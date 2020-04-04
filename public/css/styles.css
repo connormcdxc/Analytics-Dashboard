@@ -47,3 +47,9 @@ body {
   .w3-bar-block a:hover {
     background-color: #deac2f;
   }
+
+  .content h1 {
+      display: flex;
+      justify-content: center;
+      margin-top: 65px;;
+  }
