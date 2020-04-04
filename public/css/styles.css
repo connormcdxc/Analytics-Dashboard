@@ -1,4 +1,49 @@
-#mySidebar, #topBar {
-    background-color: black;
-    color: white
+body {
+    background: white
 }
+
+#mySidebar {
+    z-index: 3;
+    width: 250px;
+    font-weight: bold;
+    color: white;
+    background-color: #408080;
+  }
+
+  #topBar {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    background-color: #408080;
+    margin-bottom: 40px;
+  }
+
+  @media (max-width: 992px) {
+    .w3-sidebar.w3-collapse {
+      display: none;
+    }
+    .main {
+      margin-left: 40px;
+      margin-right: 40px;
+    }
+    .w3-auto {
+      max-width: 100%;
+    }
+  }
+
+  @media (max-width: 992px) {
+    .w3-sidebar.w3-collapse {
+      display: none;
+    }
+    .container {
+      margin-left: 0;
+      margin-right: 0;
+    }
+    .w3-auto {
+      max-width: 100%;
+    }
+  }
+
+  .w3-bar-block a:hover {
+    background-color: #deac2f;
+  }
