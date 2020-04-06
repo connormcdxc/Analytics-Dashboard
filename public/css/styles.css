@@ -45,6 +45,28 @@ body {
   }
 }
 
+@media (max-width: 480px) {
+  .w3-sidebar.w3-collapse {
+    display: none;
+  }
+  .w3-auto {
+    max-width: 100%;
+  }
+  .main {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 100px;
+  }
+  .p_holder {
+    display: flex;
+    justify-content: center;
+    margin: 15px;
+    background-color: black;
+    width: 320px;
+    height: 240px;
+  }
+}
+
 @media (min-width: 992px) {
   .w3-sidebar.w3-collapse {
     display: none;
