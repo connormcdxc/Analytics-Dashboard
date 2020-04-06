@@ -22,36 +22,50 @@ body {
   .w3-sidebar.w3-collapse {
     display: none;
   }
-  .main {
-    margin-left: 40px;
-    margin-right: 40px;
-  }
   .w3-auto {
     max-width: 100%;
   }
-  
+  .main {
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 80px;
+  }
+  .p_holder {
+    display: flex;
+    justify-content: center;
+    margin: 15px;
+    background-color: black;
+    width: 320px;
+    height: 240px;
+  }
 }
 
-@media (max-width: 992px) {
+@media (min-width: 992px) {
   .w3-sidebar.w3-collapse {
     display: none;
   }
-  .container {
-    margin-left: 0;
-    margin-right: 0;
-  }
   .w3-auto {
     max-width: 100%;
   }
+  .main {
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 50px;
+  }
+  .p_holder {
+    display: flex;
+    justify-content: center;
+    margin: 15px;
+    background-color: black;
+    width: 640px;
+    height: 480px;
+  }
 }
 
-.main {
-  margin-left: 200px;
-  margin-right: 200px;
-}
 
 .content h1 {
     display: flex;
     justify-content: center;
     margin-top: 65px;;
 }
+
