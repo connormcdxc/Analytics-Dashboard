@@ -1,5 +1,10 @@
 body {
-    background: white
+    background: white;
+    color: #1D4040
+}
+
+::-webkit-scrollbar {
+  width: 5px;
 }
 
 #mySidebar {
@@ -48,14 +53,17 @@ body {
     max-width: 100%;
   }
   .main {
-    margin-left: 200px;
+    margin-left: 400px;
     margin-right: 200px;
     margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    column-count: 1;
   }
   .p_holder {
     display: flex;
     justify-content: center;
-    margin: 15px;
     background-color: black;
     width: 640px;
     height: 480px;
