@@ -4,25 +4,30 @@ body {
   min-height: 100vh;
   min-width: 100vw;
   overflow: hidden;
-  box-sizing: border-box;
-  font-family: "Century Gothic";
 }
 
 body {
   background: white;
-  transition: 0.5s;
 }
+
+.w3-container img{
+  padding-top: 15px;
+  padding-left: 15px;
+}
+
 #dark {
   width: 0;
   height: 0;
   opacity: 0;
 }
+
 label {
   display: block;
   height: 15px;
   width: 60px;
   position: relative;
 }
+
 span.slide {
   position: absolute;
   width: 100%;
@@ -30,6 +35,12 @@ span.slide {
   background: #dadada;
   border-radius: 30px;
 }
+
+.switch{
+  display: flex;
+  justify-content: center;
+}
+
 span.slide:before {
   position: absolute;
   content: "";
@@ -39,24 +50,17 @@ span.slide:before {
   border-radius: 50%;
   top: -2px;
   left: 0px;
-  transition: 0.5s;
   box-shadow: rgba(0, 0, 0, 0.21) 0px 0px 7px 1px;
 }
+
 
 #dark:checked + span.slide:before {
   transform: translatex(40px);
 }
-/* if dark-mode class is added set this background */
+
 body.dark-mode {
   background: #353535;
-}
-.dark-mode .txt p:nth-child(1) {
-  color: #000;
-  font-weight: normal;
-}
-.dark-mode .txt p:nth-child(2) {
-  color: grey;
-  font-weight: bold;
+  color: white;
 }
 
 ::-webkit-scrollbar {
