@@ -1,6 +1,8 @@
 body {
     background: white;
-    color: #1D4040
+    color: #1D4040;
+    max-width: 50rem;
+    margin: 0 auto;
 }
 
 ::-webkit-scrollbar {
@@ -60,10 +62,9 @@ body {
   .p_holder {
     display: flex;
     justify-content: center;
-    margin: 15px;
     background-color: black;
-    width: 320px;
-    height: 240px;
+    width: 256px;
+    height: 192px;
   }
 }
 
@@ -87,15 +88,14 @@ body {
     display: flex;
     justify-content: center;
     background-color: black;
+    margin: 15px;
     width: 640px;
     height: 480px;
   }
 }
-
 
 .content h1 {
     display: flex;
     justify-content: center;
     margin-top: 65px;;
 }
-
