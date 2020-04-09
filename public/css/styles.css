@@ -6,9 +6,12 @@ body {
   overflow: hidden;
 }
 
+
+
 body {
   background: white;
 }
+
 
 .w3-container img{
   padding-top: 15px;
@@ -60,7 +63,7 @@ span.slide:before {
 
 body.dark-mode {
   background: #353535;
-  color: white;
+  color: white
 }
 
 ::-webkit-scrollbar {
@@ -73,6 +76,14 @@ body.dark-mode {
     font-weight: bold;
     color: white;
     background-color: #408080;
+    -webkit-text-stroke-color: darkblue;
+    -webkit-text-stroke-width: 1px; 
+}
+
+.w3-bar-block a{
+  -webkit-text-stroke-color: darkblue;
+  -webkit-text-stroke-width: 1px; 
+
 }
 
 #topBar {
@@ -81,8 +92,12 @@ body.dark-mode {
   color: white;
   background-color: #408080;
   margin-bottom: 40px;
+  -webkit-text-stroke-color: darkblue;
+  -webkit-text-stroke-width: 1px; 
 }
 
+
+/*Viewport formatting for tablets*/
 @media (max-width: 992px) {
   .w3-sidebar.w3-collapse {
     display: none;
@@ -94,6 +109,10 @@ body.dark-mode {
     margin-left: 100px;
     margin-right: 100px;
     margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    column-count: 1;
   }
   .p_holder {
     display: flex;
@@ -105,6 +124,7 @@ body.dark-mode {
   }
 }
 
+/*Phone formatting*/
 @media (max-width: 480px) {
   .w3-sidebar.w3-collapse {
     display: none;
@@ -116,6 +136,10 @@ body.dark-mode {
     margin-left: 20px;
     margin-right: 20px;
     margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    column-count: 1;
   }
   .p_holder {
     display: flex;
@@ -127,6 +151,7 @@ body.dark-mode {
   }
 }
 
+/*Desktop formatting*/
 @media (min-width: 992px) {
   .w3-sidebar.w3-collapse {
     display: none;
@@ -158,4 +183,3 @@ body.dark-mode {
     justify-content: center;
     margin-top: 65px;;
 }
-
