@@ -1,0 +1,122 @@
+[
+	{
+		"grouping_id" : 1,
+		"actor_id" : 1,
+		"team_id" : 5
+	},
+	{
+		"grouping_id" : 2,
+		"actor_id" : 2,
+		"team_id" : 5
+	},
+	{
+		"grouping_id" : 3,
+		"actor_id" : 3,
+		"team_id" : 5
+	},
+	{
+		"grouping_id" : 4,
+		"actor_id" : 4,
+		"team_id" : 5
+	},
+	{
+		"grouping_id" : 5,
+		"actor_id" : 6,
+		"team_id" : 10
+	},
+	{
+		"grouping_id" : 6,
+		"actor_id" : 7,
+		"team_id" : 10
+	},
+	{
+		"grouping_id" : 7,
+		"actor_id" : 8,
+		"team_id" : 10
+	},
+	{
+		"grouping_id" : 8,
+		"actor_id" : 9,
+		"team_id" : 10
+	},
+	{
+		"grouping_id" : 9,
+		"actor_id" : 11,
+		"team_id" : 15
+	},
+	{
+		"grouping_id" : 10,
+		"actor_id" : 12,
+		"team_id" : 15
+	},
+	{
+		"grouping_id" : 11,
+		"actor_id" : 13,
+		"team_id" : 15
+	},
+	{
+		"grouping_id" : 12,
+		"actor_id" : 14,
+		"team_id" : 15
+	},
+	{
+		"grouping_id" : 13,
+		"actor_id" : 16,
+		"team_id" : 20
+	},
+	{
+		"grouping_id" : 14,
+		"actor_id" : 17,
+		"team_id" : 20
+	},
+	{
+		"grouping_id" : 15,
+		"actor_id" : 18,
+		"team_id" : 20
+	},
+	{
+		"grouping_id" : 16,
+		"actor_id" : 19,
+		"team_id" : 20
+	},
+	{
+		"grouping_id" : 17,
+		"actor_id" : 21,
+		"team_id" : 25
+	},
+	{
+		"grouping_id" : 18,
+		"actor_id" : 22,
+		"team_id" : 25
+	},
+	{
+		"grouping_id" : 19,
+		"actor_id" : 23,
+		"team_id" : 25
+	},
+	{
+		"grouping_id" : 20,
+		"actor_id" : 24,
+		"team_id" : 25
+	},
+	{
+		"grouping_id" : 21,
+		"actor_id" : 26,
+		"team_id" : 30
+	},
+	{
+		"grouping_id" : 22,
+		"actor_id" : 27,
+		"team_id" : 30
+	},
+	{
+		"grouping_id" : 23,
+		"actor_id" : 28,
+		"team_id" : 30
+	},
+	{
+		"grouping_id" : 24,
+		"actor_id" : 29,
+		"team_id" : 30
+	}
+]
