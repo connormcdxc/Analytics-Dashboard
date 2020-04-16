@@ -12,6 +12,16 @@ window.addEventListener('load', () => {
   const cont = document.querySelector("#chart");
   const cont2 = document.querySelector("#chart2")
   const checkbox = document.querySelector("#dark");
+  sessionStorage.setItem("actors", fetch("/actors"))
+  sessionStorage.setItem("groupings", fetch("/groupings"))
+  sessionStorage.setItem("instances", fetch("/instances"))
+  sessionStorage.setItem("messages", fetch("/messages"))
+  sessionStorage.setItem("msgactions", fetch("/msgactions"))
+  sessionStorage.setItem("people", fetch("/people"))
+  sessionStorage.setItem("roles", fetch("/roles"))
+  sessionStorage.setItem("versions", fetch("/versions"))
+  console.log(sessionStorage.getItem("actors"))
+
 
   if (sessionStorage.getItem("mode") == "dark") {
     darkmode(); 
