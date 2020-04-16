@@ -43,8 +43,106 @@ app.use(express.static('public'));
 
 
 
-app.get('/s1', (req, res) => {
-  const baseURL = 'http://localhost:' + port + '/json/s1.json';
+app.get('/actors', (req, res) => {
+  const baseURL = 'http://localhost:' + port + '/json/actors.json';
+  fetch(baseURL)
+    .then(res => res.json())
+    .then(data => {
+      console.log(data);
+      res.send({ data: data });
+        })
+      .catch((err) => {
+      console.log(err);
+      res.redirect('/error');
+        })
+});
+
+app.get('/groupings', (req, res) => {
+  const baseURL = 'http://localhost:' + port + '/json/groupings.json';
+  fetch(baseURL)
+    .then(res => res.json())
+    .then(data => {
+      console.log(data);
+      res.send({ data: data });
+        })
+      .catch((err) => {
+      console.log(err);
+      res.redirect('/error');
+        })
+});
+
+app.get('/instances', (req, res) => {
+  const baseURL = 'http://localhost:' + port + '/json/instances.json';
+  fetch(baseURL)
+    .then(res => res.json())
+    .then(data => {
+      console.log(data);
+      res.send({ data: data });
+        })
+      .catch((err) => {
+      console.log(err);
+      res.redirect('/error');
+        })
+});
+
+app.get('/instances', (req, res) => {
+  const baseURL = 'http://localhost:' + port + '/json/instances.json';
+  fetch(baseURL)
+    .then(res => res.json())
+    .then(data => {
+      console.log(data);
+      res.send({ data: data });
+        })
+      .catch((err) => {
+      console.log(err);
+      res.redirect('/error');
+        })
+});
+
+app.get('/msgactions', (req, res) => {
+  const baseURL = 'http://localhost:' + port + '/json/msgactions.json';
+  fetch(baseURL)
+    .then(res => res.json())
+    .then(data => {
+      console.log(data);
+      res.send({ data: data });
+        })
+      .catch((err) => {
+      console.log(err);
+      res.redirect('/error');
+        })
+});
+
+app.get('/people', (req, res) => {
+  const baseURL = 'http://localhost:' + port + '/json/people.json';
+  fetch(baseURL)
+    .then(res => res.json())
+    .then(data => {
+      console.log(data);
+      res.send({ data: data });
+        })
+      .catch((err) => {
+      console.log(err);
+      res.redirect('/error');
+        })
+});
+
+app.get('/roles', (req, res) => {
+  const baseURL = 'http://localhost:' + port + '/json/roles.json';
+  fetch(baseURL)
+    .then(res => res.json())
+    .then(data => {
+      console.log(data);
+      res.send({ data: data });
+        })
+      .catch((err) => {
+      console.log(err);
+      res.redirect('/error');
+        })
+});
+
+app.get('/versions', (req, res) => {
+  const baseURL = 'http://localhost:' + port + '/json/versions.json';
   fetch(baseURL)
     .then(res => res.json())
     .then(data => {
