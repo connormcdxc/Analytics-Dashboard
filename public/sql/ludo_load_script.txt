@@ -1,0 +1,532 @@
+use ludo;
+
+
+INSERT INTO people (person_name, institution_name, username)
+/*null values should be actors? as a list, messages sent and received? instances that they participated in*/
+VALUES ('Bob Brown', 'UMD', 'princesspeach12');
+
+INSERT INTO people (person_name, institution_name, username)
+VALUES ('Red Eye', 'UMD', 'luigiman45');
+
+INSERT INTO people (person_name, institution_name, username)
+VALUES ('Corona Virus', 'UMD', 'wariorules');
+
+INSERT INTO people (person_name, institution_name, username)
+VALUES ('Warrior', 'UMD', 'mariomain1');
+
+INSERT INTO game_versions (version_name)
+VALUES ('CIP 1');
+
+INSERT INTO game_instances (term_name, section, course_code, institution_name, version_id)
+VALUES ('Spring 2020', '0101', 'INST201', 'UMD', (SELECT version_id FROM game_versions WHERE version_name = 'CIP 1'));
+
+INSERT INTO role_types (role_type, version_id)
+VALUES ('Database Administrator', (SELECT version_id FROM game_versions WHERE version_name = 'CIP 1'));
+
+INSERT INTO role_types (role_type, version_id)
+VALUES ('Civic Officer', (SELECT version_id FROM game_versions WHERE version_name = 'CIP 1'));
+
+INSERT INTO role_types (role_type, version_id)
+VALUES ('IT Associate', (SELECT version_id FROM game_versions WHERE version_name = 'CIP 1'));
+
+INSERT INTO role_types (role_type, version_id)
+VALUES ('Emergency Response Specialist', (SELECT version_id FROM game_versions WHERE version_name = 'CIP 1'));
+
+INSERT INTO actors (actor_type, comment, role_type_id , person_id, instance_id)
+VALUES('I', 'Bob Brown: Database Administrator',
+(SELECT role_type_id FROM role_types WHERE role_type = 'Database Administrator'),
+(SELECT person_id FROM people WHERE person_name = 'Bob Brown'),
+(SELECT instance_id FROM game_instances WHERE section = '0101')
+);
+
+INSERT INTO actors (actor_type,comment, role_type_id, person_id, instance_id)
+VALUES('I', 'Red Eye: Civic Officer',
+(SELECT role_type_id FROM role_types WHERE role_type = 'Civic Officer'),
+(SELECT person_id FROM people WHERE person_name = 'Red Eye'),
+(SELECT instance_id FROM game_instances WHERE section = '0101')
+);
+
+INSERT INTO actors (actor_type, comment, role_type_id, person_id, instance_id)
+VALUES('I', 'Corona Virus: IT Associate',
+(SELECT role_type_id FROM role_types WHERE role_type = 'IT Associate'),
+(SELECT person_id FROM people WHERE person_name = 'Corona Virus'),
+(SELECT instance_id FROM game_instances WHERE section = '0101')
+);
+
+INSERT INTO actors (actor_type, comment, role_type_id, person_id, instance_id)
+VALUES('I', 'Warrior: Emergency Response Specialist',
+(SELECT role_type_id FROM role_types WHERE role_type = 'Emergency Response Specialist'),
+(SELECT person_id FROM people WHERE person_name = 'Warrior'),
+(SELECT instance_id FROM game_instances WHERE section = '0101')
+);
+
+INSERT INTO actors (actor_type, comment, role_type_id , person_id, instance_id)
+VALUES('T', 'Blue Team', NULL, NULL, 
+(SELECT instance_id FROM game_instances WHERE section = '0101')
+);
+
+INSERT INTO messages (message_subject, message_text)
+VALUES('Emergency Action Needed for Leak', 'There is a leak on the North side of town that is flooding the street.');
+
+INSERT INTO message_actions (type, timestamp, message_id, actor_id)
+VALUES('Send', timestamp,
+(SELECT message_id FROM messages WHERE message_subject = 'Emergency Action Needed for Leak'),
+(SELECT actor_id FROM actors WHERE comment = 'Red Eye: Civic Officer'));
+
+INSERT INTO message_actions (type, timestamp, message_id, actor_id)
+VALUES('Received', timestamp,
+(SELECT message_id FROM messages WHERE message_subject = 'Emergency Action Needed for Leak'),
+(SELECT actor_id FROM actors WHERE comment = 'Bob Brown: Database Administrator'));
+
+INSERT INTO message_actions (type, timestamp, message_id, actor_id)
+VALUES('Received', timestamp,
+(SELECT message_id FROM messages WHERE message_subject = 'Emergency Action Needed for Leak'),
+(SELECT actor_id FROM actors WHERE comment = 'Corona Virus: IT Associate'));
+
+INSERT INTO message_actions (type, timestamp, message_id, actor_id)
+VALUES('Received', timestamp,
+(SELECT message_id FROM messages WHERE message_subject = 'Emergency Action Needed for Leak'),
+(SELECT actor_id FROM actors WHERE comment = 'Warrior: Emergency Response Specialist'));
+
+INSERT into groupings (actor_id, team_id)
+VALUES ((SELECT actor_id FROM actors WHERE actor_id = 1), 5);
+
+INSERT into groupings (actor_id, team_id)
+VALUES ((SELECT actor_id FROM actors WHERE actor_id = 2), 5);
+
+INSERT into groupings (actor_id, team_id)
+VALUES ((SELECT actor_id FROM actors WHERE actor_id = 3), 5);
+
+INSERT into groupings (actor_id, team_id)
+VALUES ((SELECT actor_id FROM actors WHERE actor_id = 4), 5);
+
+/*Second Part of Load Script*/
+
+
+INSERT INTO people (person_name, institution_name, username)
+VALUES ('Adam Applin', 'UMD', 'catchemall890');
+
+INSERT INTO people (person_name, institution_name, username)
+VALUES ('Buster Boost', 'UMD', 'gottagofast');
+
+INSERT INTO people (person_name, institution_name, username)
+VALUES ('Cinder Crash', 'UMD', 'spinner32');
+
+INSERT INTO people (person_name, institution_name, username)
+VALUES ('Draymond DK', 'UMD', 'barrelcountry');
+
+INSERT INTO actors (actor_type, comment, role_type_id , person_id, instance_id)
+VALUES('I', 'Adam Applin: Database Administrator',
+(SELECT role_type_id FROM role_types WHERE role_type = 'Database Administrator'),
+(SELECT person_id FROM people WHERE person_name = 'Adam Applin'),
+(SELECT instance_id FROM game_instances WHERE section = '0101')
+);
+
+INSERT INTO actors (actor_type,comment, role_type_id, person_id, instance_id)
+VALUES('I', 'Cinder Crash: Civic Officer',
+(SELECT role_type_id FROM role_types WHERE role_type = 'Civic Officer'),
+(SELECT person_id FROM people WHERE person_name = 'Cinder Crash'),
+(SELECT instance_id FROM game_instances WHERE section = '0101')
+);
+
+INSERT INTO actors (actor_type, comment, role_type_id, person_id, instance_id)
+VALUES('I', 'Draymond DK: IT Associate',
+(SELECT role_type_id FROM role_types WHERE role_type = 'IT Associate'),
+(SELECT person_id FROM people WHERE person_name = 'Draymond DK'),
+(SELECT instance_id FROM game_instances WHERE section = '0101')
+);
+
+INSERT INTO actors (actor_type, comment, role_type_id, person_id, instance_id)
+VALUES('I', 'Buster Boost: Emergency Response Specialist',
+(SELECT role_type_id FROM role_types WHERE role_type = 'Emergency Response Specialist'),
+(SELECT person_id FROM people WHERE person_name = 'Buster Boost'),
+(SELECT instance_id FROM game_instances WHERE section = '0101')
+);
+
+INSERT INTO actors (actor_type, comment, role_type_id , person_id, instance_id)
+VALUES('T', 'Red Team', NULL, NULL, 
+(SELECT instance_id FROM game_instances WHERE section = '0101')
+);
+
+INSERT INTO messages (message_subject, message_text)
+VALUES('Break Plans', 'Let\'s meet up for lunch!');
+
+INSERT INTO message_actions (type, timestamp, message_id, actor_id)
+VALUES('Send', timestamp,
+(SELECT message_id FROM messages WHERE message_subject = 'Break Plans'),
+(SELECT actor_id FROM actors WHERE comment = 'Adam Applin: Database Administrator'));
+
+INSERT INTO message_actions (type, timestamp, message_id, actor_id)
+VALUES('Received', timestamp,
+(SELECT message_id FROM messages WHERE message_subject = 'Break Plans'),
+(SELECT actor_id FROM actors WHERE comment = 'Buster Boost: Emergency Response Specialist'));
+
+INSERT INTO message_actions (type, timestamp, message_id, actor_id)
+VALUES('Received', timestamp,
+(SELECT message_id FROM messages WHERE message_subject = 'Break Plans'),
+(SELECT actor_id FROM actors WHERE comment = 'Cinder Crash: Civic Officer'));
+
+INSERT INTO message_actions (type, timestamp, message_id, actor_id)
+VALUES('CC', timestamp,
+(SELECT message_id FROM messages WHERE message_subject = 'Break Plans'),
+(SELECT actor_id FROM actors WHERE comment = 'Draymond DK: IT Associate'));
+
+INSERT into groupings (actor_id, team_id)
+VALUES ((SELECT actor_id FROM actors WHERE actor_id = 6), 10);
+
+INSERT into groupings (actor_id, team_id)
+VALUES ((SELECT actor_id FROM actors WHERE actor_id = 7), 10);
+
+INSERT into groupings (actor_id, team_id)
+VALUES ((SELECT actor_id FROM actors WHERE actor_id = 8), 10);
+
+INSERT into groupings (actor_id, team_id)
+VALUES ((SELECT actor_id FROM actors WHERE actor_id = 9), 10);
+
+/*Third Part of Load Script*/
+
+
+INSERT INTO people (person_name, institution_name, username)
+VALUES ('Eve Olve', 'UMD', 'nolaughing31');
+
+INSERT INTO people (person_name, institution_name, username)
+VALUES ('Contra Ease', 'UMD', 'paradox3');
+
+INSERT INTO people (person_name, institution_name, username)
+VALUES ('Kei Kaku', 'UMD', 'doctorright');
+
+INSERT INTO people (person_name, institution_name, username)
+VALUES ('Mordecai Simple', 'UMD', 'sheworth100');
+
+INSERT INTO actors (actor_type, comment, role_type_id , person_id, instance_id)
+VALUES('I', 'Mordecai Simple: Database Administrator',
+(SELECT role_type_id FROM role_types WHERE role_type = 'Database Administrator'),
+(SELECT person_id FROM people WHERE person_name = 'Mordecai Simple'),
+(SELECT instance_id FROM game_instances WHERE section = '0101')
+);
+
+INSERT INTO actors (actor_type,comment, role_type_id, person_id, instance_id)
+VALUES('I', 'Contra Ease: Civic Officer',
+(SELECT role_type_id FROM role_types WHERE role_type = 'Civic Officer'),
+(SELECT person_id FROM people WHERE person_name = 'Contra Ease'),
+(SELECT instance_id FROM game_instances WHERE section = '0101')
+);
+
+INSERT INTO actors (actor_type, comment, role_type_id, person_id, instance_id)
+VALUES('I', 'Kei Kaku: IT Associate',
+(SELECT role_type_id FROM role_types WHERE role_type = 'IT Associate'),
+(SELECT person_id FROM people WHERE person_name = 'Kei Kaku'),
+(SELECT instance_id FROM game_instances WHERE section = '0101')
+);
+
+INSERT INTO actors (actor_type, comment, role_type_id, person_id, instance_id)
+VALUES('I', 'Eve Olve: Emergency Response Specialist',
+(SELECT role_type_id FROM role_types WHERE role_type = 'Emergency Response Specialist'),
+(SELECT person_id FROM people WHERE person_name = 'Eve Olve'),
+(SELECT instance_id FROM game_instances WHERE section = '0101')
+);
+
+INSERT INTO actors (actor_type, comment, role_type_id , person_id, instance_id)
+VALUES('T', 'Green Team', NULL, NULL, 
+(SELECT instance_id FROM game_instances WHERE section = '0101')
+);
+
+INSERT INTO messages (message_subject, message_text)
+VALUES('Future Reference', 'Please document the emergency I fixed for future reference.');
+
+INSERT INTO messages (message_subject, message_text)
+VALUES('Overheated Words', 'I need help calming a debate in the lobby.');
+
+INSERT INTO message_actions (type, timestamp, message_id, actor_id)
+VALUES('Send', timestamp,
+(SELECT message_id FROM messages WHERE message_subject = 'Future Reference'),
+(SELECT actor_id FROM actors WHERE comment = 'Eve Olve: Emergency Response Specialist'));
+
+INSERT INTO message_actions (type, timestamp, message_id, actor_id)
+VALUES('Received', timestamp,
+(SELECT message_id FROM messages WHERE message_subject = 'Future Reference'),
+(SELECT actor_id FROM actors WHERE comment = 'Mordecai Simple: Database Administrator'));
+
+INSERT INTO message_actions (type, timestamp, message_id, actor_id)
+VALUES('Send', timestamp,
+(SELECT message_id FROM messages WHERE message_subject = 'Overheated Words'),
+(SELECT actor_id FROM actors WHERE comment = 'Kei Kaku: IT Associate'));
+
+INSERT INTO message_actions (type, timestamp, message_id, actor_id)
+VALUES('Received', timestamp,
+(SELECT message_id FROM messages WHERE message_subject = 'Overheated Words'),
+(SELECT actor_id FROM actors WHERE comment = 'Contra Ease: Civic Officer'));
+
+INSERT into groupings (actor_id, team_id)
+VALUES ((SELECT actor_id FROM actors WHERE actor_id = 11), 15);
+
+INSERT into groupings (actor_id, team_id)
+VALUES ((SELECT actor_id FROM actors WHERE actor_id = 12), 15);
+
+INSERT into groupings (actor_id, team_id)
+VALUES ((SELECT actor_id FROM actors WHERE actor_id = 13), 15);
+
+INSERT into groupings (actor_id, team_id)
+VALUES ((SELECT actor_id FROM actors WHERE actor_id = 14), 15);
+
+/*Fourth Part of Load Script*/
+
+
+INSERT INTO people (person_name, institution_name, username)
+VALUES ('Hannibal Broly', 'UMD', 'blandsaiyan3');
+
+INSERT INTO people (person_name, institution_name, username)
+VALUES ('Barney Miles', 'UMD', 'stonerun50');
+
+INSERT INTO people (person_name, institution_name, username)
+VALUES ('Kim Hines', 'UMD', 'fiftycent22');
+
+INSERT INTO people (person_name, institution_name, username)
+VALUES ('Rena Logan', 'UMD', 'sheworth100');
+
+INSERT INTO actors (actor_type, comment, role_type_id , person_id, instance_id)
+VALUES('I', 'Hannibal Broly: Civic Officer',
+(SELECT role_type_id FROM role_types WHERE role_type = 'Civic Officer'),
+(SELECT person_id FROM people WHERE person_name = 'Hannibal Broly'),
+(SELECT instance_id FROM game_instances WHERE section = '0101')
+);
+
+INSERT INTO actors (actor_type,comment, role_type_id, person_id, instance_id)
+VALUES('I', 'Rena Logan: IT Associate',
+(SELECT role_type_id FROM role_types WHERE role_type = 'IT Associate'),
+(SELECT person_id FROM people WHERE person_name = 'Rena Logan'),
+(SELECT instance_id FROM game_instances WHERE section = '0101')
+);
+
+INSERT INTO actors (actor_type, comment, role_type_id, person_id, instance_id)
+VALUES('I', 'Barney Miles: Database Administrator',
+(SELECT role_type_id FROM role_types WHERE role_type = 'Database Administrator'),
+(SELECT person_id FROM people WHERE person_name = 'Barney Miles'),
+(SELECT instance_id FROM game_instances WHERE section = '0101')
+);
+
+INSERT INTO actors (actor_type, comment, role_type_id, person_id, instance_id)
+VALUES('I', 'Kim Hines: Emergency Response Specialist',
+(SELECT role_type_id FROM role_types WHERE role_type = 'Emergency Response Specialist'),
+(SELECT person_id FROM people WHERE person_name = 'Kim Hines'),
+(SELECT instance_id FROM game_instances WHERE section = '0101')
+);
+
+INSERT INTO actors (actor_type, comment, role_type_id , person_id, instance_id)
+VALUES('T', 'Magenta Team', NULL, NULL, 
+(SELECT instance_id FROM game_instances WHERE section = '0101')
+);
+
+INSERT INTO messages (message_subject, message_text)
+VALUES('Talk to me.', 'Please respond to my emails. We need to talk about future plans.');
+
+INSERT INTO messages (message_subject, message_text)
+VALUES('Why is no one responding?', 'Hannibal, Rena, Barney, I need to communicate with you three if we are to succeed. Reply back if you read this.');
+
+INSERT INTO message_actions (type, timestamp, message_id, actor_id)
+VALUES('Send', timestamp,
+(SELECT message_id FROM messages WHERE message_subject = 'Talk to me.'),
+(SELECT actor_id FROM actors WHERE comment = 'Kim Hines: Emergency Response Specialist'));
+
+INSERT INTO message_actions (type, timestamp, message_id, actor_id)
+VALUES('Received', timestamp,
+(SELECT message_id FROM messages WHERE message_subject = 'Talk to me.'),
+(SELECT actor_id FROM actors WHERE comment = 'Rena Logan: IT Associate'));
+
+INSERT INTO message_actions (type, timestamp, message_id, actor_id)
+VALUES('Recieved', timestamp,
+(SELECT message_id FROM messages WHERE message_subject = 'Talk to me.'),
+(SELECT actor_id FROM actors WHERE comment = 'Barney Miles: Database Administrator'));
+
+INSERT INTO message_actions (type, timestamp, message_id, actor_id)
+VALUES('Received', timestamp,
+(SELECT message_id FROM messages WHERE message_subject = 'Talk to me.'),
+(SELECT actor_id FROM actors WHERE comment = 'Hannibal Broly: Civic Officer'));
+
+INSERT INTO message_actions (type, timestamp, message_id, actor_id)
+VALUES('Send', timestamp,
+(SELECT message_id FROM messages WHERE message_subject = 'Why is no one responding?'),
+(SELECT actor_id FROM actors WHERE comment = 'Kim Hines: Emergency Response Specialist'));
+
+INSERT INTO message_actions (type, timestamp, message_id, actor_id)
+VALUES('Received', timestamp,
+(SELECT message_id FROM messages WHERE message_subject = 'Why is no one responding?'),
+(SELECT actor_id FROM actors WHERE comment = 'Rena Logan: IT Associate'));
+
+INSERT INTO message_actions (type, timestamp, message_id, actor_id)
+VALUES('Recieved', timestamp,
+(SELECT message_id FROM messages WHERE message_subject = 'Why is no one responding?'),
+(SELECT actor_id FROM actors WHERE comment = 'Barney Miles: Database Administrator'));
+
+INSERT INTO message_actions (type, timestamp, message_id, actor_id)
+VALUES('Received', timestamp,
+(SELECT message_id FROM messages WHERE message_subject = 'Why is no one responding?'),
+(SELECT actor_id FROM actors WHERE comment = 'Hannibal Broly: Civic Officer'));
+
+INSERT into groupings (actor_id, team_id)
+VALUES ((SELECT actor_id FROM actors WHERE actor_id = 16), 20);
+
+INSERT into groupings (actor_id, team_id)
+VALUES ((SELECT actor_id FROM actors WHERE actor_id = 17), 20);
+
+INSERT into groupings (actor_id, team_id)
+VALUES ((SELECT actor_id FROM actors WHERE actor_id = 18), 20);
+
+INSERT into groupings (actor_id, team_id)
+VALUES ((SELECT actor_id FROM actors WHERE actor_id = 19), 20);
+
+/*Fifth Part of Load Script*/
+
+/*This team doesn't talk at all*/
+INSERT INTO people (person_name, institution_name, username)
+VALUES ('Gangrel', 'UMD', 'blooddrinker4');
+
+INSERT INTO people (person_name, institution_name, username)
+VALUES ('Kevin Thorn', 'UMD', 'edwardecai');
+
+INSERT INTO people (person_name, institution_name, username)
+VALUES ('Vampiro', 'UMD', 'creepydeepy');
+
+INSERT INTO people (person_name, institution_name, username)
+VALUES ('Ariel', 'UMD', 'notbellaswan010');
+
+INSERT INTO actors (actor_type, comment, role_type_id , person_id, instance_id)
+VALUES('I', 'Ariel: Emergency Response Specialist',
+(SELECT role_type_id FROM role_types WHERE role_type = 'Emergency Response Specialist'),
+(SELECT person_id FROM people WHERE person_name = 'Ariel'),
+(SELECT instance_id FROM game_instances WHERE section = '0101')
+);
+
+INSERT INTO actors (actor_type,comment, role_type_id, person_id, instance_id)
+VALUES('I', 'Kevin Thorn: Database Administrator',
+(SELECT role_type_id FROM role_types WHERE role_type = 'Database Administrator'),
+(SELECT person_id FROM people WHERE person_name = 'Kevin Thorn'),
+(SELECT instance_id FROM game_instances WHERE section = '0101')
+);
+
+INSERT INTO actors (actor_type, comment, role_type_id, person_id, instance_id)
+VALUES('I', 'Gangrel: IT Associate',
+(SELECT role_type_id FROM role_types WHERE role_type = 'IT Associate'),
+(SELECT person_id FROM people WHERE person_name = 'Gangrel'),
+(SELECT instance_id FROM game_instances WHERE section = '0101')
+);
+
+INSERT INTO actors (actor_type, comment, role_type_id, person_id, instance_id)
+VALUES('I', 'Vampiro: Civic Officer',
+(SELECT role_type_id FROM role_types WHERE role_type = 'Civic Officer'),
+(SELECT person_id FROM people WHERE person_name = 'Vampiro'),
+(SELECT instance_id FROM game_instances WHERE section = '0101')
+);
+
+INSERT INTO actors (actor_type, comment, role_type_id , person_id, instance_id)
+VALUES('T', 'Crimson Team', NULL, NULL, 
+(SELECT instance_id FROM game_instances WHERE section = '0101')
+);
+
+INSERT into groupings (actor_id, team_id)
+VALUES ((SELECT actor_id FROM actors WHERE actor_id = 21), 25);
+
+INSERT into groupings (actor_id, team_id)
+VALUES ((SELECT actor_id FROM actors WHERE actor_id = 22), 25);
+
+INSERT into groupings (actor_id, team_id)
+VALUES ((SELECT actor_id FROM actors WHERE actor_id = 23), 25);
+
+INSERT into groupings (actor_id, team_id)
+VALUES ((SELECT actor_id FROM actors WHERE actor_id = 24), 25);
+
+/*Sixth Part of Load Script*/
+
+INSERT INTO people (person_name, institution_name, username)
+VALUES ('Charles Wright', 'UMD', 'godfathershango');
+
+INSERT INTO people (person_name, institution_name, username)
+VALUES ('Manfred Von Karma', 'UMD', 'perfectprosecutor');
+
+INSERT INTO people (person_name, institution_name, username)
+VALUES ('Speed Racer', 'UMD', 'oah31');
+
+INSERT INTO people (person_name, institution_name, username)
+VALUES ('Harold Jordan', 'UMD', 'blingbling2814');
+
+INSERT INTO actors (actor_type, comment, role_type_id , person_id, instance_id)
+VALUES('I', 'Charles Wright: Database Administrator',
+(SELECT role_type_id FROM role_types WHERE role_type = 'Database Administrator'),
+(SELECT person_id FROM people WHERE person_name = 'Charles Wright'),
+(SELECT instance_id FROM game_instances WHERE section = '0101')
+);
+
+INSERT INTO actors (actor_type,comment, role_type_id, person_id, instance_id)
+VALUES('I', 'Manfred Von Karma: Civic Officer',
+(SELECT role_type_id FROM role_types WHERE role_type = 'Civic Officer'),
+(SELECT person_id FROM people WHERE person_name = 'Manfred Von Karma'),
+(SELECT instance_id FROM game_instances WHERE section = '0101')
+);
+
+INSERT INTO actors (actor_type, comment, role_type_id, person_id, instance_id)
+VALUES('I', 'Speed Racer: IT Associate',
+(SELECT role_type_id FROM role_types WHERE role_type = 'IT Associate'),
+(SELECT person_id FROM people WHERE person_name = 'Speed Racer'),
+(SELECT instance_id FROM game_instances WHERE section = '0101')
+);
+
+INSERT INTO actors (actor_type, comment, role_type_id, person_id, instance_id)
+VALUES('I', 'Harold Jordan: Emergency Response Specialist',
+(SELECT role_type_id FROM role_types WHERE role_type = 'Emergency Response Specialist'),
+(SELECT person_id FROM people WHERE person_name = 'Harold Jordan'),
+(SELECT instance_id FROM game_instances WHERE section = '0101')
+);
+
+INSERT INTO actors (actor_type, comment, role_type_id , person_id, instance_id)
+VALUES('T', 'Purple Team', NULL, NULL, 
+(SELECT instance_id FROM game_instances WHERE section = '0101')
+);
+
+INSERT INTO messages (message_subject, message_text)
+VALUES('What Now?', 'Does anyone know what we are supposed to do?');
+
+INSERT INTO messages (message_subject, message_text)
+VALUES('What Now? - Response', 'Hal, you have to save the people\'s data, then tell us what happens.');
+
+INSERT INTO message_actions (type, timestamp, message_id, actor_id)
+VALUES('Send', timestamp,
+(SELECT message_id FROM messages WHERE message_subject = 'What Now?'),
+(SELECT actor_id FROM actors WHERE comment = 'Harold Jordan: Emergency Response Specialist'));
+
+INSERT INTO message_actions (type, timestamp, message_id, actor_id)
+VALUES('Received', timestamp,
+(SELECT message_id FROM messages WHERE message_subject = 'What Now?'),
+(SELECT actor_id FROM actors WHERE comment = 'Speed Racer: IT Associate'));
+
+INSERT INTO message_actions (type, timestamp, message_id, actor_id)
+VALUES('Received', timestamp,
+(SELECT message_id FROM messages WHERE message_subject = 'What Now?'),
+(SELECT actor_id FROM actors WHERE comment = 'Manfred Von Karma: Civic Officer'));
+
+INSERT INTO message_actions (type, timestamp, message_id, actor_id)
+VALUES('Recieved', timestamp,
+(SELECT message_id FROM messages WHERE message_subject = 'What Now?'),
+(SELECT actor_id FROM actors WHERE comment = 'Charles Wright: Database Administrator'));
+
+INSERT INTO message_actions (type, timestamp, message_id, actor_id)
+VALUES('Send', timestamp,
+(SELECT message_id FROM messages WHERE message_subject = 'What Now? - Response'),
+(SELECT actor_id FROM actors WHERE comment = 'Speed Racer: IT Associate'));
+
+INSERT INTO message_actions (type, timestamp, message_id, actor_id)
+VALUES('Received', timestamp,
+(SELECT message_id FROM messages WHERE message_subject = 'What Now? - Response'),
+(SELECT actor_id FROM actors WHERE comment = 'Harold Jordan: Emergency Response Specialist'));
+
+INSERT into groupings (actor_id, team_id)
+VALUES ((SELECT actor_id FROM actors WHERE actor_id = 26), 30);
+
+INSERT into groupings (actor_id, team_id)
+VALUES ((SELECT actor_id FROM actors WHERE actor_id = 27), 30);
+
+INSERT into groupings (actor_id, team_id)
+VALUES ((SELECT actor_id FROM actors WHERE actor_id = 28), 30);
+
+INSERT into groupings (actor_id, team_id)
+VALUES ((SELECT actor_id FROM actors WHERE actor_id = 29), 30);
+
