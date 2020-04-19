@@ -1,5 +1,6 @@
 const express = require('express');
 const fetch = require('node-fetch');
+var mysql = require('mysql');
 
 const app = express();
 const port = process.env.PORT || 3000;
@@ -155,5 +156,39 @@ app.get('/versions', (req, res) => {
         })
 });
 
+// Add the credentials to access your database
+var connection = mysql.createConnection({
+    //Host will have to be changed if we use AWS, currently pointing to my database
+    host     : '162.241.216.56',
+    user     : 'connorm4_490user',
+    password : 'InfoCap490',
+    database : 'connorm4_inst490'
+});
+
+// connect to mysql
+connection.connect(function(err) {
+    // in case of error
+    if(err){
+        console.log(err.code);
+        console.log(err.fatal);
+    }
+});
+
+// Perform a query
+$query = 'SELECT * from MyTable LIMIT 10';
+
+connection.query($query, function(err, rows, fields) {
+    if(err){
+        console.log("An error ocurred performing the query.");
+        return;
+    }
+
+    console.log("Query succesfully executed: ", rows);
+});
+
+// Close the connection
+connection.end(function(){
+    // The connection has been closed
+});
 
 app.listen(port, () => console.log(`Example app listening on port ${port}!`))

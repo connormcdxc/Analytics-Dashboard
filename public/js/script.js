@@ -2,11 +2,12 @@ function openNav() {
     document.getElementById("mySidebar").style.display = "block";
     document.getElementById("myOverlay").style.display = "block";
   }
-  
+
 function closeNav() {
   document.getElementById("mySidebar").style.display = "none";
   document.getElementById("myOverlay").style.display = "none";
 }
+
 
 window.addEventListener('load', () => {
   const cont = document.querySelector("#chart");
@@ -24,22 +25,22 @@ window.addEventListener('load', () => {
 
 
   if (sessionStorage.getItem("mode") == "dark") {
-    darkmode(); 
+    darkmode();
   } else {
-    nodark(); 
+    nodark();
   }
 
   checkbox.addEventListener("change", function() {
     if (checkbox.checked) {
-      darkmode(); 
+      darkmode();
     } else {
-      nodark(); 
+      nodark();
     }
   });
 
   function darkmode() {
-    document.body.classList.add("dark-mode"); 
-    checkbox.checked = true; 
+    document.body.classList.add("dark-mode");
+    checkbox.checked = true;
     sessionStorage.setItem("mode", "dark");
     if (cont) {
       var chart = new CanvasJS.Chart(cont, {
@@ -86,7 +87,7 @@ window.addEventListener('load', () => {
         }]
       });
       chart.render();
-     
+
       var chart2 = new CanvasJS.Chart(cont2, {
       animationEnabled: true,
       backgroundColor: null,
@@ -146,9 +147,9 @@ window.addEventListener('load', () => {
   }
 
   function nodark() {
-    document.body.classList.remove("dark-mode"); 
-    checkbox.checked = false; 
-    sessionStorage.setItem("mode", "light"); 
+    document.body.classList.remove("dark-mode");
+    checkbox.checked = false;
+    sessionStorage.setItem("mode", "light");
     if (cont) {
       var chart = new CanvasJS.Chart(cont, {
         backgroundColor: null,
@@ -193,7 +194,7 @@ window.addEventListener('load', () => {
         }]
       });
       chart.render();
-       
+
       var chart2 = new CanvasJS.Chart(cont2, {
       animationEnabled: true,
       backgroundColor: null,
@@ -251,4 +252,3 @@ window.addEventListener('load', () => {
     }
   }
 });
-
