@@ -6,6 +6,40 @@ const app = express();
 const port = process.env.PORT || 3000;
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
+/* Start database connection */
+// Adding credentials to access database
+var connection = mysql.createConnection({
+  //Host and login info will have to be changed if we use AWS, currently pointing to my database
+  host     : '162.241.216.56',
+  user     : 'connorm4_490user',
+  password : 'InfoCap490',
+  database : 'connorm4_inst490'
+});
+
+// connect to mysql
+connection.connect(function(err) {
+  // in case of error
+  if(err){
+      console.log(err.code);
+      console.log(err.fatal);
+  }
+});
+
+// Perform a test query
+$query = 'SELECT * from actors LIMIT 10';
+var actors;
+connection.query($query, function(err, rows, fields) {
+  if(err){
+      console.log("An error ocurred performing the query.");
+      return;
+  }
+  actors = rows[2];
+  //console.log("Query succesfully executed: ", rows);
+});
+
+// Close the database connection
+connection.end(function(){
+});
 
 /*
  * The 'express.static' middleware provides some services Express can use to
@@ -45,10 +79,62 @@ app.use(express.static('public'));
 
 
 app.get('/actors', (req, res) => {
-  const baseURL = 'http://localhost:' + port + '/json/actors.json';
-  fetch(baseURL)
-    .then(res => res.json())
+  var connection = mysql.createConnection({
+    //Host and login info will have to be changed if we use AWS, currently pointing to my database
+    host     : '162.241.216.56',
+    user     : 'connorm4_490user',
+    password : 'InfoCap490',
+    database : 'connorm4_inst490'
+  });
+  var actors;
+  // connect to mysql
+connection.connect(function(err) {
+  // in case of error
+  if(err){
+      console.log(err.code);
+      console.log(err.fatal);
+  }
+  $query = 'SELECT * from actors LIMIT 10';
+connection.query($query, function(err, rows, fields) {
+  if(err){
+      console.log("An error ocurred performing the query.");
+      return;
+  }
+  var obj = JSON.stringify(rows);
+  actors = obj;
+  res.send({ obj: obj });
+  console.log(rows);
+  console.log(actors);
+  console.log(obj);
+  
+  //console.log("Query succesfully executed: ", rows);
+});
+// Close the database connection
+connection.end(function(){
+});
+})
+});
+
+/* Perform a test query
+$query = 'SELECT * from actors LIMIT 10';
+connection.query($query, function(err, rows, fields) {
+  if(err){
+      console.log("An error ocurred performing the query.");
+      return;
+  }
+  actors = rows;
+  //console.log("Query succesfully executed: ", rows);
+});
+
+// Close the database connection
+connection.end(function(){
+});
+  console.log(actors);
+  var obj = JSON.parse(actors);
+  //const baseURL = 'http://localhost:' + port + '/json/actors.json';
+  fetch(obj)
     .then(data => {
+      console.log("ROWS START");
       console.log(data);
       res.send({ data: data });
         })
@@ -56,14 +142,14 @@ app.get('/actors', (req, res) => {
       console.log(err);
       res.redirect('/error');
         })
-});
+});*/
 
 app.get('/groupings', (req, res) => {
   const baseURL = 'http://localhost:' + port + '/json/groupings.json';
   fetch(baseURL)
     .then(res => res.json())
     .then(data => {
-      console.log(data);
+      //console.log(data);
       res.send({ data: data });
         })
       .catch((err) => {
@@ -77,7 +163,7 @@ app.get('/instances', (req, res) => {
   fetch(baseURL)
     .then(res => res.json())
     .then(data => {
-      console.log(data);
+      //console.log(data);
       res.send({ data: data });
         })
       .catch((err) => {
@@ -91,7 +177,7 @@ app.get('/instances', (req, res) => {
   fetch(baseURL)
     .then(res => res.json())
     .then(data => {
-      console.log(data);
+      //console.log(data);
       res.send({ data: data });
         })
       .catch((err) => {
@@ -105,7 +191,7 @@ app.get('/msgactions', (req, res) => {
   fetch(baseURL)
     .then(res => res.json())
     .then(data => {
-      console.log(data);
+      //console.log(data);
       res.send({ data: data });
         })
       .catch((err) => {
@@ -119,7 +205,7 @@ app.get('/people', (req, res) => {
   fetch(baseURL)
     .then(res => res.json())
     .then(data => {
-      console.log(data);
+      //console.log(data);
       res.send({ data: data });
         })
       .catch((err) => {
@@ -133,7 +219,7 @@ app.get('/roles', (req, res) => {
   fetch(baseURL)
     .then(res => res.json())
     .then(data => {
-      console.log(data);
+      //console.log(data);
       res.send({ data: data });
         })
       .catch((err) => {
@@ -147,7 +233,7 @@ app.get('/versions', (req, res) => {
   fetch(baseURL)
     .then(res => res.json())
     .then(data => {
-      console.log(data);
+      //console.log(data);
       res.send({ data: data });
         })
       .catch((err) => {
@@ -156,39 +242,5 @@ app.get('/versions', (req, res) => {
         })
 });
 
-// Add the credentials to access your database
-var connection = mysql.createConnection({
-    //Host will have to be changed if we use AWS, currently pointing to my database
-    host     : '162.241.216.56',
-    user     : 'connorm4_490user',
-    password : 'InfoCap490',
-    database : 'connorm4_inst490'
-});
-
-// connect to mysql
-connection.connect(function(err) {
-    // in case of error
-    if(err){
-        console.log(err.code);
-        console.log(err.fatal);
-    }
-});
-
-// Perform a query
-$query = 'SELECT * from MyTable LIMIT 10';
-
-connection.query($query, function(err, rows, fields) {
-    if(err){
-        console.log("An error ocurred performing the query.");
-        return;
-    }
-
-    console.log("Query succesfully executed: ", rows);
-});
-
-// Close the connection
-connection.end(function(){
-    // The connection has been closed
-});
 
 app.listen(port, () => console.log(`Example app listening on port ${port}!`))

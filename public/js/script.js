@@ -13,7 +13,13 @@ window.addEventListener('load', () => {
   const cont = document.querySelector("#chart");
   const cont2 = document.querySelector("#chart2")
   const checkbox = document.querySelector("#dark");
-  sessionStorage.setItem("actors", fetch("/actors"))
+  async function actorFetch() {
+    let response = await fetch("/actors");
+    let data = await response.json();
+    sessionStorage.setItem("actors", data );
+    console.log(data);
+  }
+  actorFetch();
   sessionStorage.setItem("groupings", fetch("/groupings"))
   sessionStorage.setItem("instances", fetch("/instances"))
   sessionStorage.setItem("messages", fetch("/messages"))
@@ -21,7 +27,8 @@ window.addEventListener('load', () => {
   sessionStorage.setItem("people", fetch("/people"))
   sessionStorage.setItem("roles", fetch("/roles"))
   sessionStorage.setItem("versions", fetch("/versions"))
-  console.log(sessionStorage.getItem("actors"))
+
+  //console.log(sessionStorage.getItem("actors"))
 
 
   if (sessionStorage.getItem("mode") == "dark") {
