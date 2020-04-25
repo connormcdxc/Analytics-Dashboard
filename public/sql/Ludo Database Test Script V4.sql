@@ -7,6 +7,120 @@ INSERT INTO people (person_name, institution_name, username)
 VALUES ('Bob Brown', 'UMD', 'princesspeach12');
 
 INSERT INTO people (person_name, institution_name, username)
+VALUES ('Lonzo Lewinsky', 'UMD', 'llewinsky');
+
+INSERT INTO people (person_name, institution_name, username)
+VALUES ('Lonzo Lewinsky', 'UMD', 'llewinsky');
+
+INSERT INTO people (person_name, institution_name, username)
+VALUES ('Lonzo Lewinsky', 'UMD', 'llewinsky');
+
+INSERT INTO people (person_name, institution_name, username)
+VALUES ('Lonzo Lewinsky', 'UMD', 'llewinsky');
+
+INSERT INTO people (person_name, institution_name, username)
+VALUES ('Mark Sanchez', 'UMD', 'madscientist2');
+
+INSERT INTO people (person_name, institution_name, username)
+VALUES ('Tom Bernard', 'UMD', 'tbern0');
+
+INSERT INTO people (person_name, institution_name, username)
+VALUES ('Chad Hensley', 'UMD', 'hensley92');
+
+INSERT INTO people (person_name, institution_name, username)
+VALUES ('Dave Cobb', 'UMD', 'dc_propietor');
+
+INSERT INTO people (person_name, institution_name, username)
+VALUES ('Notta Copa', 'UMD', 'copper5_0');
+
+INSERT INTO people (person_name, institution_name, username)
+VALUES ('Allie Laud', 'UMD', 'allauded95');
+
+INSERT INTO people (person_name, institution_name, username)
+VALUES ('Bernie Standers', 'UMD', 'bernie20');
+
+INSERT INTO people (person_name, institution_name, username)
+VALUES ('Jarvis Landry', 'UMD', 'nodropseva');
+
+INSERT INTO people (person_name, institution_name, username)
+VALUES ('Sport Dudely', 'UMD', 'allpro88');
+
+INSERT INTO people (person_name, institution_name, username)
+VALUES ('Betsy Ross', 'UMD', 'patriot1776');
+
+INSERT INTO people (person_name, institution_name, username)
+VALUES ('Alpha Bet', 'UMD', 'asdfjkl44');
+
+INSERT INTO people (person_name, institution_name, username)
+VALUES ('Francine Devita', 'UMD', 'fritos66');
+
+INSERT INTO people (person_name, institution_name, username)
+VALUES ('Nicholas Ziegler', 'UMD', 'nopiezzz');
+
+INSERT INTO people (person_name, institution_name, username)
+VALUES ('Jamarcus Meadows', 'UMD', 'jm334455');
+
+INSERT INTO people (person_name, institution_name, username)
+VALUES ('Ursula Brooks', 'UMD', 'ubrook71');
+
+INSERT INTO people (person_name, institution_name, username)
+VALUES ('Chris Terry', 'UMD', 'cterry44');
+
+INSERT INTO people (person_name, institution_name, username)
+VALUES ('Hillary Osborne', 'UMD', 'hosborne48');
+
+INSERT INTO people (person_name, institution_name, username)
+VALUES ('Nate Nathans', 'UMD', 'natenate76');
+
+INSERT INTO people (person_name, institution_name, username)
+VALUES ('Howie Liong', 'UMD', 'hlong99');
+
+INSERT INTO people (person_name, institution_name, username)
+VALUES ('Megan Sanders', 'UMD', 'megas55');
+
+INSERT INTO people (person_name, institution_name, username)
+VALUES ('Seamus Sullivan', 'UMD', 'sully22');
+
+INSERT INTO people (person_name, institution_name, username)
+VALUES ('Victor Vitale', 'UMD', 'vvttyl');
+
+INSERT INTO people (person_name, institution_name, username)
+VALUES ('Betty Anderson', 'UMD', 'banderson2');
+
+INSERT INTO people (person_name, institution_name, username)
+VALUES ('Yazmin Lawrence', 'UMD', 'yla345');
+
+INSERT INTO people (person_name, institution_name, username)
+VALUES ('Red Haurbach', 'UMD', 'rhaurxx');
+
+INSERT INTO people (person_name, institution_name, username)
+VALUES ('Nadia Opal', 'UMD', 'nadia99');
+
+INSERT INTO people (person_name, institution_name, username)
+VALUES ('Veronica Mars', 'UMD', 'vmartian');
+
+INSERT INTO people (person_name, institution_name, username)
+VALUES ('Ted Reinholdt', 'UMD', 'tre89');
+
+INSERT INTO people (person_name, institution_name, username)
+VALUES ('Teddy Bridgewater', 'UMD', 'tb12');
+
+INSERT INTO people (person_name, institution_name, username)
+VALUES ('Jacob Crider', 'UMD', 'jc45');
+
+INSERT INTO people (person_name, institution_name, username)
+VALUES ('Henry Hunter', 'UMD', 'hhunter33');
+
+INSERT INTO people (person_name, institution_name, username)
+VALUES ('Jade Fleming', 'UMD', 'jfleming1');
+
+INSERT INTO people (person_name, institution_name, username)
+VALUES ('Lonzo Lewinsky', 'UMD', 'llewinsky');
+
+INSERT INTO people (person_name, institution_name, username)
+VALUES ('Reggie Jackson', 'UMD', 'kewlkat33');
+
+INSERT INTO people (person_name, institution_name, username)
 VALUES ('Red Eye', 'UMD', 'luigiman45');
 
 INSERT INTO people (person_name, institution_name, username)
