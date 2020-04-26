@@ -9,26 +9,46 @@ VALUES ('Bob Brown', 'UMD', 'princesspeach12');
 INSERT INTO people (person_name, institution_name, username)
 VALUES ('Lonzo Lewinsky', 'UMD', 'llewinsky');
 
-INSERT INTO people (person_name, institution_name, username)
-VALUES ('Lonzo Lewinsky', 'UMD', 'llewinsky');
-
-INSERT INTO people (person_name, institution_name, username)
-VALUES ('Lonzo Lewinsky', 'UMD', 'llewinsky');
-
-INSERT INTO people (person_name, institution_name, username)
-VALUES ('Lonzo Lewinsky', 'UMD', 'llewinsky');
+INSERT INTO actors (actor_type, comment, role_type_id , person_id, instance_id)
+VALUES('I', 'Lonzo Lewinsky: Emergency Response Specialist',
+(SELECT role_type_id FROM role_types WHERE role_type = 'Emergency Response Specialist'),
+(SELECT person_id FROM people WHERE person_name = 'Lonzo Lewinsky'),
+(SELECT instance_id FROM game_instances WHERE section = '0101')
+);
 
 INSERT INTO people (person_name, institution_name, username)
 VALUES ('Mark Sanchez', 'UMD', 'madscientist2');
 
+INSERT INTO actors (actor_type, comment, role_type_id , person_id, instance_id)
+VALUES('T', 'Mark Sanchez: Emergency Response Specialist',
+(SELECT role_type_id FROM role_types WHERE role_type = 'Emergency Response Specialist'),
+(SELECT person_id FROM people WHERE person_name = 'Mark Sanchez'),
+(SELECT instance_id FROM game_instances WHERE section = '0101')
+);
+
 INSERT INTO people (person_name, institution_name, username)
 VALUES ('Tom Bernard', 'UMD', 'tbern0');
+
+INSERT INTO actors (actor_type, comment, role_type_id , person_id, instance_id)
+VALUES('I', 'Tom Bernard: IT Associate',
+(SELECT role_type_id FROM role_types WHERE role_type = 'IT Associate'),
+(SELECT person_id FROM people WHERE person_name = 'Tom Bernard'),
+(SELECT instance_id FROM game_instances WHERE section = '0101')
+);
+
 
 INSERT INTO people (person_name, institution_name, username)
 VALUES ('Chad Hensley', 'UMD', 'hensley92');
 
 INSERT INTO people (person_name, institution_name, username)
 VALUES ('Dave Cobb', 'UMD', 'dc_propietor');
+
+INSERT INTO actors (actor_type, comment, role_type_id , person_id, instance_id)
+VALUES('T', 'Dave Cobb: Civic Officer',
+(SELECT role_type_id FROM role_types WHERE role_type = 'IT Associate'),
+(SELECT person_id FROM people WHERE person_name = 'Dave Cobb'),
+(SELECT instance_id FROM game_instances WHERE section = '0101')
+);
 
 INSERT INTO people (person_name, institution_name, username)
 VALUES ('Notta Copa', 'UMD', 'copper5_0');
