@@ -1,6 +1,6 @@
-const express = require('express');
-const fetch = require('node-fetch');
-var mysql = require('mysql');
+const express = require("express");
+const fetch = require("node-fetch");
+var mysql = require("mysql");
 
 const app = express();
 const port = process.env.PORT || 3000;
@@ -10,36 +10,35 @@ app.use(express.json());
 // Adding credentials to access database
 var connection = mysql.createConnection({
   //Host and login info will have to be changed if we use AWS, currently pointing to my database
-  host     : '162.241.216.56',
-  user     : 'connorm4_490user',
-  password : 'InfoCap490',
-  database : 'connorm4_inst490'
+  host: "162.241.216.56",
+  user: "connorm4_490user",
+  password: "InfoCap490",
+  database: "connorm4_inst490"
 });
 
 // connect to mysql
 connection.connect(function(err) {
   // in case of error
-  if(err){
-      console.log(err.code);
-      console.log(err.fatal);
+  if (err) {
+    console.log(err.code);
+    console.log(err.fatal);
   }
 });
 
 // Perform a test query
-$query = 'SELECT * from actors LIMIT 10';
+$query = "SELECT * from actors LIMIT 10";
 var actors;
 connection.query($query, function(err, rows, fields) {
-  if(err){
-      console.log("An error ocurred performing the query.");
-      return;
+  if (err) {
+    console.log("An error ocurred performing the query.");
+    return;
   }
   actors = rows[2];
   //console.log("Query succesfully executed: ", rows);
 });
 
 // Close the database connection
-connection.end(function(){
-});
+connection.end(function() {});
 
 /*
  * The 'express.static' middleware provides some services Express can use to
@@ -69,178 +68,145 @@ connection.end(function(){
  *  - Express: app.use()
  *    https://expressjs.com/en/4x/api.html#app.use
  */
-app.use(express.static('public'));
+app.use(express.static("public"));
 
 // this is a single route, in the simplest possible format
 // the simplest format is not necessarily the best one.
 // this is, right now, an introduction to Callback Hell
 // but it is okay for a first-level example
 
-
-
-app.get('/actors', (req, res) => {
+app.get("/actors", (req, res) => {
   var connection = mysql.createConnection({
     //Host and login info will have to be changed if we use AWS, currently pointing to my database
-    host     : '162.241.216.56',
-    user     : 'connorm4_490user',
-    password : 'InfoCap490',
-    database : 'connorm4_inst490'
+    host: "162.241.216.56",
+    user: "connorm4_490user",
+    password: "InfoCap490",
+    database: "connorm4_inst490"
   });
   var actors;
   // connect to mysql
-connection.connect(function(err) {
-  // in case of error
-  if(err){
+  connection.connect(function(err) {
+    // in case of error
+    if (err) {
       console.log(err.code);
       console.log(err.fatal);
-  }
-  $query = 'SELECT * from actors LIMIT 10';
-connection.query($query, function(err, rows, fields) {
-  if(err){
-      console.log("An error ocurred performing the query.");
-      return;
-  }
-  var obj = JSON.stringify(rows);
-  actors = obj;
-  res.send({ obj: obj });
-  console.log(rows);
-  console.log(actors);
-  console.log(obj);
-  
-  //console.log("Query succesfully executed: ", rows);
-});
-// Close the database connection
-connection.end(function(){
-});
-})
+    }
+    $query = "SELECT * from actors LIMIT 10";
+    connection.query($query, function(err, rows, fields) {
+      if (err) {
+        console.log("An error ocurred performing the query.");
+        return;
+      }
+      //var obj = JSON.stringify(rows);
+      //actors = obj;
+      res.send({ data: rows });
+      console.log(rows);
+      //console.log(actors);
+      //console.log(obj);
+
+      //console.log("Query succesfully executed: ", rows);
+    });
+    // Close the database connection
+    connection.end(function() {});
+  });
 });
 
-/* Perform a test query
-$query = 'SELECT * from actors LIMIT 10';
-connection.query($query, function(err, rows, fields) {
-  if(err){
-      console.log("An error ocurred performing the query.");
-      return;
-  }
-  actors = rows;
-  //console.log("Query succesfully executed: ", rows);
-});
-
-// Close the database connection
-connection.end(function(){
-});
-  console.log(actors);
-  var obj = JSON.parse(actors);
-  //const baseURL = 'http://localhost:' + port + '/json/actors.json';
-  fetch(obj)
-    .then(data => {
-      console.log("ROWS START");
-      console.log(data);
-      res.send({ data: data });
-        })
-      .catch((err) => {
-      console.log(err);
-      res.redirect('/error');
-        })
-});*/
-
-app.get('/groupings', (req, res) => {
-  const baseURL = 'http://localhost:' + port + '/json/groupings.json';
+app.get("/groupings", (req, res) => {
+  const baseURL = "http://localhost:" + port + "/json/groupings.json";
   fetch(baseURL)
     .then(res => res.json())
     .then(data => {
       //console.log(data);
       res.send({ data: data });
-        })
-      .catch((err) => {
+    })
+    .catch(err => {
       console.log(err);
-      res.redirect('/error');
-        })
+      res.redirect("/error");
+    });
 });
 
-app.get('/instances', (req, res) => {
-  const baseURL = 'http://localhost:' + port + '/json/instances.json';
+app.get("/instances", (req, res) => {
+  const baseURL = "http://localhost:" + port + "/json/instances.json";
   fetch(baseURL)
     .then(res => res.json())
     .then(data => {
       //console.log(data);
       res.send({ data: data });
-        })
-      .catch((err) => {
+    })
+    .catch(err => {
       console.log(err);
-      res.redirect('/error');
-        })
+      res.redirect("/error");
+    });
 });
 
-app.get('/instances', (req, res) => {
-  const baseURL = 'http://localhost:' + port + '/json/instances.json';
+app.get("/instances", (req, res) => {
+  const baseURL = "http://localhost:" + port + "/json/instances.json";
   fetch(baseURL)
     .then(res => res.json())
     .then(data => {
       //console.log(data);
       res.send({ data: data });
-        })
-      .catch((err) => {
+    })
+    .catch(err => {
       console.log(err);
-      res.redirect('/error');
-        })
+      res.redirect("/error");
+    });
 });
 
-app.get('/msgactions', (req, res) => {
-  const baseURL = 'http://localhost:' + port + '/json/msgactions.json';
+app.get("/msgactions", (req, res) => {
+  const baseURL = "http://localhost:" + port + "/json/msgactions.json";
   fetch(baseURL)
     .then(res => res.json())
     .then(data => {
       //console.log(data);
       res.send({ data: data });
-        })
-      .catch((err) => {
+    })
+    .catch(err => {
       console.log(err);
-      res.redirect('/error');
-        })
+      res.redirect("/error");
+    });
 });
 
-app.get('/people', (req, res) => {
-  const baseURL = 'http://localhost:' + port + '/json/people.json';
+app.get("/people", (req, res) => {
+  const baseURL = "http://localhost:" + port + "/json/people.json";
   fetch(baseURL)
     .then(res => res.json())
     .then(data => {
       //console.log(data);
       res.send({ data: data });
-        })
-      .catch((err) => {
+    })
+    .catch(err => {
       console.log(err);
-      res.redirect('/error');
-        })
+      res.redirect("/error");
+    });
 });
 
-app.get('/roles', (req, res) => {
-  const baseURL = 'http://localhost:' + port + '/json/roles.json';
+app.get("/roles", (req, res) => {
+  const baseURL = "http://localhost:" + port + "/json/roles.json";
   fetch(baseURL)
     .then(res => res.json())
     .then(data => {
       //console.log(data);
       res.send({ data: data });
-        })
-      .catch((err) => {
+    })
+    .catch(err => {
       console.log(err);
-      res.redirect('/error');
-        })
+      res.redirect("/error");
+    });
 });
 
-app.get('/versions', (req, res) => {
-  const baseURL = 'http://localhost:' + port + '/json/versions.json';
+app.get("/versions", (req, res) => {
+  const baseURL = "http://localhost:" + port + "/json/versions.json";
   fetch(baseURL)
     .then(res => res.json())
     .then(data => {
       //console.log(data);
       res.send({ data: data });
-        })
-      .catch((err) => {
+    })
+    .catch(err => {
       console.log(err);
-      res.redirect('/error');
-        })
+      res.redirect("/error");
+    });
 });
 
-
-app.listen(port, () => console.log(`Example app listening on port ${port}!`))
+app.listen(port, () => console.log(`Example app listening on port ${port}!`));
