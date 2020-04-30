@@ -27,7 +27,7 @@ CREATE TABLE IF NOT EXISTS `ludo`.`messages` (
   `message_id` INT NOT NULL AUTO_INCREMENT,
   `message_subject` VARCHAR(45) NOT NULL COMMENT 'The topic of the message.',
   `message_text` VARCHAR(200) NOT NULL COMMENT 'The content of the message.',
-  `game_position` INT COMMENT 'The virtual day in-game.',
+  `game_position` VARCHAR(45) NOT NULL COMMENT 'The virtual day in-game.',
   PRIMARY KEY (`message_id`))
 ENGINE = InnoDB;
 
@@ -97,7 +97,7 @@ DROP TABLE IF EXISTS `ludo`.`actors` ;
 CREATE TABLE IF NOT EXISTS `ludo`.`actors` (
   `actor_id` INT NOT NULL AUTO_INCREMENT,
   `actor_type` VARCHAR(45) NOT NULL COMMENT 'I for Individual, T for Team, B for Bot',
-  `comment` VARCHAR(45) NOT NULL,
+  `actor_name` VARCHAR(45) NOT NULL,
   `role_type_id` INT COMMENT 'The actor\'s in-game role.',
   `person_id` INT COMMENT 'The Player Name, Username, etc.',
   `instance_id` INT NOT NULL,
@@ -116,9 +116,9 @@ DROP TABLE IF EXISTS `ludo`.`message_actions` ;
 
 CREATE TABLE IF NOT EXISTS `ludo`.`message_actions` (
   `message_action_id` INT NOT NULL AUTO_INCREMENT,
-  `type` VARCHAR(10) NOT NULL COMMENT 'This holds the type of the action. Ex: Send, Receive, CC, BCC, Forward',
+  `action_type` VARCHAR(10) NOT NULL COMMENT 'This holds the type of the action. Ex: Send, Receive, CC, BCC, Forward',
   `action_time` INT NOT NULL COMMENT 'The date and time the message action is performed',
-  `game_position` INT COMMENT 'The virtual day in-game.',
+  `game_position` VARCHAR(45) NOT NULL COMMENT 'The virtual day in-game.',
   `message_id` INT NOT NULL,
   `actor_id` INT NOT NULL,
   PRIMARY KEY (`message_action_id`),
@@ -142,5 +142,27 @@ CREATE TABLE IF NOT EXISTS `ludo`.`groupings` (
   FOREIGN KEY (`team_id`) REFERENCES `actors`(`actor_id`))
 ENGINE = InnoDB;
 
+
+-- -----------------------------------------------------
+-- View `ludo`.`message_action_detail`
+-- -----------------------------------------------------
+
+CREATE VIEW message_action_detail AS
+SELECT message_actions.actor_id, action_type, game_position, actor_name, actors.role_type_id, actors.person_id, role_type, people.username
+FROM message_actions, actors, role_types, people
+WHERE message_actions.actor_id = actors.actor_id
+AND actors.role_type_id = role_types.role_type_id
+AND people.person_id = actors.person_id;
+
+
+-- -----------------------------------------------------
+-- View `ludo`.`message_gameday_summary`
+-- -----------------------------------------------------
+
+CREATE VIEW message_gameday_summary AS
+SELECT actor_id, actor_name, count(*) message_actions, game_position
+FROM message_action_detail
+GROUP BY message_action_detail.actor_id, game_position
+ORDER BY game_position, actor_id;
 
 
