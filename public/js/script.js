@@ -11,12 +11,11 @@ var formatted_data = "";
 var workingData = [];
 var response;
 sessionStorage.setItem("actors", fetch("/actors").then(res => res.json()));
-  async function fetchActors() {
+window.onload = function() {
     fetch("/actors").then(data => data.json()).then(data => {
       response = data;
-      console.log(response);
       const cont7 = document.querySelector("#chart7");
-      setTimeout(function(){ 
+        console.log(data);
         var chart7 = new CanvasJS.Chart(cont7, {
         backgroundColor: null,
         animationEnabled: true,
@@ -35,18 +34,27 @@ sessionStorage.setItem("actors", fetch("/actors").then(res => res.json()));
           {
             type: "bar",
             toolTipContent:
-              '<img src="https://canvasjs.com/wp-content/uploads/images/gallery/javascript-column-bar-charts/"{url}"" style="width:40px; height:20px;"> <b>{label}</b><br>Budget: ${y}bn<br>{gdp}% of GDP',
+              'Actor ID: {x} <br>Role Type ID: {y}',
             dataPoints: [
-              { x: response[0].comment, y: response[0].person_id}
+              { x: response["rows"][0].actor_id, y: response["rows"][0].role_type_id },
+              { x: response["rows"][1].actor_id, y: response["rows"][1].role_type_id },
+              { x: response["rows"][2].actor_id, y: response["rows"][2].role_type_id },
+              { x: response["rows"][3].actor_id, y: response["rows"][3].role_type_id },
+              { x: response["rows"][4].actor_id, y: response["rows"][4].role_type_id },
+              { x: response["rows"][5].actor_id, y: response["rows"][5].role_type_id },
+              { x: response["rows"][6].actor_id, y: response["rows"][6].role_type_id },
+              { x: response["rows"][7].actor_id, y: response["rows"][7].role_type_id },
+              { x: response["rows"][8].actor_id, y: response["rows"][8].role_type_id },
+              { x: response["rows"][9].actor_id, y: response["rows"][9].role_type_id }
             ]
           }
         ]
       });
-    }, 5000);
-      
+      //chart7.dataPoints = { x: response["rows"][0].comment, y: response["rows"][0].person_id}
       chart7.render();
-    })}
-    fetchActors();
+      
+    });
+  }
     /*fetchActors().then( res => {
   var obj = JSON.stringify(res);
   var chart7 = new CanvasJS.Chart(cont7, {
@@ -80,11 +88,11 @@ window.addEventListener("load", () => {
   const cont = document.querySelector("#chart");
   const cont2 = document.querySelector("#chart2");
   const checkbox = document.querySelector("#dark");
-  console.log(sessionStorage.getItem("actors"));
+  //console.log(sessionStorage.getItem("actors"));
   async function actorFetch() {
     let response = fetch("/actors").then(res => res.json())
     .then(data => {
-      console.log(data);
+      //console.log(data);
       for(var i = 0; i<data.length - 1; i++) {
         workingData.push = data[i];
       }

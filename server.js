@@ -97,10 +97,14 @@ app.get("/actors", (req, res) => {
         console.log("An error ocurred performing the query.");
         return;
       }
-      //var obj = JSON.stringify(rows);
+      var obj = JSON.stringify(rows);
+      var obj2 = JSON.parse(obj);
       //actors = obj;
-      res.send({ data: rows });
-      console.log(rows);
+      console.log(obj2);
+      //var obj = JSON.parse(rows);
+      //console.log(rows);
+      res.send({ rows: obj2 });
+      //console.log(rows);
       //console.log(actors);
       //console.log(obj);
 
