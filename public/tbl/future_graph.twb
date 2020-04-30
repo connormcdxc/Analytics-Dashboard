@@ -148,6 +148,9 @@
         </metadata-records>
       </connection>
       <aliases enabled='yes' />
+      <column caption='Time Calculated' datatype='datetime' name='[Calculation_3959790018269220864]' role='dimension' type='ordinal'>
+        <calculation class='tableau' formula='DATEADD(&apos;hour&apos;,1,(Date(&quot;1/1/1970&quot;) + ([action_time]/86400)))' />
+      </column>
       <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
         <calculation class='tableau' formula='1' />
       </column>
@@ -312,6 +315,13 @@
           </strip>
         </edge>
       </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.19s3pnq1lsa12d16mwz2g09vh5eq].[yr:Calculation_3959790018269220864:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
       <simple-id uuid='{E7151035-8744-4C09-8EFD-16DD2F24B7D6}' />
     </window>
   </windows>
