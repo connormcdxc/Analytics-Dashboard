@@ -72,6 +72,7 @@ body.dark-mode {
 
 #mySidebar {
     z-index: 3;
+    height: 1000px;
     width: 175px;
     font-weight: bold;
     color: white;
@@ -114,7 +115,7 @@ body.dark-mode {
     flex-direction: column;
     column-count: 1;
   }
-  .p_holder {
+  #chart7 {
     display: flex;
     justify-content: center;
     margin: 15px;
@@ -141,7 +142,7 @@ body.dark-mode {
     flex-direction: column;
     column-count: 1;
   }
-  .p_holder {
+  #chart7 {
     display: flex;
     justify-content: center;
     background-color: black;
@@ -168,7 +169,7 @@ body.dark-mode {
     flex-direction: column;
     column-count: 1;
   }
-  .p_holder {
+  #chart7 {
     display: flex;
     justify-content: center;
     background-color: black;
