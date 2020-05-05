@@ -1,11 +1,13 @@
 function openNav() {
   document.getElementById("mySidebar").style.display = "block";
   document.getElementById("myOverlay").style.display = "block";
+  document.getElementById("topBar").style.display = "none";
 }
 
 function closeNav() {
   document.getElementById("mySidebar").style.display = "none";
   document.getElementById("myOverlay").style.display = "none";
+  document.getElementById("topBar").style.display = "block";
 }
 var formatted_data = "";
 var workingData = [];
