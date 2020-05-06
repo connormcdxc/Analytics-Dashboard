@@ -36,7 +36,7 @@ window.onload = function() {
           {
             type: "bar",
             toolTipContent:
-              'Actor ID: {x} <br>Role Type ID: {y}',
+              'Actor ID: {x} <br>Role Type ID:  {y}',
             dataPoints: [
               { x: response["rows"][0].actor_id, y: response["rows"][0].role_type_id },
               { x: response["rows"][1].actor_id, y: response["rows"][1].role_type_id },
@@ -54,7 +54,7 @@ window.onload = function() {
       });
       //chart7.dataPoints = { x: response["rows"][0].comment, y: response["rows"][0].person_id}
       chart7.render();
-      
+
     });
   }
     /*fetchActors().then( res => {
@@ -99,7 +99,7 @@ window.addEventListener("load", () => {
         workingData.push = data[i];
       }
     });
-    /*let data; 
+    /*let data;
     data = await response.json().then(async function() {
       for(var i = 0; i<data.length - 1; i++) {
         workingData.push = data[i];
@@ -118,7 +118,7 @@ window.addEventListener("load", () => {
   console.log(workingData);
 });*/
   //ACTOR TEST CHART
-  
+
   //END TEST CHART
   sessionStorage.setItem("groupings", fetch("/groupings"));
   sessionStorage.setItem("instances", fetch("/instances"));
