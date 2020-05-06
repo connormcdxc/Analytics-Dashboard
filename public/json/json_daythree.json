@@ -1,0 +1,188 @@
+[
+	{
+		"actor_id" : 1,
+		"actor_name" : "Bob Brown: Database Administrator",
+		"game_position" : "Day 3",
+		"message_participation_count" : 1
+	},
+	{
+		"actor_id" : 2,
+		"actor_name" : "Red Eye: Civic Officer",
+		"game_position" : "Day 3",
+		"message_participation_count" : 1
+	},
+	{
+		"actor_id" : 3,
+		"actor_name" : "Corona Virus: IT Associate",
+		"game_position" : "Day 3",
+		"message_participation_count" : 1
+	},
+	{
+		"actor_id" : 4,
+		"actor_name" : "Warrior: Emergency Response Specialist",
+		"game_position" : "Day 3",
+		"message_participation_count" : 1
+	},
+	{
+		"actor_id" : 5,
+		"actor_name" : "Blue Team",
+		"game_position" : "Day 3",
+		"message_participation_count" : 2
+	},
+	{
+		"actor_id" : 6,
+		"actor_name" : "Adam Applin: Database Administrator",
+		"game_position" : "Day 3",
+		"message_participation_count" : 2
+	},
+	{
+		"actor_id" : 7,
+		"actor_name" : "Cinder Crash: Civic Officer",
+		"game_position" : "Day 3",
+		"message_participation_count" : 1
+	},
+	{
+		"actor_id" : 8,
+		"actor_name" : "Draymond DK: IT Associate",
+		"game_position" : "Day 3",
+		"message_participation_count" : 1
+	},
+	{
+		"actor_id" : 9,
+		"actor_name" : "Buster Boost: Emergency Response Specialist",
+		"game_position" : "Day 3",
+		"message_participation_count" : 2
+	},
+	{
+		"actor_id" : 10,
+		"actor_name" : "Red Team",
+		"game_position" : "Day 3",
+		"message_participation_count" : 2
+	},
+	{
+		"actor_id" : 11,
+		"actor_name" : "Mordecai Simple: Database Administrator",
+		"game_position" : "Day 3",
+		"message_participation_count" : 2
+	},
+	{
+		"actor_id" : 12,
+		"actor_name" : "Contra Ease: Civic Officer",
+		"game_position" : "Day 3",
+		"message_participation_count" : 1
+	},
+	{
+		"actor_id" : 13,
+		"actor_name" : "Kei Kaku: IT Associate",
+		"game_position" : "Day 3",
+		"message_participation_count" : 1
+	},
+	{
+		"actor_id" : 14,
+		"actor_name" : "Eve Olve: Emergency Response Specialist",
+		"game_position" : "Day 3",
+		"message_participation_count" : 0
+	},
+	{
+		"actor_id" : 15,
+		"actor_name" : "Green Team",
+		"game_position" : "Day 3",
+		"message_participation_count" : 1
+	},
+	{
+		"actor_id" : 16,
+		"actor_name" : "Hannibal Broly: Civic Officer",
+		"game_position" : "Day 3",
+		"message_participation_count" : 2
+	},
+	{
+		"actor_id" : 17,
+		"actor_name" : "Rena Logan: IT Associate",
+		"game_position" : "Day 3",
+		"message_participation_count" : 2
+	},
+	{
+		"actor_id" : 18,
+		"actor_name" : "Barney Miles: Database Administrator",
+		"game_position" : "Day 3",
+		"message_participation_count" : 2
+	},
+	{
+		"actor_id" : 19,
+		"actor_name" : "Kim Hines: Emergency Response Specialist",
+		"game_position" : "Day 3",
+		"message_participation_count" : 4
+	},
+	{
+		"actor_id" : 20,
+		"actor_name" : "Magenta Team",
+		"game_position" : "Day 3",
+		"message_participation_count" : 1
+	},
+	{
+		"actor_id" : 21,
+		"actor_name" : "Ariel: Emergency Response Specialist",
+		"game_position" : "Day 3",
+		"message_participation_count" : 0
+	},
+	{
+		"actor_id" : 22,
+		"actor_name" : "Kevin Thorn: Database Administrator",
+		"game_position" : "Day 3",
+		"message_participation_count" : 0
+	},
+	{
+		"actor_id" : 23,
+		"actor_name" : "Gangrel: IT Associate",
+		"game_position" : "Day 3",
+		"message_participation_count" : 0
+	},
+	{
+		"actor_id" : 24,
+		"actor_name" : "Vampiro: Civic Officer",
+		"game_position" : "Day 3",
+		"message_participation_count" : 0
+	},
+	{
+		"actor_id" : 25,
+		"actor_name" : "Crimson Team",
+		"game_position" : "Day 3",
+		"message_participation_count" : 3
+	},
+	{
+		"actor_id" : 26,
+		"actor_name" : "Charles Wright: Database Administrator",
+		"game_position" : "Day 3",
+		"message_participation_count" : 0
+	},
+	{
+		"actor_id" : 27,
+		"actor_name" : "Manfred Von Karma: Civic Officer",
+		"game_position" : "Day 3",
+		"message_participation_count" : 2
+	},
+	{
+		"actor_id" : 28,
+		"actor_name" : "Speed Racer: IT Associate",
+		"game_position" : "Day 3",
+		"message_participation_count" : 0
+	},
+	{
+		"actor_id" : 29,
+		"actor_name" : "Harold Jordan: Emergency Response Specialist",
+		"game_position" : "Day 3",
+		"message_participation_count" : 2
+	},
+	{
+		"actor_id" : 30,
+		"actor_name" : "Purple Team",
+		"game_position" : "Day 3",
+		"message_participation_count" : 1
+	},
+	{
+		"actor_id" : 31,
+		"actor_name" : "The Big Bad Boss",
+		"game_position" : "Day 3",
+		"message_participation_count" : 8
+	}
+]

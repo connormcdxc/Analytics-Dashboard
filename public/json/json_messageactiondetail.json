@@ -1,0 +1,1482 @@
+[
+	{
+		"actor_id" : 1,
+		"action_type" : "Sent",
+		"game_position" : "Day 1",
+		"actor_name" : "Bob Brown: Database Administrator",
+		"role_type_id" : 1,
+		"person_id" : 1,
+		"role_type" : "Database Administrator",
+		"username" : "princesspeach12"
+	},
+	{
+		"actor_id" : 1,
+		"action_type" : "Received",
+		"game_position" : "Day 1",
+		"actor_name" : "Bob Brown: Database Administrator",
+		"role_type_id" : 1,
+		"person_id" : 1,
+		"role_type" : "Database Administrator",
+		"username" : "princesspeach12"
+	},
+	{
+		"actor_id" : 1,
+		"action_type" : "Sent",
+		"game_position" : "Day 2",
+		"actor_name" : "Bob Brown: Database Administrator",
+		"role_type_id" : 1,
+		"person_id" : 1,
+		"role_type" : "Database Administrator",
+		"username" : "princesspeach12"
+	},
+	{
+		"actor_id" : 1,
+		"action_type" : "Received",
+		"game_position" : "Day 3",
+		"actor_name" : "Bob Brown: Database Administrator",
+		"role_type_id" : 1,
+		"person_id" : 1,
+		"role_type" : "Database Administrator",
+		"username" : "princesspeach12"
+	},
+	{
+		"actor_id" : 1,
+		"action_type" : "Received",
+		"game_position" : "Day 4",
+		"actor_name" : "Bob Brown: Database Administrator",
+		"role_type_id" : 1,
+		"person_id" : 1,
+		"role_type" : "Database Administrator",
+		"username" : "princesspeach12"
+	},
+	{
+		"actor_id" : 1,
+		"action_type" : "Received",
+		"game_position" : "Day 5",
+		"actor_name" : "Bob Brown: Database Administrator",
+		"role_type_id" : 1,
+		"person_id" : 1,
+		"role_type" : "Database Administrator",
+		"username" : "princesspeach12"
+	},
+	{
+		"actor_id" : 2,
+		"action_type" : "Sent",
+		"game_position" : "Day 1",
+		"actor_name" : "Red Eye: Civic Officer",
+		"role_type_id" : 2,
+		"person_id" : 2,
+		"role_type" : "Civic Officer",
+		"username" : "luigiman45"
+	},
+	{
+		"actor_id" : 2,
+		"action_type" : "Received",
+		"game_position" : "Day 1",
+		"actor_name" : "Red Eye: Civic Officer",
+		"role_type_id" : 2,
+		"person_id" : 2,
+		"role_type" : "Civic Officer",
+		"username" : "luigiman45"
+	},
+	{
+		"actor_id" : 2,
+		"action_type" : "Received",
+		"game_position" : "Day 2",
+		"actor_name" : "Red Eye: Civic Officer",
+		"role_type_id" : 2,
+		"person_id" : 2,
+		"role_type" : "Civic Officer",
+		"username" : "luigiman45"
+	},
+	{
+		"actor_id" : 2,
+		"action_type" : "Received",
+		"game_position" : "Day 3",
+		"actor_name" : "Red Eye: Civic Officer",
+		"role_type_id" : 2,
+		"person_id" : 2,
+		"role_type" : "Civic Officer",
+		"username" : "luigiman45"
+	},
+	{
+		"actor_id" : 2,
+		"action_type" : "Received",
+		"game_position" : "Day 4",
+		"actor_name" : "Red Eye: Civic Officer",
+		"role_type_id" : 2,
+		"person_id" : 2,
+		"role_type" : "Civic Officer",
+		"username" : "luigiman45"
+	},
+	{
+		"actor_id" : 2,
+		"action_type" : "Received",
+		"game_position" : "Day 4",
+		"actor_name" : "Red Eye: Civic Officer",
+		"role_type_id" : 2,
+		"person_id" : 2,
+		"role_type" : "Civic Officer",
+		"username" : "luigiman45"
+	},
+	{
+		"actor_id" : 2,
+		"action_type" : "Received",
+		"game_position" : "Day 5",
+		"actor_name" : "Red Eye: Civic Officer",
+		"role_type_id" : 2,
+		"person_id" : 2,
+		"role_type" : "Civic Officer",
+		"username" : "luigiman45"
+	},
+	{
+		"actor_id" : 3,
+		"action_type" : "Received",
+		"game_position" : "Day 1",
+		"actor_name" : "Corona Virus: IT Associate",
+		"role_type_id" : 3,
+		"person_id" : 3,
+		"role_type" : "IT Associate",
+		"username" : "wariorules"
+	},
+	{
+		"actor_id" : 3,
+		"action_type" : "Sent",
+		"game_position" : "Day 1",
+		"actor_name" : "Corona Virus: IT Associate",
+		"role_type_id" : 3,
+		"person_id" : 3,
+		"role_type" : "IT Associate",
+		"username" : "wariorules"
+	},
+	{
+		"actor_id" : 3,
+		"action_type" : "Received",
+		"game_position" : "Day 2",
+		"actor_name" : "Corona Virus: IT Associate",
+		"role_type_id" : 3,
+		"person_id" : 3,
+		"role_type" : "IT Associate",
+		"username" : "wariorules"
+	},
+	{
+		"actor_id" : 3,
+		"action_type" : "Sent",
+		"game_position" : "Day 3",
+		"actor_name" : "Corona Virus: IT Associate",
+		"role_type_id" : 3,
+		"person_id" : 3,
+		"role_type" : "IT Associate",
+		"username" : "wariorules"
+	},
+	{
+		"actor_id" : 3,
+		"action_type" : "Sent",
+		"game_position" : "Day 4",
+		"actor_name" : "Corona Virus: IT Associate",
+		"role_type_id" : 3,
+		"person_id" : 3,
+		"role_type" : "IT Associate",
+		"username" : "wariorules"
+	},
+	{
+		"actor_id" : 3,
+		"action_type" : "Sent",
+		"game_position" : "Day 5",
+		"actor_name" : "Corona Virus: IT Associate",
+		"role_type_id" : 3,
+		"person_id" : 3,
+		"role_type" : "IT Associate",
+		"username" : "wariorules"
+	},
+	{
+		"actor_id" : 4,
+		"action_type" : "Received",
+		"game_position" : "Day 1",
+		"actor_name" : "Warrior: Emergency Response Specialist",
+		"role_type_id" : 4,
+		"person_id" : 4,
+		"role_type" : "Emergency Response Specialist",
+		"username" : "mariomain1"
+	},
+	{
+		"actor_id" : 4,
+		"action_type" : "Received",
+		"game_position" : "Day 1",
+		"actor_name" : "Warrior: Emergency Response Specialist",
+		"role_type_id" : 4,
+		"person_id" : 4,
+		"role_type" : "Emergency Response Specialist",
+		"username" : "mariomain1"
+	},
+	{
+		"actor_id" : 4,
+		"action_type" : "Sent",
+		"game_position" : "Day 2",
+		"actor_name" : "Warrior: Emergency Response Specialist",
+		"role_type_id" : 4,
+		"person_id" : 4,
+		"role_type" : "Emergency Response Specialist",
+		"username" : "mariomain1"
+	},
+	{
+		"actor_id" : 4,
+		"action_type" : "Sent",
+		"game_position" : "Day 3",
+		"actor_name" : "Warrior: Emergency Response Specialist",
+		"role_type_id" : 4,
+		"person_id" : 4,
+		"role_type" : "Emergency Response Specialist",
+		"username" : "mariomain1"
+	},
+	{
+		"actor_id" : 4,
+		"action_type" : "Received",
+		"game_position" : "Day 4",
+		"actor_name" : "Warrior: Emergency Response Specialist",
+		"role_type_id" : 4,
+		"person_id" : 4,
+		"role_type" : "Emergency Response Specialist",
+		"username" : "mariomain1"
+	},
+	{
+		"actor_id" : 4,
+		"action_type" : "Sent",
+		"game_position" : "Day 4",
+		"actor_name" : "Warrior: Emergency Response Specialist",
+		"role_type_id" : 4,
+		"person_id" : 4,
+		"role_type" : "Emergency Response Specialist",
+		"username" : "mariomain1"
+	},
+	{
+		"actor_id" : 4,
+		"action_type" : "Received",
+		"game_position" : "Day 5",
+		"actor_name" : "Warrior: Emergency Response Specialist",
+		"role_type_id" : 4,
+		"person_id" : 4,
+		"role_type" : "Emergency Response Specialist",
+		"username" : "mariomain1"
+	},
+	{
+		"actor_id" : 6,
+		"action_type" : "Sent",
+		"game_position" : "Day 1",
+		"actor_name" : "Adam Applin: Database Administrator",
+		"role_type_id" : 1,
+		"person_id" : 5,
+		"role_type" : "Database Administrator",
+		"username" : "catchemall890"
+	},
+	{
+		"actor_id" : 6,
+		"action_type" : "Sent",
+		"game_position" : "Day 1",
+		"actor_name" : "Adam Applin: Database Administrator",
+		"role_type_id" : 1,
+		"person_id" : 5,
+		"role_type" : "Database Administrator",
+		"username" : "catchemall890"
+	},
+	{
+		"actor_id" : 6,
+		"action_type" : "Sent",
+		"game_position" : "Day 1",
+		"actor_name" : "Adam Applin: Database Administrator",
+		"role_type_id" : 1,
+		"person_id" : 5,
+		"role_type" : "Database Administrator",
+		"username" : "catchemall890"
+	},
+	{
+		"actor_id" : 6,
+		"action_type" : "Received",
+		"game_position" : "Day 2",
+		"actor_name" : "Adam Applin: Database Administrator",
+		"role_type_id" : 1,
+		"person_id" : 5,
+		"role_type" : "Database Administrator",
+		"username" : "catchemall890"
+	},
+	{
+		"actor_id" : 6,
+		"action_type" : "Received",
+		"game_position" : "Day 3",
+		"actor_name" : "Adam Applin: Database Administrator",
+		"role_type_id" : 1,
+		"person_id" : 5,
+		"role_type" : "Database Administrator",
+		"username" : "catchemall890"
+	},
+	{
+		"actor_id" : 6,
+		"action_type" : "Sent",
+		"game_position" : "Day 3",
+		"actor_name" : "Adam Applin: Database Administrator",
+		"role_type_id" : 1,
+		"person_id" : 5,
+		"role_type" : "Database Administrator",
+		"username" : "catchemall890"
+	},
+	{
+		"actor_id" : 6,
+		"action_type" : "Received",
+		"game_position" : "Day 4",
+		"actor_name" : "Adam Applin: Database Administrator",
+		"role_type_id" : 1,
+		"person_id" : 5,
+		"role_type" : "Database Administrator",
+		"username" : "catchemall890"
+	},
+	{
+		"actor_id" : 6,
+		"action_type" : "Received",
+		"game_position" : "Day 4",
+		"actor_name" : "Adam Applin: Database Administrator",
+		"role_type_id" : 1,
+		"person_id" : 5,
+		"role_type" : "Database Administrator",
+		"username" : "catchemall890"
+	},
+	{
+		"actor_id" : 6,
+		"action_type" : "Received",
+		"game_position" : "Day 5",
+		"actor_name" : "Adam Applin: Database Administrator",
+		"role_type_id" : 1,
+		"person_id" : 5,
+		"role_type" : "Database Administrator",
+		"username" : "catchemall890"
+	},
+	{
+		"actor_id" : 7,
+		"action_type" : "Received",
+		"game_position" : "Day 1",
+		"actor_name" : "Cinder Crash: Civic Officer",
+		"role_type_id" : 2,
+		"person_id" : 7,
+		"role_type" : "Civic Officer",
+		"username" : "gymbattler32"
+	},
+	{
+		"actor_id" : 7,
+		"action_type" : "Received",
+		"game_position" : "Day 1",
+		"actor_name" : "Cinder Crash: Civic Officer",
+		"role_type_id" : 2,
+		"person_id" : 7,
+		"role_type" : "Civic Officer",
+		"username" : "gymbattler32"
+	},
+	{
+		"actor_id" : 7,
+		"action_type" : "Sent",
+		"game_position" : "Day 2",
+		"actor_name" : "Cinder Crash: Civic Officer",
+		"role_type_id" : 2,
+		"person_id" : 7,
+		"role_type" : "Civic Officer",
+		"username" : "gymbattler32"
+	},
+	{
+		"actor_id" : 7,
+		"action_type" : "Received",
+		"game_position" : "Day 2",
+		"actor_name" : "Cinder Crash: Civic Officer",
+		"role_type_id" : 2,
+		"person_id" : 7,
+		"role_type" : "Civic Officer",
+		"username" : "gymbattler32"
+	},
+	{
+		"actor_id" : 7,
+		"action_type" : "Sent",
+		"game_position" : "Day 2",
+		"actor_name" : "Cinder Crash: Civic Officer",
+		"role_type_id" : 2,
+		"person_id" : 7,
+		"role_type" : "Civic Officer",
+		"username" : "gymbattler32"
+	},
+	{
+		"actor_id" : 7,
+		"action_type" : "Received",
+		"game_position" : "Day 3",
+		"actor_name" : "Cinder Crash: Civic Officer",
+		"role_type_id" : 2,
+		"person_id" : 7,
+		"role_type" : "Civic Officer",
+		"username" : "gymbattler32"
+	},
+	{
+		"actor_id" : 7,
+		"action_type" : "Received",
+		"game_position" : "Day 4",
+		"actor_name" : "Cinder Crash: Civic Officer",
+		"role_type_id" : 2,
+		"person_id" : 7,
+		"role_type" : "Civic Officer",
+		"username" : "gymbattler32"
+	},
+	{
+		"actor_id" : 7,
+		"action_type" : "Received",
+		"game_position" : "Day 4",
+		"actor_name" : "Cinder Crash: Civic Officer",
+		"role_type_id" : 2,
+		"person_id" : 7,
+		"role_type" : "Civic Officer",
+		"username" : "gymbattler32"
+	},
+	{
+		"actor_id" : 7,
+		"action_type" : "Sent",
+		"game_position" : "Day 5",
+		"actor_name" : "Cinder Crash: Civic Officer",
+		"role_type_id" : 2,
+		"person_id" : 7,
+		"role_type" : "Civic Officer",
+		"username" : "gymbattler32"
+	},
+	{
+		"actor_id" : 8,
+		"action_type" : "Received",
+		"game_position" : "Day 1",
+		"actor_name" : "Draymond DK: IT Associate",
+		"role_type_id" : 3,
+		"person_id" : 8,
+		"role_type" : "IT Associate",
+		"username" : "dynamaximum"
+	},
+	{
+		"actor_id" : 8,
+		"action_type" : "Received",
+		"game_position" : "Day 1",
+		"actor_name" : "Draymond DK: IT Associate",
+		"role_type_id" : 3,
+		"person_id" : 8,
+		"role_type" : "IT Associate",
+		"username" : "dynamaximum"
+	},
+	{
+		"actor_id" : 8,
+		"action_type" : "Sent",
+		"game_position" : "Day 3",
+		"actor_name" : "Draymond DK: IT Associate",
+		"role_type_id" : 3,
+		"person_id" : 8,
+		"role_type" : "IT Associate",
+		"username" : "dynamaximum"
+	},
+	{
+		"actor_id" : 8,
+		"action_type" : "Sent",
+		"game_position" : "Day 4",
+		"actor_name" : "Draymond DK: IT Associate",
+		"role_type_id" : 3,
+		"person_id" : 8,
+		"role_type" : "IT Associate",
+		"username" : "dynamaximum"
+	},
+	{
+		"actor_id" : 8,
+		"action_type" : "Received",
+		"game_position" : "Day 4",
+		"actor_name" : "Draymond DK: IT Associate",
+		"role_type_id" : 3,
+		"person_id" : 8,
+		"role_type" : "IT Associate",
+		"username" : "dynamaximum"
+	},
+	{
+		"actor_id" : 8,
+		"action_type" : "Sent",
+		"game_position" : "Day 4",
+		"actor_name" : "Draymond DK: IT Associate",
+		"role_type_id" : 3,
+		"person_id" : 8,
+		"role_type" : "IT Associate",
+		"username" : "dynamaximum"
+	},
+	{
+		"actor_id" : 8,
+		"action_type" : "Received",
+		"game_position" : "Day 5",
+		"actor_name" : "Draymond DK: IT Associate",
+		"role_type_id" : 3,
+		"person_id" : 8,
+		"role_type" : "IT Associate",
+		"username" : "dynamaximum"
+	},
+	{
+		"actor_id" : 9,
+		"action_type" : "Received",
+		"game_position" : "Day 1",
+		"actor_name" : "Buster Boost: Emergency Response Specialist",
+		"role_type_id" : 4,
+		"person_id" : 6,
+		"role_type" : "Emergency Response Specialist",
+		"username" : "pokemart21"
+	},
+	{
+		"actor_id" : 9,
+		"action_type" : "Received",
+		"game_position" : "Day 1",
+		"actor_name" : "Buster Boost: Emergency Response Specialist",
+		"role_type_id" : 4,
+		"person_id" : 6,
+		"role_type" : "Emergency Response Specialist",
+		"username" : "pokemart21"
+	},
+	{
+		"actor_id" : 9,
+		"action_type" : "Received",
+		"game_position" : "Day 1",
+		"actor_name" : "Buster Boost: Emergency Response Specialist",
+		"role_type_id" : 4,
+		"person_id" : 6,
+		"role_type" : "Emergency Response Specialist",
+		"username" : "pokemart21"
+	},
+	{
+		"actor_id" : 9,
+		"action_type" : "Received",
+		"game_position" : "Day 2",
+		"actor_name" : "Buster Boost: Emergency Response Specialist",
+		"role_type_id" : 4,
+		"person_id" : 6,
+		"role_type" : "Emergency Response Specialist",
+		"username" : "pokemart21"
+	},
+	{
+		"actor_id" : 9,
+		"action_type" : "Sent",
+		"game_position" : "Day 2",
+		"actor_name" : "Buster Boost: Emergency Response Specialist",
+		"role_type_id" : 4,
+		"person_id" : 6,
+		"role_type" : "Emergency Response Specialist",
+		"username" : "pokemart21"
+	},
+	{
+		"actor_id" : 9,
+		"action_type" : "Sent",
+		"game_position" : "Day 3",
+		"actor_name" : "Buster Boost: Emergency Response Specialist",
+		"role_type_id" : 4,
+		"person_id" : 6,
+		"role_type" : "Emergency Response Specialist",
+		"username" : "pokemart21"
+	},
+	{
+		"actor_id" : 9,
+		"action_type" : "Received",
+		"game_position" : "Day 3",
+		"actor_name" : "Buster Boost: Emergency Response Specialist",
+		"role_type_id" : 4,
+		"person_id" : 6,
+		"role_type" : "Emergency Response Specialist",
+		"username" : "pokemart21"
+	},
+	{
+		"actor_id" : 9,
+		"action_type" : "Received",
+		"game_position" : "Day 4",
+		"actor_name" : "Buster Boost: Emergency Response Specialist",
+		"role_type_id" : 4,
+		"person_id" : 6,
+		"role_type" : "Emergency Response Specialist",
+		"username" : "pokemart21"
+	},
+	{
+		"actor_id" : 9,
+		"action_type" : "Sent",
+		"game_position" : "Day 4",
+		"actor_name" : "Buster Boost: Emergency Response Specialist",
+		"role_type_id" : 4,
+		"person_id" : 6,
+		"role_type" : "Emergency Response Specialist",
+		"username" : "pokemart21"
+	},
+	{
+		"actor_id" : 9,
+		"action_type" : "Received",
+		"game_position" : "Day 4",
+		"actor_name" : "Buster Boost: Emergency Response Specialist",
+		"role_type_id" : 4,
+		"person_id" : 6,
+		"role_type" : "Emergency Response Specialist",
+		"username" : "pokemart21"
+	},
+	{
+		"actor_id" : 9,
+		"action_type" : "Received",
+		"game_position" : "Day 5",
+		"actor_name" : "Buster Boost: Emergency Response Specialist",
+		"role_type_id" : 4,
+		"person_id" : 6,
+		"role_type" : "Emergency Response Specialist",
+		"username" : "pokemart21"
+	},
+	{
+		"actor_id" : 11,
+		"action_type" : "Received",
+		"game_position" : "Day 1",
+		"actor_name" : "Mordecai Simple: Database Administrator",
+		"role_type_id" : 1,
+		"person_id" : 12,
+		"role_type" : "Database Administrator",
+		"username" : "samuswins365"
+	},
+	{
+		"actor_id" : 11,
+		"action_type" : "Received",
+		"game_position" : "Day 2",
+		"actor_name" : "Mordecai Simple: Database Administrator",
+		"role_type_id" : 1,
+		"person_id" : 12,
+		"role_type" : "Database Administrator",
+		"username" : "samuswins365"
+	},
+	{
+		"actor_id" : 11,
+		"action_type" : "Received",
+		"game_position" : "Day 2",
+		"actor_name" : "Mordecai Simple: Database Administrator",
+		"role_type_id" : 1,
+		"person_id" : 12,
+		"role_type" : "Database Administrator",
+		"username" : "samuswins365"
+	},
+	{
+		"actor_id" : 11,
+		"action_type" : "Forward",
+		"game_position" : "Day 3",
+		"actor_name" : "Mordecai Simple: Database Administrator",
+		"role_type_id" : 1,
+		"person_id" : 12,
+		"role_type" : "Database Administrator",
+		"username" : "samuswins365"
+	},
+	{
+		"actor_id" : 11,
+		"action_type" : "Received",
+		"game_position" : "Day 3",
+		"actor_name" : "Mordecai Simple: Database Administrator",
+		"role_type_id" : 1,
+		"person_id" : 12,
+		"role_type" : "Database Administrator",
+		"username" : "samuswins365"
+	},
+	{
+		"actor_id" : 11,
+		"action_type" : "Received",
+		"game_position" : "Day 4",
+		"actor_name" : "Mordecai Simple: Database Administrator",
+		"role_type_id" : 1,
+		"person_id" : 12,
+		"role_type" : "Database Administrator",
+		"username" : "samuswins365"
+	},
+	{
+		"actor_id" : 11,
+		"action_type" : "Received",
+		"game_position" : "Day 5",
+		"actor_name" : "Mordecai Simple: Database Administrator",
+		"role_type_id" : 1,
+		"person_id" : 12,
+		"role_type" : "Database Administrator",
+		"username" : "samuswins365"
+	},
+	{
+		"actor_id" : 12,
+		"action_type" : "Sent",
+		"game_position" : "Day 1",
+		"actor_name" : "Contra Ease: Civic Officer",
+		"role_type_id" : 2,
+		"person_id" : 10,
+		"role_type" : "Civic Officer",
+		"username" : "zerosuit09"
+	},
+	{
+		"actor_id" : 12,
+		"action_type" : "Received",
+		"game_position" : "Day 3",
+		"actor_name" : "Contra Ease: Civic Officer",
+		"role_type_id" : 2,
+		"person_id" : 10,
+		"role_type" : "Civic Officer",
+		"username" : "zerosuit09"
+	},
+	{
+		"actor_id" : 12,
+		"action_type" : "Received",
+		"game_position" : "Day 4",
+		"actor_name" : "Contra Ease: Civic Officer",
+		"role_type_id" : 2,
+		"person_id" : 10,
+		"role_type" : "Civic Officer",
+		"username" : "zerosuit09"
+	},
+	{
+		"actor_id" : 12,
+		"action_type" : "Received",
+		"game_position" : "Day 5",
+		"actor_name" : "Contra Ease: Civic Officer",
+		"role_type_id" : 2,
+		"person_id" : 10,
+		"role_type" : "Civic Officer",
+		"username" : "zerosuit09"
+	},
+	{
+		"actor_id" : 13,
+		"action_type" : "Received",
+		"game_position" : "Day 1",
+		"actor_name" : "Kei Kaku: IT Associate",
+		"role_type_id" : 3,
+		"person_id" : 11,
+		"role_type" : "IT Associate",
+		"username" : "ridleyistoobig"
+	},
+	{
+		"actor_id" : 13,
+		"action_type" : "Sent",
+		"game_position" : "Day 3",
+		"actor_name" : "Kei Kaku: IT Associate",
+		"role_type_id" : 3,
+		"person_id" : 11,
+		"role_type" : "IT Associate",
+		"username" : "ridleyistoobig"
+	},
+	{
+		"actor_id" : 13,
+		"action_type" : "Sent",
+		"game_position" : "Day 4",
+		"actor_name" : "Kei Kaku: IT Associate",
+		"role_type_id" : 3,
+		"person_id" : 11,
+		"role_type" : "IT Associate",
+		"username" : "ridleyistoobig"
+	},
+	{
+		"actor_id" : 13,
+		"action_type" : "Sent",
+		"game_position" : "Day 5",
+		"actor_name" : "Kei Kaku: IT Associate",
+		"role_type_id" : 3,
+		"person_id" : 11,
+		"role_type" : "IT Associate",
+		"username" : "ridleyistoobig"
+	},
+	{
+		"actor_id" : 13,
+		"action_type" : "Received",
+		"game_position" : "Day 5",
+		"actor_name" : "Kei Kaku: IT Associate",
+		"role_type_id" : 3,
+		"person_id" : 11,
+		"role_type" : "IT Associate",
+		"username" : "ridleyistoobig"
+	},
+	{
+		"actor_id" : 14,
+		"action_type" : "Received",
+		"game_position" : "Day 1",
+		"actor_name" : "Eve Olve: Emergency Response Specialist",
+		"role_type_id" : 4,
+		"person_id" : 9,
+		"role_type" : "Emergency Response Specialist",
+		"username" : "metroidfan22"
+	},
+	{
+		"actor_id" : 14,
+		"action_type" : "Sent",
+		"game_position" : "Day 2",
+		"actor_name" : "Eve Olve: Emergency Response Specialist",
+		"role_type_id" : 4,
+		"person_id" : 9,
+		"role_type" : "Emergency Response Specialist",
+		"username" : "metroidfan22"
+	},
+	{
+		"actor_id" : 14,
+		"action_type" : "Sent",
+		"game_position" : "Day 2",
+		"actor_name" : "Eve Olve: Emergency Response Specialist",
+		"role_type_id" : 4,
+		"person_id" : 9,
+		"role_type" : "Emergency Response Specialist",
+		"username" : "metroidfan22"
+	},
+	{
+		"actor_id" : 14,
+		"action_type" : "Sent",
+		"game_position" : "Day 4",
+		"actor_name" : "Eve Olve: Emergency Response Specialist",
+		"role_type_id" : 4,
+		"person_id" : 9,
+		"role_type" : "Emergency Response Specialist",
+		"username" : "metroidfan22"
+	},
+	{
+		"actor_id" : 14,
+		"action_type" : "Received",
+		"game_position" : "Day 5",
+		"actor_name" : "Eve Olve: Emergency Response Specialist",
+		"role_type_id" : 4,
+		"person_id" : 9,
+		"role_type" : "Emergency Response Specialist",
+		"username" : "metroidfan22"
+	},
+	{
+		"actor_id" : 14,
+		"action_type" : "Sent",
+		"game_position" : "Day 5",
+		"actor_name" : "Eve Olve: Emergency Response Specialist",
+		"role_type_id" : 4,
+		"person_id" : 9,
+		"role_type" : "Emergency Response Specialist",
+		"username" : "metroidfan22"
+	},
+	{
+		"actor_id" : 16,
+		"action_type" : "Received",
+		"game_position" : "Day 1",
+		"actor_name" : "Hannibal Broly: Civic Officer",
+		"role_type_id" : 2,
+		"person_id" : 13,
+		"role_type" : "Civic Officer",
+		"username" : "kingofevil1"
+	},
+	{
+		"actor_id" : 16,
+		"action_type" : "Received",
+		"game_position" : "Day 1",
+		"actor_name" : "Hannibal Broly: Civic Officer",
+		"role_type_id" : 2,
+		"person_id" : 13,
+		"role_type" : "Civic Officer",
+		"username" : "kingofevil1"
+	},
+	{
+		"actor_id" : 16,
+		"action_type" : "Received",
+		"game_position" : "Day 2",
+		"actor_name" : "Hannibal Broly: Civic Officer",
+		"role_type_id" : 2,
+		"person_id" : 13,
+		"role_type" : "Civic Officer",
+		"username" : "kingofevil1"
+	},
+	{
+		"actor_id" : 16,
+		"action_type" : "Received",
+		"game_position" : "Day 3",
+		"actor_name" : "Hannibal Broly: Civic Officer",
+		"role_type_id" : 2,
+		"person_id" : 13,
+		"role_type" : "Civic Officer",
+		"username" : "kingofevil1"
+	},
+	{
+		"actor_id" : 16,
+		"action_type" : "Received",
+		"game_position" : "Day 3",
+		"actor_name" : "Hannibal Broly: Civic Officer",
+		"role_type_id" : 2,
+		"person_id" : 13,
+		"role_type" : "Civic Officer",
+		"username" : "kingofevil1"
+	},
+	{
+		"actor_id" : 16,
+		"action_type" : "Received",
+		"game_position" : "Day 5",
+		"actor_name" : "Hannibal Broly: Civic Officer",
+		"role_type_id" : 2,
+		"person_id" : 13,
+		"role_type" : "Civic Officer",
+		"username" : "kingofevil1"
+	},
+	{
+		"actor_id" : 17,
+		"action_type" : "Received",
+		"game_position" : "Day 1",
+		"actor_name" : "Rena Logan: IT Associate",
+		"role_type_id" : 3,
+		"person_id" : 16,
+		"role_type" : "IT Associate",
+		"username" : "triforce100"
+	},
+	{
+		"actor_id" : 17,
+		"action_type" : "Received",
+		"game_position" : "Day 1",
+		"actor_name" : "Rena Logan: IT Associate",
+		"role_type_id" : 3,
+		"person_id" : 16,
+		"role_type" : "IT Associate",
+		"username" : "triforce100"
+	},
+	{
+		"actor_id" : 17,
+		"action_type" : "Received",
+		"game_position" : "Day 2",
+		"actor_name" : "Rena Logan: IT Associate",
+		"role_type_id" : 3,
+		"person_id" : 16,
+		"role_type" : "IT Associate",
+		"username" : "triforce100"
+	},
+	{
+		"actor_id" : 17,
+		"action_type" : "Received",
+		"game_position" : "Day 3",
+		"actor_name" : "Rena Logan: IT Associate",
+		"role_type_id" : 3,
+		"person_id" : 16,
+		"role_type" : "IT Associate",
+		"username" : "triforce100"
+	},
+	{
+		"actor_id" : 17,
+		"action_type" : "Received",
+		"game_position" : "Day 3",
+		"actor_name" : "Rena Logan: IT Associate",
+		"role_type_id" : 3,
+		"person_id" : 16,
+		"role_type" : "IT Associate",
+		"username" : "triforce100"
+	},
+	{
+		"actor_id" : 17,
+		"action_type" : "Received",
+		"game_position" : "Day 5",
+		"actor_name" : "Rena Logan: IT Associate",
+		"role_type_id" : 3,
+		"person_id" : 16,
+		"role_type" : "IT Associate",
+		"username" : "triforce100"
+	},
+	{
+		"actor_id" : 18,
+		"action_type" : "Received",
+		"game_position" : "Day 1",
+		"actor_name" : "Barney Miles: Database Administrator",
+		"role_type_id" : 1,
+		"person_id" : 14,
+		"role_type" : "Database Administrator",
+		"username" : "windwaker45"
+	},
+	{
+		"actor_id" : 18,
+		"action_type" : "Received",
+		"game_position" : "Day 1",
+		"actor_name" : "Barney Miles: Database Administrator",
+		"role_type_id" : 1,
+		"person_id" : 14,
+		"role_type" : "Database Administrator",
+		"username" : "windwaker45"
+	},
+	{
+		"actor_id" : 18,
+		"action_type" : "Received",
+		"game_position" : "Day 2",
+		"actor_name" : "Barney Miles: Database Administrator",
+		"role_type_id" : 1,
+		"person_id" : 14,
+		"role_type" : "Database Administrator",
+		"username" : "windwaker45"
+	},
+	{
+		"actor_id" : 18,
+		"action_type" : "Received",
+		"game_position" : "Day 3",
+		"actor_name" : "Barney Miles: Database Administrator",
+		"role_type_id" : 1,
+		"person_id" : 14,
+		"role_type" : "Database Administrator",
+		"username" : "windwaker45"
+	},
+	{
+		"actor_id" : 18,
+		"action_type" : "Received",
+		"game_position" : "Day 3",
+		"actor_name" : "Barney Miles: Database Administrator",
+		"role_type_id" : 1,
+		"person_id" : 14,
+		"role_type" : "Database Administrator",
+		"username" : "windwaker45"
+	},
+	{
+		"actor_id" : 18,
+		"action_type" : "Received",
+		"game_position" : "Day 5",
+		"actor_name" : "Barney Miles: Database Administrator",
+		"role_type_id" : 1,
+		"person_id" : 14,
+		"role_type" : "Database Administrator",
+		"username" : "windwaker45"
+	},
+	{
+		"actor_id" : 19,
+		"action_type" : "Sent",
+		"game_position" : "Day 1",
+		"actor_name" : "Kim Hines: Emergency Response Specialist",
+		"role_type_id" : 4,
+		"person_id" : 15,
+		"role_type" : "Emergency Response Specialist",
+		"username" : "mastersword22"
+	},
+	{
+		"actor_id" : 19,
+		"action_type" : "Sent",
+		"game_position" : "Day 1",
+		"actor_name" : "Kim Hines: Emergency Response Specialist",
+		"role_type_id" : 4,
+		"person_id" : 15,
+		"role_type" : "Emergency Response Specialist",
+		"username" : "mastersword22"
+	},
+	{
+		"actor_id" : 19,
+		"action_type" : "Sent",
+		"game_position" : "Day 1",
+		"actor_name" : "Kim Hines: Emergency Response Specialist",
+		"role_type_id" : 4,
+		"person_id" : 15,
+		"role_type" : "Emergency Response Specialist",
+		"username" : "mastersword22"
+	},
+	{
+		"actor_id" : 19,
+		"action_type" : "Sent",
+		"game_position" : "Day 2",
+		"actor_name" : "Kim Hines: Emergency Response Specialist",
+		"role_type_id" : 4,
+		"person_id" : 15,
+		"role_type" : "Emergency Response Specialist",
+		"username" : "mastersword22"
+	},
+	{
+		"actor_id" : 19,
+		"action_type" : "Sent",
+		"game_position" : "Day 2",
+		"actor_name" : "Kim Hines: Emergency Response Specialist",
+		"role_type_id" : 4,
+		"person_id" : 15,
+		"role_type" : "Emergency Response Specialist",
+		"username" : "mastersword22"
+	},
+	{
+		"actor_id" : 19,
+		"action_type" : "Received",
+		"game_position" : "Day 2",
+		"actor_name" : "Kim Hines: Emergency Response Specialist",
+		"role_type_id" : 4,
+		"person_id" : 15,
+		"role_type" : "Emergency Response Specialist",
+		"username" : "mastersword22"
+	},
+	{
+		"actor_id" : 19,
+		"action_type" : "Sent",
+		"game_position" : "Day 2",
+		"actor_name" : "Kim Hines: Emergency Response Specialist",
+		"role_type_id" : 4,
+		"person_id" : 15,
+		"role_type" : "Emergency Response Specialist",
+		"username" : "mastersword22"
+	},
+	{
+		"actor_id" : 19,
+		"action_type" : "Received",
+		"game_position" : "Day 3",
+		"actor_name" : "Kim Hines: Emergency Response Specialist",
+		"role_type_id" : 4,
+		"person_id" : 15,
+		"role_type" : "Emergency Response Specialist",
+		"username" : "mastersword22"
+	},
+	{
+		"actor_id" : 19,
+		"action_type" : "Sent",
+		"game_position" : "Day 3",
+		"actor_name" : "Kim Hines: Emergency Response Specialist",
+		"role_type_id" : 4,
+		"person_id" : 15,
+		"role_type" : "Emergency Response Specialist",
+		"username" : "mastersword22"
+	},
+	{
+		"actor_id" : 19,
+		"action_type" : "Received",
+		"game_position" : "Day 3",
+		"actor_name" : "Kim Hines: Emergency Response Specialist",
+		"role_type_id" : 4,
+		"person_id" : 15,
+		"role_type" : "Emergency Response Specialist",
+		"username" : "mastersword22"
+	},
+	{
+		"actor_id" : 19,
+		"action_type" : "Sent",
+		"game_position" : "Day 3",
+		"actor_name" : "Kim Hines: Emergency Response Specialist",
+		"role_type_id" : 4,
+		"person_id" : 15,
+		"role_type" : "Emergency Response Specialist",
+		"username" : "mastersword22"
+	},
+	{
+		"actor_id" : 19,
+		"action_type" : "Sent",
+		"game_position" : "Day 4",
+		"actor_name" : "Kim Hines: Emergency Response Specialist",
+		"role_type_id" : 4,
+		"person_id" : 15,
+		"role_type" : "Emergency Response Specialist",
+		"username" : "mastersword22"
+	},
+	{
+		"actor_id" : 19,
+		"action_type" : "Received",
+		"game_position" : "Day 4",
+		"actor_name" : "Kim Hines: Emergency Response Specialist",
+		"role_type_id" : 4,
+		"person_id" : 15,
+		"role_type" : "Emergency Response Specialist",
+		"username" : "mastersword22"
+	},
+	{
+		"actor_id" : 19,
+		"action_type" : "Sent",
+		"game_position" : "Day 5",
+		"actor_name" : "Kim Hines: Emergency Response Specialist",
+		"role_type_id" : 4,
+		"person_id" : 15,
+		"role_type" : "Emergency Response Specialist",
+		"username" : "mastersword22"
+	},
+	{
+		"actor_id" : 19,
+		"action_type" : "Received",
+		"game_position" : "Day 5",
+		"actor_name" : "Kim Hines: Emergency Response Specialist",
+		"role_type_id" : 4,
+		"person_id" : 15,
+		"role_type" : "Emergency Response Specialist",
+		"username" : "mastersword22"
+	},
+	{
+		"actor_id" : 19,
+		"action_type" : "Sent",
+		"game_position" : "Day 5",
+		"actor_name" : "Kim Hines: Emergency Response Specialist",
+		"role_type_id" : 4,
+		"person_id" : 15,
+		"role_type" : "Emergency Response Specialist",
+		"username" : "mastersword22"
+	},
+	{
+		"actor_id" : 26,
+		"action_type" : "Received",
+		"game_position" : "Day 1",
+		"actor_name" : "Charles Wright: Database Administrator",
+		"role_type_id" : 1,
+		"person_id" : 21,
+		"role_type" : "Database Administrator",
+		"username" : "chaoscontroller7"
+	},
+	{
+		"actor_id" : 26,
+		"action_type" : "Received",
+		"game_position" : "Day 1",
+		"actor_name" : "Charles Wright: Database Administrator",
+		"role_type_id" : 1,
+		"person_id" : 21,
+		"role_type" : "Database Administrator",
+		"username" : "chaoscontroller7"
+	},
+	{
+		"actor_id" : 26,
+		"action_type" : "Received",
+		"game_position" : "Day 5",
+		"actor_name" : "Charles Wright: Database Administrator",
+		"role_type_id" : 1,
+		"person_id" : 21,
+		"role_type" : "Database Administrator",
+		"username" : "chaoscontroller7"
+	},
+	{
+		"actor_id" : 27,
+		"action_type" : "Received",
+		"game_position" : "Day 1",
+		"actor_name" : "Manfred Von Karma: Civic Officer",
+		"role_type_id" : 2,
+		"person_id" : 22,
+		"role_type" : "Civic Officer",
+		"username" : "worldrings7"
+	},
+	{
+		"actor_id" : 27,
+		"action_type" : "Sent",
+		"game_position" : "Day 1",
+		"actor_name" : "Manfred Von Karma: Civic Officer",
+		"role_type_id" : 2,
+		"person_id" : 22,
+		"role_type" : "Civic Officer",
+		"username" : "worldrings7"
+	},
+	{
+		"actor_id" : 27,
+		"action_type" : "Received",
+		"game_position" : "Day 1",
+		"actor_name" : "Manfred Von Karma: Civic Officer",
+		"role_type_id" : 2,
+		"person_id" : 22,
+		"role_type" : "Civic Officer",
+		"username" : "worldrings7"
+	},
+	{
+		"actor_id" : 27,
+		"action_type" : "Sent",
+		"game_position" : "Day 1",
+		"actor_name" : "Manfred Von Karma: Civic Officer",
+		"role_type_id" : 2,
+		"person_id" : 22,
+		"role_type" : "Civic Officer",
+		"username" : "worldrings7"
+	},
+	{
+		"actor_id" : 27,
+		"action_type" : "Sent",
+		"game_position" : "Day 2",
+		"actor_name" : "Manfred Von Karma: Civic Officer",
+		"role_type_id" : 2,
+		"person_id" : 22,
+		"role_type" : "Civic Officer",
+		"username" : "worldrings7"
+	},
+	{
+		"actor_id" : 27,
+		"action_type" : "Received",
+		"game_position" : "Day 2",
+		"actor_name" : "Manfred Von Karma: Civic Officer",
+		"role_type_id" : 2,
+		"person_id" : 22,
+		"role_type" : "Civic Officer",
+		"username" : "worldrings7"
+	},
+	{
+		"actor_id" : 27,
+		"action_type" : "Sent",
+		"game_position" : "Day 3",
+		"actor_name" : "Manfred Von Karma: Civic Officer",
+		"role_type_id" : 2,
+		"person_id" : 22,
+		"role_type" : "Civic Officer",
+		"username" : "worldrings7"
+	},
+	{
+		"actor_id" : 27,
+		"action_type" : "Received",
+		"game_position" : "Day 3",
+		"actor_name" : "Manfred Von Karma: Civic Officer",
+		"role_type_id" : 2,
+		"person_id" : 22,
+		"role_type" : "Civic Officer",
+		"username" : "worldrings7"
+	},
+	{
+		"actor_id" : 27,
+		"action_type" : "Sent",
+		"game_position" : "Day 4",
+		"actor_name" : "Manfred Von Karma: Civic Officer",
+		"role_type_id" : 2,
+		"person_id" : 22,
+		"role_type" : "Civic Officer",
+		"username" : "worldrings7"
+	},
+	{
+		"actor_id" : 27,
+		"action_type" : "Received",
+		"game_position" : "Day 4",
+		"actor_name" : "Manfred Von Karma: Civic Officer",
+		"role_type_id" : 2,
+		"person_id" : 22,
+		"role_type" : "Civic Officer",
+		"username" : "worldrings7"
+	},
+	{
+		"actor_id" : 27,
+		"action_type" : "Received",
+		"game_position" : "Day 5",
+		"actor_name" : "Manfred Von Karma: Civic Officer",
+		"role_type_id" : 2,
+		"person_id" : 22,
+		"role_type" : "Civic Officer",
+		"username" : "worldrings7"
+	},
+	{
+		"actor_id" : 28,
+		"action_type" : "Received",
+		"game_position" : "Day 1",
+		"actor_name" : "Speed Racer: IT Associate",
+		"role_type_id" : 3,
+		"person_id" : 23,
+		"role_type" : "IT Associate",
+		"username" : "superemerald7"
+	},
+	{
+		"actor_id" : 28,
+		"action_type" : "Sent",
+		"game_position" : "Day 1",
+		"actor_name" : "Speed Racer: IT Associate",
+		"role_type_id" : 3,
+		"person_id" : 23,
+		"role_type" : "IT Associate",
+		"username" : "superemerald7"
+	},
+	{
+		"actor_id" : 28,
+		"action_type" : "Received",
+		"game_position" : "Day 1",
+		"actor_name" : "Speed Racer: IT Associate",
+		"role_type_id" : 3,
+		"person_id" : 23,
+		"role_type" : "IT Associate",
+		"username" : "superemerald7"
+	},
+	{
+		"actor_id" : 28,
+		"action_type" : "Sent",
+		"game_position" : "Day 5",
+		"actor_name" : "Speed Racer: IT Associate",
+		"role_type_id" : 3,
+		"person_id" : 23,
+		"role_type" : "IT Associate",
+		"username" : "superemerald7"
+	},
+	{
+		"actor_id" : 29,
+		"action_type" : "Received",
+		"game_position" : "Day 1",
+		"actor_name" : "Harold Jordan: Emergency Response Specialist",
+		"role_type_id" : 4,
+		"person_id" : 24,
+		"role_type" : "Emergency Response Specialist",
+		"username" : "solemeralds7"
+	},
+	{
+		"actor_id" : 29,
+		"action_type" : "Received",
+		"game_position" : "Day 1",
+		"actor_name" : "Harold Jordan: Emergency Response Specialist",
+		"role_type_id" : 4,
+		"person_id" : 24,
+		"role_type" : "Emergency Response Specialist",
+		"username" : "solemeralds7"
+	},
+	{
+		"actor_id" : 29,
+		"action_type" : "Sent",
+		"game_position" : "Day 1",
+		"actor_name" : "Harold Jordan: Emergency Response Specialist",
+		"role_type_id" : 4,
+		"person_id" : 24,
+		"role_type" : "Emergency Response Specialist",
+		"username" : "solemeralds7"
+	},
+	{
+		"actor_id" : 29,
+		"action_type" : "Received",
+		"game_position" : "Day 1",
+		"actor_name" : "Harold Jordan: Emergency Response Specialist",
+		"role_type_id" : 4,
+		"person_id" : 24,
+		"role_type" : "Emergency Response Specialist",
+		"username" : "solemeralds7"
+	},
+	{
+		"actor_id" : 29,
+		"action_type" : "Sent",
+		"game_position" : "Day 1",
+		"actor_name" : "Harold Jordan: Emergency Response Specialist",
+		"role_type_id" : 4,
+		"person_id" : 24,
+		"role_type" : "Emergency Response Specialist",
+		"username" : "solemeralds7"
+	},
+	{
+		"actor_id" : 29,
+		"action_type" : "Received",
+		"game_position" : "Day 2",
+		"actor_name" : "Harold Jordan: Emergency Response Specialist",
+		"role_type_id" : 4,
+		"person_id" : 24,
+		"role_type" : "Emergency Response Specialist",
+		"username" : "solemeralds7"
+	},
+	{
+		"actor_id" : 29,
+		"action_type" : "Sent",
+		"game_position" : "Day 2",
+		"actor_name" : "Harold Jordan: Emergency Response Specialist",
+		"role_type_id" : 4,
+		"person_id" : 24,
+		"role_type" : "Emergency Response Specialist",
+		"username" : "solemeralds7"
+	},
+	{
+		"actor_id" : 29,
+		"action_type" : "Received",
+		"game_position" : "Day 3",
+		"actor_name" : "Harold Jordan: Emergency Response Specialist",
+		"role_type_id" : 4,
+		"person_id" : 24,
+		"role_type" : "Emergency Response Specialist",
+		"username" : "solemeralds7"
+	},
+	{
+		"actor_id" : 29,
+		"action_type" : "Sent",
+		"game_position" : "Day 3",
+		"actor_name" : "Harold Jordan: Emergency Response Specialist",
+		"role_type_id" : 4,
+		"person_id" : 24,
+		"role_type" : "Emergency Response Specialist",
+		"username" : "solemeralds7"
+	},
+	{
+		"actor_id" : 29,
+		"action_type" : "Received",
+		"game_position" : "Day 4",
+		"actor_name" : "Harold Jordan: Emergency Response Specialist",
+		"role_type_id" : 4,
+		"person_id" : 24,
+		"role_type" : "Emergency Response Specialist",
+		"username" : "solemeralds7"
+	},
+	{
+		"actor_id" : 29,
+		"action_type" : "Sent",
+		"game_position" : "Day 4",
+		"actor_name" : "Harold Jordan: Emergency Response Specialist",
+		"role_type_id" : 4,
+		"person_id" : 24,
+		"role_type" : "Emergency Response Specialist",
+		"username" : "solemeralds7"
+	},
+	{
+		"actor_id" : 29,
+		"action_type" : "Received",
+		"game_position" : "Day 5",
+		"actor_name" : "Harold Jordan: Emergency Response Specialist",
+		"role_type_id" : 4,
+		"person_id" : 24,
+		"role_type" : "Emergency Response Specialist",
+		"username" : "solemeralds7"
+	}
+]

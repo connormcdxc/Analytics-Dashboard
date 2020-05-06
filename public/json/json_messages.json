@@ -1,0 +1,560 @@
+[
+	{
+		"message_id" : 1,
+		"message_subject" : "Emergency Action Needed for Leak",
+		"message_text" : "There is a leak on the North side of town that is flooding the street.",
+		"game_position" : "Day 1"
+	},
+	{
+		"message_id" : 2,
+		"message_subject" : "Emergency Action Needed for Leak - Response",
+		"message_text" : "Sent someone. Plumber on his way.",
+		"game_position" : "Day 1"
+	},
+	{
+		"message_id" : 3,
+		"message_subject" : "Sushi Time",
+		"message_text" : "I want fish, team. Let us get sushi.",
+		"game_position" : "Day 1"
+	},
+	{
+		"message_id" : 4,
+		"message_subject" : "Improve Firewalls",
+		"message_text" : "Help me find a guy to improve our firewalls.",
+		"game_position" : "Day 2"
+	},
+	{
+		"message_id" : 5,
+		"message_subject" : "Keep the peace.",
+		"message_text" : "Calm the people",
+		"game_position" : "Day 2"
+	},
+	{
+		"message_id" : 6,
+		"message_subject" : "Here, have these docs.",
+		"message_text" : "Use this data.",
+		"game_position" : "Day 3"
+	},
+	{
+		"message_id" : 7,
+		"message_subject" : "Document these, dude.",
+		"message_text" : "Dude! Here you go!",
+		"game_position" : "Day 3"
+	},
+	{
+		"message_id" : 8,
+		"message_subject" : "We almost good!",
+		"message_text" : "Right to da end, babies!",
+		"game_position" : "Day 4"
+	},
+	{
+		"message_id" : 9,
+		"message_subject" : "Liberty.",
+		"message_text" : "Almost free to be me!",
+		"game_position" : "Day 4"
+	},
+	{
+		"message_id" : 10,
+		"message_subject" : "Done! We did it!",
+		"message_text" : "Time to send this to the boss!",
+		"game_position" : "Day 5"
+	},
+	{
+		"message_id" : 11,
+		"message_subject" : "Break Plans",
+		"message_text" : "Let's meet up for lunch!",
+		"game_position" : "Day 1"
+	},
+	{
+		"message_id" : 12,
+		"message_subject" : "Send the plans",
+		"message_text" : "I need the emergency plans.",
+		"game_position" : "Day 1"
+	},
+	{
+		"message_id" : 13,
+		"message_subject" : "Encouragement",
+		"message_text" : "We can.",
+		"game_position" : "Day 1"
+	},
+	{
+		"message_id" : 14,
+		"message_subject" : "Four Score...",
+		"message_text" : "I hate history.",
+		"game_position" : "Day 2"
+	},
+	{
+		"message_id" : 15,
+		"message_subject" : "Gossip",
+		"message_text" : "Look at Magenta and Crimson",
+		"game_position" : "Day 2"
+	},
+	{
+		"message_id" : 16,
+		"message_subject" : "Gossip 2",
+		"message_text" : "I know, right?",
+		"game_position" : "Day 2"
+	},
+	{
+		"message_id" : 17,
+		"message_subject" : "DB",
+		"message_text" : "How is it looking, Adam?",
+		"game_position" : "Day 3"
+	},
+	{
+		"message_id" : 18,
+		"message_subject" : "DB 2",
+		"message_text" : "Fine, Buster. More data came in.",
+		"game_position" : "Day 3"
+	},
+	{
+		"message_id" : 19,
+		"message_subject" : "Hotel Plans",
+		"message_text" : "Let's make some money.",
+		"game_position" : "Day 3"
+	},
+	{
+		"message_id" : 20,
+		"message_subject" : "We got it.",
+		"message_text" : "Let's make some money.",
+		"game_position" : "Day 4"
+	},
+	{
+		"message_id" : 21,
+		"message_subject" : "Coincidence?",
+		"message_text" : "Anyone notice that our names are all alliterative and go ABCD?",
+		"game_position" : "Day 4"
+	},
+	{
+		"message_id" : 22,
+		"message_subject" : "We noticed.",
+		"message_text" : "Yes, Buster. We noticed. Boss did it on purpose.",
+		"game_position" : "Day 4"
+	},
+	{
+		"message_id" : 23,
+		"message_subject" : "We defeated this project.",
+		"message_text" : "It's game over. We WIN!",
+		"game_position" : "Day 5"
+	},
+	{
+		"message_id" : 24,
+		"message_subject" : "Future Reference",
+		"message_text" : "Please document the emergency I fixed for future reference.",
+		"game_position" : "Day 2"
+	},
+	{
+		"message_id" : 25,
+		"message_subject" : "Overheated Words",
+		"message_text" : "I need help calming a debate in the lobby.",
+		"game_position" : "Day 4"
+	},
+	{
+		"message_id" : 26,
+		"message_subject" : "I am bored.",
+		"message_text" : "Give me something to do.",
+		"game_position" : "Day 3"
+	},
+	{
+		"message_id" : 27,
+		"message_subject" : "Another Emergency?!",
+		"message_text" : "Emergency worst, same as the first.",
+		"game_position" : "Day 2"
+	},
+	{
+		"message_id" : 28,
+		"message_subject" : "Day One Ish",
+		"message_text" : "Let us do our best!",
+		"game_position" : "Day 1"
+	},
+	{
+		"message_id" : 29,
+		"message_subject" : "All According to Cake",
+		"message_text" : "Cake Means Keikaku. Keikaku Means Plan",
+		"game_position" : "Day 5"
+	},
+	{
+		"message_id" : 30,
+		"message_subject" : "All According to Cake - Response",
+		"message_text" : "Must you? Must you really?",
+		"game_position" : "Day 5"
+	},
+	{
+		"message_id" : 31,
+		"message_subject" : "Money in the budget?",
+		"message_text" : "I need money to pay for new defenses.",
+		"game_position" : "Day 4"
+	},
+	{
+		"message_id" : 32,
+		"message_subject" : "Talk to me.",
+		"message_text" : "Please respond to my emails. We need to talk about future plans.",
+		"game_position" : "Day 1"
+	},
+	{
+		"message_id" : 33,
+		"message_subject" : "Why is no one responding?",
+		"message_text" : "Hannibal, Rena, Barney, I need to communicate with you three if we are to succeed. Reply back if you read this.",
+		"game_position" : "Day 1"
+	},
+	{
+		"message_id" : 34,
+		"message_subject" : "Stop ignoring me.",
+		"message_text" : "Why am I being ignored?",
+		"game_position" : "Day 2"
+	},
+	{
+		"message_id" : 35,
+		"message_subject" : "I told the boss.",
+		"message_text" : "Screw it, I told DA MAN and he about to fire ya'll",
+		"game_position" : "Day 3"
+	},
+	{
+		"message_id" : 36,
+		"message_subject" : "What Now?",
+		"message_text" : "Does anyone know what we are supposed to do?",
+		"game_position" : "Day 1"
+	},
+	{
+		"message_id" : 37,
+		"message_subject" : "What Now? - Response",
+		"message_text" : "Hal, you have to save the people's data, then tell us what happens.",
+		"game_position" : "Day 1"
+	},
+	{
+		"message_id" : 38,
+		"message_subject" : "Nuisance",
+		"message_text" : "You are a nuisance. Do what I say and we will achieve victory.",
+		"game_position" : "Day 1"
+	},
+	{
+		"message_id" : 39,
+		"message_subject" : "Never!",
+		"message_text" : "Green Lantern stands his ground.",
+		"game_position" : "Day 1"
+	},
+	{
+		"message_id" : 40,
+		"message_subject" : "Keep secrets",
+		"message_text" : "No one tell the boss that we have internal issues. We will look perfect.",
+		"game_position" : "Day 1"
+	},
+	{
+		"message_id" : 41,
+		"message_subject" : "Fool",
+		"message_text" : "Give me your loyalty.",
+		"game_position" : "Day 2"
+	},
+	{
+		"message_id" : 42,
+		"message_subject" : "Nah.",
+		"message_text" : "Nah.",
+		"game_position" : "Day 2"
+	},
+	{
+		"message_id" : 43,
+		"message_subject" : "Failure",
+		"message_text" : "Give me your soul.",
+		"game_position" : "Day 3"
+	},
+	{
+		"message_id" : 44,
+		"message_subject" : "You can be so stupid.",
+		"message_text" : "You have lovely charisma. s",
+		"game_position" : "Day 3"
+	},
+	{
+		"message_id" : 45,
+		"message_subject" : "Perfection",
+		"message_text" : "Give me the evidence for the guilty verdict. Also, thank you for the compliment",
+		"game_position" : "Day 4"
+	},
+	{
+		"message_id" : 46,
+		"message_subject" : "Fine.",
+		"message_text" : "You do not have to be so demanding. Also, you must not know what s means...",
+		"game_position" : "Day 4"
+	},
+	{
+		"message_id" : 47,
+		"message_subject" : "Thank God, it's over.",
+		"message_text" : "That tension was unbearable. Let us submit and be done with it.",
+		"game_position" : "Day 5"
+	},
+	{
+		"message_id" : 48,
+		"message_subject" : "Get to work",
+		"message_text" : "Start the projects. Send me a message every day.",
+		"game_position" : "Day 1"
+	},
+	{
+		"message_id" : 49,
+		"message_subject" : "Start working together!",
+		"message_text" : "Talk to each other!",
+		"game_position" : "Day 3"
+	},
+	{
+		"message_id" : 50,
+		"message_subject" : "YOU'RE FIRED!",
+		"message_text" : "Only one of you is trying, so I'll pass her and FIRE YOU!",
+		"game_position" : "Day 5"
+	},
+	{
+		"message_id" : 51,
+		"message_subject" : "Submit!",
+		"message_text" : "Give me what you have done.",
+		"game_position" : "Day 5"
+	},
+	{
+		"message_id" : 52,
+		"message_subject" : "No teamwork. Goodbye",
+		"message_text" : "I do not see your work. Did you even do it? Crimson Team is also FIRED!!! No work no collaboration",
+		"game_position" : "Day 5"
+	},
+	{
+		"message_id" : 53,
+		"message_subject" : "Day One is done.",
+		"message_text" : "Day 1 is done.",
+		"game_position" : "Day 1"
+	},
+	{
+		"message_id" : 54,
+		"message_subject" : "Day One.",
+		"message_text" : "Dia Uno.",
+		"game_position" : "Day 1"
+	},
+	{
+		"message_id" : 55,
+		"message_subject" : "Divide the Day One.",
+		"message_text" : "See you tomorrow.",
+		"game_position" : "Day 1"
+	},
+	{
+		"message_id" : 56,
+		"message_subject" : "Perfect Day One.",
+		"message_text" : "Not a second wasted.",
+		"game_position" : "Day 1"
+	},
+	{
+		"message_id" : 57,
+		"message_subject" : "Not So Perfect Day One.",
+		"message_text" : "Just got it!",
+		"game_position" : "Day 1"
+	},
+	{
+		"message_id" : 58,
+		"message_subject" : "Day Two is done.",
+		"message_text" : "Day 2 is done.",
+		"game_position" : "Day 2"
+	},
+	{
+		"message_id" : 59,
+		"message_subject" : "Day Two.",
+		"message_text" : "Dia Dos.",
+		"game_position" : "Day 2"
+	},
+	{
+		"message_id" : 60,
+		"message_subject" : "Twoday is here.",
+		"message_text" : "Here.",
+		"game_position" : "Day 2"
+	},
+	{
+		"message_id" : 61,
+		"message_subject" : "Perfect Day Two.",
+		"message_text" : "Please.",
+		"game_position" : "Day 2"
+	},
+	{
+		"message_id" : 62,
+		"message_subject" : "Forever alone.",
+		"message_text" : "Just got it!",
+		"game_position" : "Day 2"
+	},
+	{
+		"message_id" : 63,
+		"message_subject" : "Forever alone - Response.",
+		"message_text" : "Are you okay?",
+		"game_position" : "Day 2"
+	},
+	{
+		"message_id" : 64,
+		"message_subject" : ":}",
+		"message_text" : "Never better?",
+		"game_position" : "Day 2"
+	},
+	{
+		"message_id" : 65,
+		"message_subject" : "Day Three is done.",
+		"message_text" : "Day 3 is done.",
+		"game_position" : "Day 3"
+	},
+	{
+		"message_id" : 66,
+		"message_subject" : "Day Three.",
+		"message_text" : "Dia Tres.",
+		"game_position" : "Day 3"
+	},
+	{
+		"message_id" : 67,
+		"message_subject" : "R.E.S.P.E.C.THREE.",
+		"message_text" : "Halfway done.",
+		"game_position" : "Day 3"
+	},
+	{
+		"message_id" : 68,
+		"message_subject" : "Perfect Day Three.",
+		"message_text" : "As expected",
+		"game_position" : "Day 3"
+	},
+	{
+		"message_id" : 69,
+		"message_subject" : "Help.",
+		"message_text" : "I am done for the day. But I need your help. My group is not talking or working with me or showing up. Please do something.",
+		"game_position" : "Day 3"
+	},
+	{
+		"message_id" : 70,
+		"message_subject" : "On the way.",
+		"message_text" : "I will do what I can",
+		"game_position" : "Day 3"
+	},
+	{
+		"message_id" : 71,
+		"message_subject" : "Help Kim",
+		"message_text" : "Only one of you is working. Help her now.",
+		"game_position" : "Day 3"
+	},
+	{
+		"message_id" : 72,
+		"message_subject" : "Day Four is done.",
+		"message_text" : "Day 4 is done.",
+		"game_position" : "Day 4"
+	},
+	{
+		"message_id" : 73,
+		"message_subject" : "Day Four.",
+		"message_text" : "Dia Cuatro.",
+		"game_position" : "Day 4"
+	},
+	{
+		"message_id" : 74,
+		"message_subject" : "Press F to Signal Day Four's End",
+		"message_text" : "Almost done.",
+		"game_position" : "Day 4"
+	},
+	{
+		"message_id" : 75,
+		"message_subject" : "Perfect Day Four.",
+		"message_text" : "We are great.",
+		"game_position" : "Day 4"
+	},
+	{
+		"message_id" : 76,
+		"message_subject" : "No response from them.",
+		"message_text" : "I am overworking myself, boss. But today is done.",
+		"game_position" : "Day 4"
+	},
+	{
+		"message_id" : 77,
+		"message_subject" : "Last one more day",
+		"message_text" : "Just finish, Kim. I will give you their salaries if they do not help tomorrow.",
+		"game_position" : "Day 4"
+	},
+	{
+		"message_id" : 78,
+		"message_subject" : "Warning",
+		"message_text" : "I got nothing from you, today. Why?",
+		"game_position" : "Day 1"
+	},
+	{
+		"message_id" : 79,
+		"message_subject" : "Second warning",
+		"message_text" : "Still nothing. Do not ignore me.",
+		"game_position" : "Day 2"
+	},
+	{
+		"message_id" : 80,
+		"message_subject" : "No hope for you.",
+		"message_text" : "You cannot pass at this point. This shall be my last message to you. Well, besides your pink slip.",
+		"game_position" : "Day 4"
+	},
+	{
+		"message_id" : 81,
+		"message_subject" : "Day Five is done.",
+		"message_text" : "Day 5 is done.",
+		"game_position" : "Day 5"
+	},
+	{
+		"message_id" : 82,
+		"message_subject" : "Day Five.",
+		"message_text" : "Dia Cinco.",
+		"game_position" : "Day 5"
+	},
+	{
+		"message_id" : 83,
+		"message_subject" : "Return of the Five",
+		"message_text" : "It is done",
+		"game_position" : "Day 5"
+	},
+	{
+		"message_id" : 84,
+		"message_subject" : "Perfect Day Five.",
+		"message_text" : "Perfectly finished, as is all things we do.",
+		"game_position" : "Day 5"
+	},
+	{
+		"message_id" : 85,
+		"message_subject" : "I'm done...",
+		"message_text" : "I finished finally. Can I go home and sleep?",
+		"game_position" : "Day 5"
+	},
+	{
+		"message_id" : 86,
+		"message_subject" : "Take five, soldier.",
+		"message_text" : "You will have their money, their jobs, and their praise.",
+		"game_position" : "Day 5"
+	},
+	{
+		"message_id" : 87,
+		"message_subject" : "Data Transfer",
+		"message_text" : "Send us the data, please.",
+		"game_position" : "Day 1"
+	},
+	{
+		"message_id" : 88,
+		"message_subject" : "Communicate",
+		"message_text" : "You all should really speak to each other.",
+		"game_position" : "Day 3"
+	},
+	{
+		"message_id" : 89,
+		"message_subject" : "Help each other!",
+		"message_text" : "You have to work together.",
+		"game_position" : "Day 3"
+	},
+	{
+		"message_id" : 90,
+		"message_subject" : "Your account",
+		"message_text" : "Kim, just use your individual account. We know your team is not helping you.",
+		"game_position" : "Day 3"
+	},
+	{
+		"message_id" : 91,
+		"message_subject" : "Deadline incoming",
+		"message_text" : "Send us the papers. We got the rest.",
+		"game_position" : "Day 4"
+	},
+	{
+		"message_id" : 92,
+		"message_subject" : "Take these.",
+		"message_text" : "Here. It was nice working with you.",
+		"game_position" : "Day 4"
+	},
+	{
+		"message_id" : 93,
+		"message_subject" : "Until We Meet Again",
+		"message_text" : "Here. It was nice working with you.",
+		"game_position" : "Day 5"
+	}
+]
