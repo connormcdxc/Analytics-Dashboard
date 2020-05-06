@@ -1,0 +1,32 @@
+actor_id,actor_type,actor_name,role_type_id,person_id,instance_id
+1,I,"Bob Brown: Database Administrator",1,1,1
+2,I,"Red Eye: Civic Officer",2,2,1
+3,I,"Corona Virus: IT Associate",3,3,1
+4,I,"Warrior: Emergency Response Specialist",4,4,1
+5,T,"Blue Team",NULL,NULL,1
+6,I,"Adam Applin: Database Administrator",1,5,1
+7,I,"Cinder Crash: Civic Officer",2,7,1
+8,I,"Draymond DK: IT Associate",3,8,1
+9,I,"Buster Boost: Emergency Response Specialist",4,6,1
+10,T,"Red Team",NULL,NULL,1
+11,I,"Mordecai Simple: Database Administrator",1,12,1
+12,I,"Contra Ease: Civic Officer",2,10,1
+13,I,"Kei Kaku: IT Associate",3,11,1
+14,I,"Eve Olve: Emergency Response Specialist",4,9,1
+15,T,"Green Team",NULL,NULL,1
+16,I,"Hannibal Broly: Civic Officer",2,13,1
+17,I,"Rena Logan: IT Associate",3,16,1
+18,I,"Barney Miles: Database Administrator",1,14,1
+19,I,"Kim Hines: Emergency Response Specialist",4,15,1
+20,T,"Magenta Team",NULL,NULL,1
+21,I,"Ariel: Emergency Response Specialist",4,20,1
+22,I,"Kevin Thorn: Database Administrator",1,18,1
+23,I,"Gangrel: IT Associate",3,17,1
+24,I,"Vampiro: Civic Officer",2,19,1
+25,T,"Crimson Team",NULL,NULL,1
+26,I,"Charles Wright: Database Administrator",1,21,1
+27,I,"Manfred Von Karma: Civic Officer",2,22,1
+28,I,"Speed Racer: IT Associate",3,23,1
+29,I,"Harold Jordan: Emergency Response Specialist",4,24,1
+30,T,"Purple Team",NULL,NULL,1
+31,B,"The Big Bad Boss",5,NULL,1

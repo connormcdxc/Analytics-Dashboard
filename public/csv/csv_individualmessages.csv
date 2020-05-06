@@ -1,0 +1,149 @@
+person_id,person_name,role_type_id,role_type,game_position,action_type,action_time
+1,"Bob Brown",1,"Database Administrator","Day 1",Received,1588743611
+1,"Bob Brown",1,"Database Administrator","Day 1",Sent,1588743611
+1,"Bob Brown",1,"Database Administrator","Day 2",Sent,1588743612
+1,"Bob Brown",1,"Database Administrator","Day 3",Received,1588743613
+1,"Bob Brown",1,"Database Administrator","Day 4",Received,1588743613
+1,"Bob Brown",1,"Database Administrator","Day 5",Received,1588743614
+5,"Adam Applin",1,"Database Administrator","Day 1",Sent,1588743617
+5,"Adam Applin",1,"Database Administrator","Day 1",Sent,1588743617
+5,"Adam Applin",1,"Database Administrator","Day 1",Sent,1588743618
+5,"Adam Applin",1,"Database Administrator","Day 2",Received,1588743619
+5,"Adam Applin",1,"Database Administrator","Day 3",Received,1588743620
+5,"Adam Applin",1,"Database Administrator","Day 3",Sent,1588743620
+5,"Adam Applin",1,"Database Administrator","Day 4",Received,1588743621
+5,"Adam Applin",1,"Database Administrator","Day 4",Received,1588743621
+5,"Adam Applin",1,"Database Administrator","Day 5",Received,1588743622
+12,"Mordecai Simple",1,"Database Administrator","Day 2",Received,1588743624
+12,"Mordecai Simple",1,"Database Administrator","Day 3",Received,1588743624
+12,"Mordecai Simple",1,"Database Administrator","Day 3",Forward,1588743624
+12,"Mordecai Simple",1,"Database Administrator","Day 2",Received,1588743625
+12,"Mordecai Simple",1,"Database Administrator","Day 1",Received,1588743625
+12,"Mordecai Simple",1,"Database Administrator","Day 5",Received,1588743625
+12,"Mordecai Simple",1,"Database Administrator","Day 4",Received,1588743627
+14,"Barney Miles",1,"Database Administrator","Day 1",Received,1588743629
+14,"Barney Miles",1,"Database Administrator","Day 1",Received,1588743629
+14,"Barney Miles",1,"Database Administrator","Day 2",Received,1588743630
+14,"Barney Miles",1,"Database Administrator","Day 3",Received,1588743631
+14,"Barney Miles",1,"Database Administrator","Day 5",Received,1588743642
+14,"Barney Miles",1,"Database Administrator","Day 3",Received,1588743649
+21,"Charles Wright",1,"Database Administrator","Day 1",Received,1588743635
+21,"Charles Wright",1,"Database Administrator","Day 1",Received,1588743637
+21,"Charles Wright",1,"Database Administrator","Day 5",Received,1588743640
+2,"Red Eye",2,"Civic Officer","Day 1",Sent,1588743610
+2,"Red Eye",2,"Civic Officer","Day 1",Received,1588743611
+2,"Red Eye",2,"Civic Officer","Day 2",Received,1588743612
+2,"Red Eye",2,"Civic Officer","Day 3",Received,1588743613
+2,"Red Eye",2,"Civic Officer","Day 4",Received,1588743613
+2,"Red Eye",2,"Civic Officer","Day 4",Received,1588743614
+2,"Red Eye",2,"Civic Officer","Day 5",Received,1588743614
+7,"Cinder Crash",2,"Civic Officer","Day 1",Received,1588743617
+7,"Cinder Crash",2,"Civic Officer","Day 1",Received,1588743618
+7,"Cinder Crash",2,"Civic Officer","Day 2",Sent,1588743619
+7,"Cinder Crash",2,"Civic Officer","Day 2",Sent,1588743619
+7,"Cinder Crash",2,"Civic Officer","Day 2",Received,1588743619
+7,"Cinder Crash",2,"Civic Officer","Day 3",Received,1588743620
+7,"Cinder Crash",2,"Civic Officer","Day 4",Received,1588743621
+7,"Cinder Crash",2,"Civic Officer","Day 4",Received,1588743621
+7,"Cinder Crash",2,"Civic Officer","Day 5",Sent,1588743622
+10,"Contra Ease",2,"Civic Officer","Day 4",Received,1588743624
+10,"Contra Ease",2,"Civic Officer","Day 3",Received,1588743624
+10,"Contra Ease",2,"Civic Officer","Day 1",Sent,1588743625
+10,"Contra Ease",2,"Civic Officer","Day 5",Received,1588743626
+13,"Hannibal Broly",2,"Civic Officer","Day 1",Received,1588743629
+13,"Hannibal Broly",2,"Civic Officer","Day 1",Received,1588743630
+13,"Hannibal Broly",2,"Civic Officer","Day 2",Received,1588743630
+13,"Hannibal Broly",2,"Civic Officer","Day 3",Received,1588743631
+13,"Hannibal Broly",2,"Civic Officer","Day 5",Received,1588743642
+13,"Hannibal Broly",2,"Civic Officer","Day 3",Received,1588743649
+22,"Manfred Von Karma",2,"Civic Officer","Day 1",Received,1588743635
+22,"Manfred Von Karma",2,"Civic Officer","Day 1",Sent,1588743635
+22,"Manfred Von Karma",2,"Civic Officer","Day 1",Received,1588743636
+22,"Manfred Von Karma",2,"Civic Officer","Day 1",Sent,1588743636
+22,"Manfred Von Karma",2,"Civic Officer","Day 2",Sent,1588743637
+22,"Manfred Von Karma",2,"Civic Officer","Day 2",Received,1588743637
+22,"Manfred Von Karma",2,"Civic Officer","Day 3",Sent,1588743637
+22,"Manfred Von Karma",2,"Civic Officer","Day 3",Received,1588743638
+22,"Manfred Von Karma",2,"Civic Officer","Day 4",Sent,1588743638
+22,"Manfred Von Karma",2,"Civic Officer","Day 4",Received,1588743639
+22,"Manfred Von Karma",2,"Civic Officer","Day 5",Received,1588743639
+3,"Corona Virus",3,"IT Associate","Day 1",Received,1588743611
+3,"Corona Virus",3,"IT Associate","Day 1",Sent,1588743612
+3,"Corona Virus",3,"IT Associate","Day 2",Received,1588743612
+3,"Corona Virus",3,"IT Associate","Day 3",Sent,1588743613
+3,"Corona Virus",3,"IT Associate","Day 4",Sent,1588743613
+3,"Corona Virus",3,"IT Associate","Day 5",Sent,1588743614
+8,"Draymond DK",3,"IT Associate","Day 1",Received,1588743617
+8,"Draymond DK",3,"IT Associate","Day 1",Received,1588743618
+8,"Draymond DK",3,"IT Associate","Day 3",Sent,1588743620
+8,"Draymond DK",3,"IT Associate","Day 4",Sent,1588743621
+8,"Draymond DK",3,"IT Associate","Day 4",Received,1588743621
+8,"Draymond DK",3,"IT Associate","Day 4",Sent,1588743621
+8,"Draymond DK",3,"IT Associate","Day 5",Received,1588743622
+11,"Kei Kaku",3,"IT Associate","Day 4",Sent,1588743624
+11,"Kei Kaku",3,"IT Associate","Day 3",Sent,1588743624
+11,"Kei Kaku",3,"IT Associate","Day 1",Received,1588743625
+11,"Kei Kaku",3,"IT Associate","Day 5",Sent,1588743625
+11,"Kei Kaku",3,"IT Associate","Day 5",Received,1588743626
+16,"Rena Logan",3,"IT Associate","Day 1",Received,1588743629
+16,"Rena Logan",3,"IT Associate","Day 1",Received,1588743629
+16,"Rena Logan",3,"IT Associate","Day 2",Received,1588743630
+16,"Rena Logan",3,"IT Associate","Day 3",Received,1588743631
+16,"Rena Logan",3,"IT Associate","Day 5",Received,1588743641
+16,"Rena Logan",3,"IT Associate","Day 3",Received,1588743649
+23,"Speed Racer",3,"IT Associate","Day 1",Received,1588743635
+23,"Speed Racer",3,"IT Associate","Day 1",Sent,1588743635
+23,"Speed Racer",3,"IT Associate","Day 1",Received,1588743636
+23,"Speed Racer",3,"IT Associate","Day 5",Sent,1588743639
+4,Warrior,4,"Emergency Response Specialist","Day 1",Received,1588743611
+4,Warrior,4,"Emergency Response Specialist","Day 1",Received,1588743612
+4,Warrior,4,"Emergency Response Specialist","Day 2",Sent,1588743612
+4,Warrior,4,"Emergency Response Specialist","Day 3",Sent,1588743613
+4,Warrior,4,"Emergency Response Specialist","Day 4",Received,1588743613
+4,Warrior,4,"Emergency Response Specialist","Day 4",Sent,1588743613
+4,Warrior,4,"Emergency Response Specialist","Day 5",Received,1588743614
+6,"Buster Boost",4,"Emergency Response Specialist","Day 1",Received,1588743617
+6,"Buster Boost",4,"Emergency Response Specialist","Day 1",Received,1588743618
+6,"Buster Boost",4,"Emergency Response Specialist","Day 1",Received,1588743618
+6,"Buster Boost",4,"Emergency Response Specialist","Day 2",Received,1588743619
+6,"Buster Boost",4,"Emergency Response Specialist","Day 2",Sent,1588743619
+6,"Buster Boost",4,"Emergency Response Specialist","Day 3",Sent,1588743620
+6,"Buster Boost",4,"Emergency Response Specialist","Day 3",Received,1588743620
+6,"Buster Boost",4,"Emergency Response Specialist","Day 4",Received,1588743621
+6,"Buster Boost",4,"Emergency Response Specialist","Day 4",Sent,1588743621
+6,"Buster Boost",4,"Emergency Response Specialist","Day 4",Received,1588743622
+6,"Buster Boost",4,"Emergency Response Specialist","Day 5",Received,1588743622
+9,"Eve Olve",4,"Emergency Response Specialist","Day 2",Sent,1588743624
+9,"Eve Olve",4,"Emergency Response Specialist","Day 2",Sent,1588743625
+9,"Eve Olve",4,"Emergency Response Specialist","Day 1",Received,1588743625
+9,"Eve Olve",4,"Emergency Response Specialist","Day 5",Received,1588743626
+9,"Eve Olve",4,"Emergency Response Specialist","Day 5",Sent,1588743626
+9,"Eve Olve",4,"Emergency Response Specialist","Day 4",Sent,1588743627
+15,"Kim Hines",4,"Emergency Response Specialist","Day 1",Sent,1588743629
+15,"Kim Hines",4,"Emergency Response Specialist","Day 1",Sent,1588743629
+15,"Kim Hines",4,"Emergency Response Specialist","Day 2",Sent,1588743630
+15,"Kim Hines",4,"Emergency Response Specialist","Day 3",Sent,1588743631
+15,"Kim Hines",4,"Emergency Response Specialist","Day 1",Sent,1588743644
+15,"Kim Hines",4,"Emergency Response Specialist","Day 2",Sent,1588743646
+15,"Kim Hines",4,"Emergency Response Specialist","Day 2",Received,1588743646
+15,"Kim Hines",4,"Emergency Response Specialist","Day 2",Sent,1588743647
+15,"Kim Hines",4,"Emergency Response Specialist","Day 3",Sent,1588743648
+15,"Kim Hines",4,"Emergency Response Specialist","Day 3",Received,1588743648
+15,"Kim Hines",4,"Emergency Response Specialist","Day 4",Sent,1588743651
+15,"Kim Hines",4,"Emergency Response Specialist","Day 4",Received,1588743651
+15,"Kim Hines",4,"Emergency Response Specialist","Day 5",Sent,1588743653
+15,"Kim Hines",4,"Emergency Response Specialist","Day 5",Received,1588743653
+15,"Kim Hines",4,"Emergency Response Specialist","Day 3",Received,1588743655
+15,"Kim Hines",4,"Emergency Response Specialist","Day 5",Sent,1588743656
+24,"Harold Jordan",4,"Emergency Response Specialist","Day 1",Sent,1588743634
+24,"Harold Jordan",4,"Emergency Response Specialist","Day 1",Received,1588743635
+24,"Harold Jordan",4,"Emergency Response Specialist","Day 1",Received,1588743635
+24,"Harold Jordan",4,"Emergency Response Specialist","Day 1",Sent,1588743636
+24,"Harold Jordan",4,"Emergency Response Specialist","Day 1",Received,1588743636
+24,"Harold Jordan",4,"Emergency Response Specialist","Day 2",Received,1588743637
+24,"Harold Jordan",4,"Emergency Response Specialist","Day 2",Sent,1588743637
+24,"Harold Jordan",4,"Emergency Response Specialist","Day 3",Received,1588743637
+24,"Harold Jordan",4,"Emergency Response Specialist","Day 3",Sent,1588743638
+24,"Harold Jordan",4,"Emergency Response Specialist","Day 4",Received,1588743638
+24,"Harold Jordan",4,"Emergency Response Specialist","Day 4",Sent,1588743639
+24,"Harold Jordan",4,"Emergency Response Specialist","Day 5",Received,1588743639

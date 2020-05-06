@@ -1,0 +1,149 @@
+actor_id,action_type,game_position,actor_name,role_type_id,person_id,role_type,username
+1,Sent,"Day 1","Bob Brown: Database Administrator",1,1,"Database Administrator",princesspeach12
+1,Received,"Day 1","Bob Brown: Database Administrator",1,1,"Database Administrator",princesspeach12
+1,Sent,"Day 2","Bob Brown: Database Administrator",1,1,"Database Administrator",princesspeach12
+1,Received,"Day 3","Bob Brown: Database Administrator",1,1,"Database Administrator",princesspeach12
+1,Received,"Day 4","Bob Brown: Database Administrator",1,1,"Database Administrator",princesspeach12
+1,Received,"Day 5","Bob Brown: Database Administrator",1,1,"Database Administrator",princesspeach12
+2,Sent,"Day 1","Red Eye: Civic Officer",2,2,"Civic Officer",luigiman45
+2,Received,"Day 1","Red Eye: Civic Officer",2,2,"Civic Officer",luigiman45
+2,Received,"Day 2","Red Eye: Civic Officer",2,2,"Civic Officer",luigiman45
+2,Received,"Day 3","Red Eye: Civic Officer",2,2,"Civic Officer",luigiman45
+2,Received,"Day 4","Red Eye: Civic Officer",2,2,"Civic Officer",luigiman45
+2,Received,"Day 4","Red Eye: Civic Officer",2,2,"Civic Officer",luigiman45
+2,Received,"Day 5","Red Eye: Civic Officer",2,2,"Civic Officer",luigiman45
+3,Received,"Day 1","Corona Virus: IT Associate",3,3,"IT Associate",wariorules
+3,Sent,"Day 1","Corona Virus: IT Associate",3,3,"IT Associate",wariorules
+3,Received,"Day 2","Corona Virus: IT Associate",3,3,"IT Associate",wariorules
+3,Sent,"Day 3","Corona Virus: IT Associate",3,3,"IT Associate",wariorules
+3,Sent,"Day 4","Corona Virus: IT Associate",3,3,"IT Associate",wariorules
+3,Sent,"Day 5","Corona Virus: IT Associate",3,3,"IT Associate",wariorules
+4,Received,"Day 1","Warrior: Emergency Response Specialist",4,4,"Emergency Response Specialist",mariomain1
+4,Received,"Day 1","Warrior: Emergency Response Specialist",4,4,"Emergency Response Specialist",mariomain1
+4,Sent,"Day 2","Warrior: Emergency Response Specialist",4,4,"Emergency Response Specialist",mariomain1
+4,Sent,"Day 3","Warrior: Emergency Response Specialist",4,4,"Emergency Response Specialist",mariomain1
+4,Received,"Day 4","Warrior: Emergency Response Specialist",4,4,"Emergency Response Specialist",mariomain1
+4,Sent,"Day 4","Warrior: Emergency Response Specialist",4,4,"Emergency Response Specialist",mariomain1
+4,Received,"Day 5","Warrior: Emergency Response Specialist",4,4,"Emergency Response Specialist",mariomain1
+6,Sent,"Day 1","Adam Applin: Database Administrator",1,5,"Database Administrator",catchemall890
+6,Sent,"Day 1","Adam Applin: Database Administrator",1,5,"Database Administrator",catchemall890
+6,Sent,"Day 1","Adam Applin: Database Administrator",1,5,"Database Administrator",catchemall890
+6,Received,"Day 2","Adam Applin: Database Administrator",1,5,"Database Administrator",catchemall890
+6,Received,"Day 3","Adam Applin: Database Administrator",1,5,"Database Administrator",catchemall890
+6,Sent,"Day 3","Adam Applin: Database Administrator",1,5,"Database Administrator",catchemall890
+6,Received,"Day 4","Adam Applin: Database Administrator",1,5,"Database Administrator",catchemall890
+6,Received,"Day 4","Adam Applin: Database Administrator",1,5,"Database Administrator",catchemall890
+6,Received,"Day 5","Adam Applin: Database Administrator",1,5,"Database Administrator",catchemall890
+7,Received,"Day 1","Cinder Crash: Civic Officer",2,7,"Civic Officer",gymbattler32
+7,Received,"Day 1","Cinder Crash: Civic Officer",2,7,"Civic Officer",gymbattler32
+7,Sent,"Day 2","Cinder Crash: Civic Officer",2,7,"Civic Officer",gymbattler32
+7,Received,"Day 2","Cinder Crash: Civic Officer",2,7,"Civic Officer",gymbattler32
+7,Sent,"Day 2","Cinder Crash: Civic Officer",2,7,"Civic Officer",gymbattler32
+7,Received,"Day 3","Cinder Crash: Civic Officer",2,7,"Civic Officer",gymbattler32
+7,Received,"Day 4","Cinder Crash: Civic Officer",2,7,"Civic Officer",gymbattler32
+7,Received,"Day 4","Cinder Crash: Civic Officer",2,7,"Civic Officer",gymbattler32
+7,Sent,"Day 5","Cinder Crash: Civic Officer",2,7,"Civic Officer",gymbattler32
+8,Received,"Day 1","Draymond DK: IT Associate",3,8,"IT Associate",dynamaximum
+8,Received,"Day 1","Draymond DK: IT Associate",3,8,"IT Associate",dynamaximum
+8,Sent,"Day 3","Draymond DK: IT Associate",3,8,"IT Associate",dynamaximum
+8,Sent,"Day 4","Draymond DK: IT Associate",3,8,"IT Associate",dynamaximum
+8,Received,"Day 4","Draymond DK: IT Associate",3,8,"IT Associate",dynamaximum
+8,Sent,"Day 4","Draymond DK: IT Associate",3,8,"IT Associate",dynamaximum
+8,Received,"Day 5","Draymond DK: IT Associate",3,8,"IT Associate",dynamaximum
+9,Received,"Day 1","Buster Boost: Emergency Response Specialist",4,6,"Emergency Response Specialist",pokemart21
+9,Received,"Day 1","Buster Boost: Emergency Response Specialist",4,6,"Emergency Response Specialist",pokemart21
+9,Received,"Day 1","Buster Boost: Emergency Response Specialist",4,6,"Emergency Response Specialist",pokemart21
+9,Received,"Day 2","Buster Boost: Emergency Response Specialist",4,6,"Emergency Response Specialist",pokemart21
+9,Sent,"Day 2","Buster Boost: Emergency Response Specialist",4,6,"Emergency Response Specialist",pokemart21
+9,Sent,"Day 3","Buster Boost: Emergency Response Specialist",4,6,"Emergency Response Specialist",pokemart21
+9,Received,"Day 3","Buster Boost: Emergency Response Specialist",4,6,"Emergency Response Specialist",pokemart21
+9,Received,"Day 4","Buster Boost: Emergency Response Specialist",4,6,"Emergency Response Specialist",pokemart21
+9,Sent,"Day 4","Buster Boost: Emergency Response Specialist",4,6,"Emergency Response Specialist",pokemart21
+9,Received,"Day 4","Buster Boost: Emergency Response Specialist",4,6,"Emergency Response Specialist",pokemart21
+9,Received,"Day 5","Buster Boost: Emergency Response Specialist",4,6,"Emergency Response Specialist",pokemart21
+11,Received,"Day 1","Mordecai Simple: Database Administrator",1,12,"Database Administrator",samuswins365
+11,Received,"Day 2","Mordecai Simple: Database Administrator",1,12,"Database Administrator",samuswins365
+11,Received,"Day 2","Mordecai Simple: Database Administrator",1,12,"Database Administrator",samuswins365
+11,Forward,"Day 3","Mordecai Simple: Database Administrator",1,12,"Database Administrator",samuswins365
+11,Received,"Day 3","Mordecai Simple: Database Administrator",1,12,"Database Administrator",samuswins365
+11,Received,"Day 4","Mordecai Simple: Database Administrator",1,12,"Database Administrator",samuswins365
+11,Received,"Day 5","Mordecai Simple: Database Administrator",1,12,"Database Administrator",samuswins365
+12,Sent,"Day 1","Contra Ease: Civic Officer",2,10,"Civic Officer",zerosuit09
+12,Received,"Day 3","Contra Ease: Civic Officer",2,10,"Civic Officer",zerosuit09
+12,Received,"Day 4","Contra Ease: Civic Officer",2,10,"Civic Officer",zerosuit09
+12,Received,"Day 5","Contra Ease: Civic Officer",2,10,"Civic Officer",zerosuit09
+13,Received,"Day 1","Kei Kaku: IT Associate",3,11,"IT Associate",ridleyistoobig
+13,Sent,"Day 3","Kei Kaku: IT Associate",3,11,"IT Associate",ridleyistoobig
+13,Sent,"Day 4","Kei Kaku: IT Associate",3,11,"IT Associate",ridleyistoobig
+13,Sent,"Day 5","Kei Kaku: IT Associate",3,11,"IT Associate",ridleyistoobig
+13,Received,"Day 5","Kei Kaku: IT Associate",3,11,"IT Associate",ridleyistoobig
+14,Received,"Day 1","Eve Olve: Emergency Response Specialist",4,9,"Emergency Response Specialist",metroidfan22
+14,Sent,"Day 2","Eve Olve: Emergency Response Specialist",4,9,"Emergency Response Specialist",metroidfan22
+14,Sent,"Day 2","Eve Olve: Emergency Response Specialist",4,9,"Emergency Response Specialist",metroidfan22
+14,Sent,"Day 4","Eve Olve: Emergency Response Specialist",4,9,"Emergency Response Specialist",metroidfan22
+14,Received,"Day 5","Eve Olve: Emergency Response Specialist",4,9,"Emergency Response Specialist",metroidfan22
+14,Sent,"Day 5","Eve Olve: Emergency Response Specialist",4,9,"Emergency Response Specialist",metroidfan22
+16,Received,"Day 1","Hannibal Broly: Civic Officer",2,13,"Civic Officer",kingofevil1
+16,Received,"Day 1","Hannibal Broly: Civic Officer",2,13,"Civic Officer",kingofevil1
+16,Received,"Day 2","Hannibal Broly: Civic Officer",2,13,"Civic Officer",kingofevil1
+16,Received,"Day 3","Hannibal Broly: Civic Officer",2,13,"Civic Officer",kingofevil1
+16,Received,"Day 3","Hannibal Broly: Civic Officer",2,13,"Civic Officer",kingofevil1
+16,Received,"Day 5","Hannibal Broly: Civic Officer",2,13,"Civic Officer",kingofevil1
+17,Received,"Day 1","Rena Logan: IT Associate",3,16,"IT Associate",triforce100
+17,Received,"Day 1","Rena Logan: IT Associate",3,16,"IT Associate",triforce100
+17,Received,"Day 2","Rena Logan: IT Associate",3,16,"IT Associate",triforce100
+17,Received,"Day 3","Rena Logan: IT Associate",3,16,"IT Associate",triforce100
+17,Received,"Day 3","Rena Logan: IT Associate",3,16,"IT Associate",triforce100
+17,Received,"Day 5","Rena Logan: IT Associate",3,16,"IT Associate",triforce100
+18,Received,"Day 1","Barney Miles: Database Administrator",1,14,"Database Administrator",windwaker45
+18,Received,"Day 1","Barney Miles: Database Administrator",1,14,"Database Administrator",windwaker45
+18,Received,"Day 2","Barney Miles: Database Administrator",1,14,"Database Administrator",windwaker45
+18,Received,"Day 3","Barney Miles: Database Administrator",1,14,"Database Administrator",windwaker45
+18,Received,"Day 3","Barney Miles: Database Administrator",1,14,"Database Administrator",windwaker45
+18,Received,"Day 5","Barney Miles: Database Administrator",1,14,"Database Administrator",windwaker45
+19,Sent,"Day 1","Kim Hines: Emergency Response Specialist",4,15,"Emergency Response Specialist",mastersword22
+19,Sent,"Day 1","Kim Hines: Emergency Response Specialist",4,15,"Emergency Response Specialist",mastersword22
+19,Sent,"Day 1","Kim Hines: Emergency Response Specialist",4,15,"Emergency Response Specialist",mastersword22
+19,Sent,"Day 2","Kim Hines: Emergency Response Specialist",4,15,"Emergency Response Specialist",mastersword22
+19,Sent,"Day 2","Kim Hines: Emergency Response Specialist",4,15,"Emergency Response Specialist",mastersword22
+19,Received,"Day 2","Kim Hines: Emergency Response Specialist",4,15,"Emergency Response Specialist",mastersword22
+19,Sent,"Day 2","Kim Hines: Emergency Response Specialist",4,15,"Emergency Response Specialist",mastersword22
+19,Received,"Day 3","Kim Hines: Emergency Response Specialist",4,15,"Emergency Response Specialist",mastersword22
+19,Sent,"Day 3","Kim Hines: Emergency Response Specialist",4,15,"Emergency Response Specialist",mastersword22
+19,Received,"Day 3","Kim Hines: Emergency Response Specialist",4,15,"Emergency Response Specialist",mastersword22
+19,Sent,"Day 3","Kim Hines: Emergency Response Specialist",4,15,"Emergency Response Specialist",mastersword22
+19,Sent,"Day 4","Kim Hines: Emergency Response Specialist",4,15,"Emergency Response Specialist",mastersword22
+19,Received,"Day 4","Kim Hines: Emergency Response Specialist",4,15,"Emergency Response Specialist",mastersword22
+19,Sent,"Day 5","Kim Hines: Emergency Response Specialist",4,15,"Emergency Response Specialist",mastersword22
+19,Received,"Day 5","Kim Hines: Emergency Response Specialist",4,15,"Emergency Response Specialist",mastersword22
+19,Sent,"Day 5","Kim Hines: Emergency Response Specialist",4,15,"Emergency Response Specialist",mastersword22
+26,Received,"Day 1","Charles Wright: Database Administrator",1,21,"Database Administrator",chaoscontroller7
+26,Received,"Day 1","Charles Wright: Database Administrator",1,21,"Database Administrator",chaoscontroller7
+26,Received,"Day 5","Charles Wright: Database Administrator",1,21,"Database Administrator",chaoscontroller7
+27,Received,"Day 1","Manfred Von Karma: Civic Officer",2,22,"Civic Officer",worldrings7
+27,Sent,"Day 1","Manfred Von Karma: Civic Officer",2,22,"Civic Officer",worldrings7
+27,Received,"Day 1","Manfred Von Karma: Civic Officer",2,22,"Civic Officer",worldrings7
+27,Sent,"Day 1","Manfred Von Karma: Civic Officer",2,22,"Civic Officer",worldrings7
+27,Sent,"Day 2","Manfred Von Karma: Civic Officer",2,22,"Civic Officer",worldrings7
+27,Received,"Day 2","Manfred Von Karma: Civic Officer",2,22,"Civic Officer",worldrings7
+27,Sent,"Day 3","Manfred Von Karma: Civic Officer",2,22,"Civic Officer",worldrings7
+27,Received,"Day 3","Manfred Von Karma: Civic Officer",2,22,"Civic Officer",worldrings7
+27,Sent,"Day 4","Manfred Von Karma: Civic Officer",2,22,"Civic Officer",worldrings7
+27,Received,"Day 4","Manfred Von Karma: Civic Officer",2,22,"Civic Officer",worldrings7
+27,Received,"Day 5","Manfred Von Karma: Civic Officer",2,22,"Civic Officer",worldrings7
+28,Received,"Day 1","Speed Racer: IT Associate",3,23,"IT Associate",superemerald7
+28,Sent,"Day 1","Speed Racer: IT Associate",3,23,"IT Associate",superemerald7
+28,Received,"Day 1","Speed Racer: IT Associate",3,23,"IT Associate",superemerald7
+28,Sent,"Day 5","Speed Racer: IT Associate",3,23,"IT Associate",superemerald7
+29,Received,"Day 1","Harold Jordan: Emergency Response Specialist",4,24,"Emergency Response Specialist",solemeralds7
+29,Received,"Day 1","Harold Jordan: Emergency Response Specialist",4,24,"Emergency Response Specialist",solemeralds7
+29,Sent,"Day 1","Harold Jordan: Emergency Response Specialist",4,24,"Emergency Response Specialist",solemeralds7
+29,Received,"Day 1","Harold Jordan: Emergency Response Specialist",4,24,"Emergency Response Specialist",solemeralds7
+29,Sent,"Day 1","Harold Jordan: Emergency Response Specialist",4,24,"Emergency Response Specialist",solemeralds7
+29,Received,"Day 2","Harold Jordan: Emergency Response Specialist",4,24,"Emergency Response Specialist",solemeralds7
+29,Sent,"Day 2","Harold Jordan: Emergency Response Specialist",4,24,"Emergency Response Specialist",solemeralds7
+29,Received,"Day 3","Harold Jordan: Emergency Response Specialist",4,24,"Emergency Response Specialist",solemeralds7
+29,Sent,"Day 3","Harold Jordan: Emergency Response Specialist",4,24,"Emergency Response Specialist",solemeralds7
+29,Received,"Day 4","Harold Jordan: Emergency Response Specialist",4,24,"Emergency Response Specialist",solemeralds7
+29,Sent,"Day 4","Harold Jordan: Emergency Response Specialist",4,24,"Emergency Response Specialist",solemeralds7
+29,Received,"Day 5","Harold Jordan: Emergency Response Specialist",4,24,"Emergency Response Specialist",solemeralds7
