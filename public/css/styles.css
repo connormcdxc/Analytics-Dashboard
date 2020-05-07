@@ -118,14 +118,6 @@ body.dark-mode {
     margin-left: 50px;
     margin-right: 50px;
   }
-  #p_holder {
-    display: flex;
-    justify-content: center;
-    margin: 15px;
-    background-color: black;
-    width: 320px;
-    height: 240px;
-  }
 }
 
 /*Phone formatting*/
@@ -146,14 +138,6 @@ body.dark-mode {
     justify-content: center;
     flex-direction: column;
     column-count: 1;
-  }
-  #p_holder {
-    display: flex;
-    justify-content: center;
-    background-color: black;
-    margin: 15px;
-    width: 256px;
-    height: 192px;
   }
 }
 
@@ -176,17 +160,10 @@ body.dark-mode {
     flex-direction: column;
     column-count: 1;
   }
-  #p_holder {
-    display: flex;
-    justify-content: center;
-    background-color: black;
-    margin: 15px;
-    width: 640px;
-    height: 480px;
-  }
 }
 
 .content h1 {
     display: flex;
     justify-content: center;
+    word-wrap: normal;
 }
