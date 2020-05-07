@@ -57,13 +57,11 @@ window.addEventListener("load", () => {
           },
           axisX: {
             title: "Role type",
-            interval: 1,
-            labelAutoFit: "true",
+            interval: 1
           },
           axisY: {
             title: "Number of messages",
-            interval: 5,
-            labelAutoFit: "true",
+            interval: 5
           },
           data: [
             {
@@ -110,13 +108,11 @@ window.addEventListener("load", () => {
           },
           axisX: {
             title: "person",
-            interval: 1,
-            labelAutoFit: "true",
+            interval: 1
           },
           axisY: {
             title: "Person ID",
-            interval: 1,
-            labelAutoFit: "true",
+            interval: 1
           },
           data: [
             {
@@ -152,13 +148,11 @@ window.addEventListener("load", () => {
           },
           axisX: {
             title: "person",
-            interval: 1,
-            labelAutoFit: "true",
+            interval: 1
           },
           axisY: {
             title: "Person ID",
-            interval: 1,
-            labelAutoFit: "true",
+            interval: 1
           },
           data: [
             {
@@ -199,19 +193,17 @@ window.addEventListener("load", () => {
           },
           axisX: {
             title: "person",
-            interval: 1,
-            labelAutoFit: "true",
+            interval: 1
           },
           axisY: {
             title: "Person ID",
-            interval: 1,
-            labelAutoFit: "true",
+            interval: 1
           },
           data: [
             {
               type: "pie",
               startAngle: 240,
-              indexLabel: "{label}: {y} messages",
+              indexLabel: "{label}: {y} messages sent",
               toolTipContent:
                 'Team ID: {label} <br>Messages sent: {y} messages',
               dataPoints: [
@@ -240,19 +232,17 @@ window.addEventListener("load", () => {
           },
           axisX: {
             title: "person",
-            interval: 1,
-            labelAutoFit: "true",
+            interval: 1
           },
           axisY: {
             title: "Person ID",
-            interval: 1,
-            labelAutoFit: "true",
+            interval: 1
           },
           data: [
             {
               type: "pie",
               startAngle: 240,
-              indexLabel: "{label}: {y} messages",
+              indexLabel: "{label}: {y} messages recieved",
               toolTipContent:
                 'Team ID: {label} <br>Messages recieved: {y} messages',
               dataPoints: [
@@ -280,13 +270,11 @@ window.addEventListener("load", () => {
           },
           axisX: {
             title: "Role type",
-            interval: 1,
-            labelAutoFit: "true",
+            interval: 1
           },
           axisY: {
             title: "Number of messages",
-            interval: 5,
-            labelAutoFit: "true",
+            interval: 5
           },
           data: [
             {
