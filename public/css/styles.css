@@ -232,7 +232,7 @@ body.dark-mode {
   }
 }
 
-.content h1, .content p {
+.content h1 {
     display: flex;
     justify-content: center;
     word-wrap: normal;
