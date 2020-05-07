@@ -14,12 +14,14 @@ var workingData = [];
 var response;
 sessionStorage.setItem("actors", fetch("/actors").then(res => res.json()));
 
-    
-  
+
+
 
 
 window.addEventListener("load", () => {
   const cont = document.querySelector("#chart7");
+  const cont2 = document.querySelector("#chart8");
+  const cont3 = document.querySelector("#chart9");
   const checkbox = document.querySelector("#dark");
   //console.log(sessionStorage.getItem("actors"));
 
@@ -51,8 +53,65 @@ window.addEventListener("load", () => {
           backgroundColor: null,
           animationEnabled: true,
           title: {
-            text: "Actor Test Chart",
+            text: "Messages sent/received by different roles",
             fontColor: "white"
+          },
+          axisX: {
+            title: "Role type",
+            interval: 1
+          },
+          axisY: {
+            title: "Number of messages",
+            interval: 1
+          },
+          data: [
+            {
+              type: "column",
+              toolTipContent:
+                'Role: {label} <br>Messages Sent: {y}',
+              dataPoints: [
+                { label: response["rows"][0].role_type, x: response["rows"][0].sent},
+                { label: response["rows"][1].role_type, y: response["rows"][1].sent },
+                { label: response["rows"][2].role_type, y: response["rows"][2].sent },
+                { label: response["rows"][3].role_type, y: response["rows"][3].sent },
+                { label: response["rows"][4].role_type, y: response["rows"][4].sent }
+              ]
+            },
+            {
+                type: "column",
+                toolTipContent:
+                  'Role: {label} <br>Messages Recieved: {y}',
+                dataPoints: [
+                  { label: response["rows"][0].role_type, x: response["rows"][0].received},
+                  { label: response["rows"][1].role_type, y: response["rows"][1].received },
+                  { label: response["rows"][2].role_type, y: response["rows"][2].received },
+                  { label: response["rows"][3].role_type, y: response["rows"][3].received },
+                  { label: response["rows"][4].role_type, y: response["rows"][4].received }
+                ]
+            }
+          ]
+        });
+        //chart7.dataPoints = { x: response["rows"][0].comment, y: response["rows"][0].person_id}
+        chart7.render();
+
+      });
+    }
+  }
+
+  function nodark() {
+    document.body.classList.remove("dark-mode");
+    checkbox.checked = false;
+    sessionStorage.setItem("mode", "light");
+    if (cont2) {
+      fetch("/TeamMessagesSent").then(data => data.json()).then(data => {
+        response = data;
+        const cont8 = document.querySelector("#chart8");
+          console.log(data);
+          var chart8 = new CanvasJS.Chart(cont8, {
+          backgroundColor: null,
+          animationEnabled: true,
+          title: {
+            text: "Messages sent from each team"
           },
           axisX: {
             title: "person",
@@ -64,35 +123,65 @@ window.addEventListener("load", () => {
           },
           data: [
             {
-              type: "bar",
+              type: "pie",
+              startAngle: 240,
+              indexLabel: "{label}: {y} messages sent",
               toolTipContent:
-                'Actor ID: {x} <br>Role Type ID:  {y}',
+                'Team ID: {label} <br>Messages sent: {y} messages',
               dataPoints: [
-                { x: response["rows"][0].actor_id, y: response["rows"][0].role_type_id },
-                { x: response["rows"][1].actor_id, y: response["rows"][1].role_type_id },
-                { x: response["rows"][2].actor_id, y: response["rows"][2].role_type_id },
-                { x: response["rows"][3].actor_id, y: response["rows"][3].role_type_id },
-                { x: response["rows"][4].actor_id, y: response["rows"][4].role_type_id },
-                { x: response["rows"][5].actor_id, y: response["rows"][5].role_type_id },
-                { x: response["rows"][6].actor_id, y: response["rows"][6].role_type_id },
-                { x: response["rows"][7].actor_id, y: response["rows"][7].role_type_id },
-                { x: response["rows"][8].actor_id, y: response["rows"][8].role_type_id },
-                { x: response["rows"][9].actor_id, y: response["rows"][9].role_type_id }
+                { y: response["rows"][0].count,  label: "Team " + response["rows"][0].team_id },
+                { y: response["rows"][1].count,  label: "Team " + response["rows"][1].team_id },
+                { y: response["rows"][2].count,  label: "Team " + response["rows"][2].team_id },
+                { y: response["rows"][3].count,  label: "Team " + response["rows"][3].team_id },
+                { y: response["rows"][4].count,  label: "Team " + response["rows"][4].team_id }
               ]
             }
           ]
         });
         //chart7.dataPoints = { x: response["rows"][0].comment, y: response["rows"][0].person_id}
-        chart7.render();
-  
+        chart8.render();
       });
     }
-  }
-
-  function nodark() {
-    document.body.classList.remove("dark-mode");
-    checkbox.checked = false;
-    sessionStorage.setItem("mode", "light");
+    if (cont3) {
+      fetch("/TeamMessagesRec").then(data => data.json()).then(data => {
+        response = data;
+        const cont9 = document.querySelector("#chart9");
+          console.log(data);
+          var chart8 = new CanvasJS.Chart(cont9, {
+          backgroundColor: null,
+          animationEnabled: true,
+          title: {
+            text: "Messages recieved from other teams"
+          },
+          axisX: {
+            title: "person",
+            interval: 1
+          },
+          axisY: {
+            title: "Person ID",
+            interval: 1
+          },
+          data: [
+            {
+              type: "pie",
+              startAngle: 240,
+              indexLabel: "{label}: {y} messages recieved",
+              toolTipContent:
+                'Team ID: {label} <br>Messages recieved: {y} messages',
+              dataPoints: [
+                { y: response["rows"][0].count,  label: "Team " + response["rows"][0].team_id },
+                { y: response["rows"][1].count,  label: "Team " + response["rows"][1].team_id },
+                { y: response["rows"][2].count,  label: "Team " + response["rows"][2].team_id },
+                { y: response["rows"][3].count,  label: "Team " + response["rows"][3].team_id },
+                { y: response["rows"][4].count,  label: "Team " + response["rows"][4].team_id }
+              ]
+            }
+          ]
+        });
+        //chart7.dataPoints = { x: response["rows"][0].comment, y: response["rows"][0].person_id}
+        chart8.render();
+      });
+    }
     if (cont) {
       fetch("/actors").then(data => data.json()).then(data => {
         response = data;
@@ -102,39 +191,47 @@ window.addEventListener("load", () => {
           backgroundColor: null,
           animationEnabled: true,
           title: {
-            text: "Actor Test Chart"
+            text: "Messages sent/received by different roles",
+            fontColor: "white"
           },
           axisX: {
-            title: "person",
+            title: "Role type",
             interval: 1
           },
           axisY: {
-            title: "Person ID",
-            interval: 1
+            title: "Number of messages",
+            interval: 5
           },
           data: [
             {
-              type: "bar",
+              type: "column",
               toolTipContent:
-                'Actor ID: {x} <br>Role Type ID:  {y}',
+                'Role: {label} <br>Messages Sent: {y}',
               dataPoints: [
-                { x: response["rows"][0].actor_id, y: response["rows"][0].role_type_id },
-                { x: response["rows"][1].actor_id, y: response["rows"][1].role_type_id },
-                { x: response["rows"][2].actor_id, y: response["rows"][2].role_type_id },
-                { x: response["rows"][3].actor_id, y: response["rows"][3].role_type_id },
-                { x: response["rows"][4].actor_id, y: response["rows"][4].role_type_id },
-                { x: response["rows"][5].actor_id, y: response["rows"][5].role_type_id },
-                { x: response["rows"][6].actor_id, y: response["rows"][6].role_type_id },
-                { x: response["rows"][7].actor_id, y: response["rows"][7].role_type_id },
-                { x: response["rows"][8].actor_id, y: response["rows"][8].role_type_id },
-                { x: response["rows"][9].actor_id, y: response["rows"][9].role_type_id }
+                { label: response["rows"][0].role_type, y: response["rows"][0].sent},
+                { label: response["rows"][1].role_type, y: response["rows"][1].sent },
+                { label: response["rows"][2].role_type, y: response["rows"][2].sent },
+                { label: response["rows"][3].role_type, y: response["rows"][3].sent },
+                { label: response["rows"][4].role_type, y: response["rows"][4].sent }
               ]
+            },
+            {
+                type: "column",
+                toolTipContent:
+                  'Role: {label} <br>Messages Recieved: {y}',
+                dataPoints: [
+                  { label: response["rows"][0].role_type, y: response["rows"][0].received},
+                  { label: response["rows"][1].role_type, y: response["rows"][1].received },
+                  { label: response["rows"][2].role_type, y: response["rows"][2].received },
+                  { label: response["rows"][3].role_type, y: response["rows"][3].received },
+                  { label: response["rows"][4].role_type, y: response["rows"][4].received }
+                ]
             }
           ]
         });
         //chart7.dataPoints = { x: response["rows"][0].comment, y: response["rows"][0].person_id}
         chart7.render();
-  
+
       });
     }
   }
