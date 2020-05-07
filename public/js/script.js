@@ -55,7 +55,7 @@ window.addEventListener("load", () => {
           },
           axisX: {
             labelFontColor: "white",
-            labelFontSize: 10,
+            labelFontSize: 15,
             labelAngle: -45,
             title: "Role type",
             interval: 1,
@@ -453,7 +453,7 @@ window.addEventListener("load", () => {
           },
           axisX: {
             title: "Role type",
-            labelFontSize: 10,
+            labelFontSize: 15,
             labelAngle: -45,
             interval: 1,
           },
