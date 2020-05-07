@@ -14,6 +14,10 @@ var workingData = [];
 var response;
 sessionStorage.setItem("actors", fetch("/actors").then(res => res.json()));
 
+
+
+
+
 window.addEventListener("load", () => {
   const cont = document.querySelector("#chart7");
   const cont2 = document.querySelector("#chart8");
@@ -59,6 +63,7 @@ window.addEventListener("load", () => {
             labelAngle: -45,
             title: "Role type",
             interval: 1,
+            labelWrap: true,
           },
           axisY: {
             labelFontColor: "white",
@@ -72,11 +77,11 @@ window.addEventListener("load", () => {
               toolTipContent:
                 'Role: {label} <br>Messages Sent: {y}',
               dataPoints: [
-                { label: "DB Admin", y: response["rows"][0].sent},
-                { label: "Civic Officer", y: response["rows"][1].sent },
-                { label: "IT Associate", y: response["rows"][2].sent },
-                { label: "ER Specialist", y: response["rows"][3].sent },
-                { label: "Boss", y: response["rows"][4].sent }
+                { label: response["rows"][0].role_type, y: response["rows"][0].sent},
+                { label: response["rows"][1].role_type, y: response["rows"][1].sent },
+                { label: response["rows"][2].role_type, y: response["rows"][2].sent },
+                { label: response["rows"][3].role_type, y: response["rows"][3].sent },
+                { label: response["rows"][4].role_type, y: response["rows"][4].sent }
               ]
             },
             {
@@ -84,11 +89,11 @@ window.addEventListener("load", () => {
                 toolTipContent:
                   'Role: {label} <br>Messages Recieved: {y}',
                 dataPoints: [
-                  { label: "DB Admin", y: response["rows"][0].received},
-                  { label: "Civic Officer", y: response["rows"][1].received },
-                  { label: "IT Associate", y: response["rows"][2].received },
-                  { label: "ER Specialist", y: response["rows"][3].received },
-                  { label: "Boss", y: response["rows"][4].sent }
+                  { label: response["rows"][0].role_type, y: response["rows"][0].received},
+                  { label: response["rows"][1].role_type, y: response["rows"][1].received },
+                  { label: response["rows"][2].role_type, y: response["rows"][2].received },
+                  { label: response["rows"][3].role_type, y: response["rows"][3].received },
+                  { label: response["rows"][4].role_type, y: response["rows"][4].received }
                 ]
             }
           ]
@@ -307,7 +312,7 @@ window.addEventListener("load", () => {
           var chart11 = new CanvasJS.Chart(cont5, {
           backgroundColor: null,
           animationEnabled: true,
-          title: {            
+          title: {
             fontColor: "white",
             text: "Messages sent/received by different roles",
           },
@@ -456,6 +461,7 @@ window.addEventListener("load", () => {
             labelFontSize: 15,
             labelAngle: -45,
             interval: 1,
+            labelWrap: true
           },
           axisY: {
             title: "Number of messages",
@@ -468,11 +474,11 @@ window.addEventListener("load", () => {
               toolTipContent:
                 'Role: {label} <br>Messages Sent: {y}',
               dataPoints: [
-                { label: "DB Admin", y: response["rows"][0].sent},
-                { label: "Civic Officer", y: response["rows"][1].sent },
-                { label: "IT Associate", y: response["rows"][2].sent },
-                { label: "ER Specialist", y: response["rows"][3].sent },
-                { label: "Boss", y: response["rows"][4].sent }
+                { label: response["rows"][0].role_type, y: response["rows"][0].sent},
+                { label: response["rows"][1].role_type, y: response["rows"][1].sent },
+                { label: response["rows"][2].role_type, y: response["rows"][2].sent },
+                { label: response["rows"][3].role_type, y: response["rows"][3].sent },
+                { label: response["rows"][4].role_type, y: response["rows"][4].sent }
               ]
             },
             {
@@ -480,11 +486,11 @@ window.addEventListener("load", () => {
                 toolTipContent:
                   'Role: {label} <br>Messages Recieved: {y}',
                 dataPoints: [
-                  { label: "DB Admin", y: response["rows"][0].received},
-                  { label: "Civic Officer", y: response["rows"][1].received },
-                  { label: "IT Associate", y: response["rows"][2].received },
-                  { label: "ER Specialist", y: response["rows"][3].received },
-                  { label: "Boss", y: response["rows"][4].sent }
+                  { label: response["rows"][0].role_type, y: response["rows"][0].received},
+                  { label: response["rows"][1].role_type, y: response["rows"][1].received },
+                  { label: response["rows"][2].role_type, y: response["rows"][2].received },
+                  { label: response["rows"][3].role_type, y: response["rows"][3].received },
+                  { label: response["rows"][4].role_type, y: response["rows"][4].received }
                 ]
             }
           ]
@@ -493,7 +499,7 @@ window.addEventListener("load", () => {
 
       });
     }
-    if(cont4) {
+    if (cont4) {
       fetch("/teammsg1").then(data => data.json()).then(data => {
         response = data;
         const cont10 = document.querySelector("#chart10");
@@ -502,7 +508,7 @@ window.addEventListener("load", () => {
           backgroundColor: null,
           animationEnabled: true,
           title: {
-            text: "Number of messages actions per team"
+            text: "Number of messages actions per team",
           },
           toolTip: {
             shared: true
@@ -600,7 +606,7 @@ window.addEventListener("load", () => {
           ]
         });
         chart10.render();
-      })
+      });
     }
     }
     if (cont5) {
@@ -654,6 +660,3 @@ window.addEventListener("load", () => {
     });
   }
 });
-
-
-
