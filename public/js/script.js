@@ -47,9 +47,8 @@ window.addEventListener("load", () => {
     if (cont) {
       fetch("/actors").then(data => data.json()).then(data => {
         response = data;
-        const cont7 = document.querySelector("#chart7");
           console.log(data);
-          var chart7 = new CanvasJS.Chart(cont7, {
+          var chart7 = new CanvasJS.Chart(cont, {
           backgroundColor: null,
           animationEnabled: true,
           title: {
@@ -62,7 +61,7 @@ window.addEventListener("load", () => {
           },
           axisY: {
             title: "Number of messages",
-            interval: 1
+            interval: 5
           },
           data: [
             {
@@ -267,9 +266,8 @@ window.addEventListener("load", () => {
     if (cont) {
       fetch("/actors").then(data => data.json()).then(data => {
         response = data;
-        const cont7 = document.querySelector("#chart7");
           console.log(data);
-          var chart7 = new CanvasJS.Chart(cont7, {
+          var chart7 = new CanvasJS.Chart(cont, {
           backgroundColor: null,
           animationEnabled: true,
           title: {
