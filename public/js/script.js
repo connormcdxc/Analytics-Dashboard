@@ -221,6 +221,7 @@ window.addEventListener("load", () => {
             {
               name: "Team 1",
               showInLegend: true,
+              labelFontColor: "white",
               type: "line",
               axisYType: "secondary",
               //indexLabel: "{y} messages",
@@ -237,6 +238,7 @@ window.addEventListener("load", () => {
               type: "line",
               name: "Team 2",
               showInLegend: true,
+              labelFontColor: "white",
               axisYType: "secondary",
               //indexLabel: "{y} messages",
               toolTipContent:
@@ -252,6 +254,7 @@ window.addEventListener("load", () => {
               type: "line",
               name: "Team 3",
               showInLegend: true,
+              labelFontColor: "white",
               axisYType: "secondary",
               //indexLabel: "{y} messages",
               toolTipContent:
@@ -267,6 +270,7 @@ window.addEventListener("load", () => {
               type: "line",
               name: "Team 4",
               showInLegend: true,
+              labelFontColor: "white",
               axisYType: "secondary",
               toolTipContent:
                 'Team: 4, Day: {x} <br>Messages sent/received: {y}',
@@ -282,6 +286,7 @@ window.addEventListener("load", () => {
               axisYType: "secondary",
               name: "Team 5",
               showInLegend: true,
+              labelFontColor: "white",
               //indexLabel: "{y} messages",
               toolTipContent:
                 'Team: 5, Day: {x} <br>Messages sent/received: {y}',
