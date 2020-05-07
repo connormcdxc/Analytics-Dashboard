@@ -313,8 +313,8 @@ window.addEventListener("load", () => {
           backgroundColor: null,
           animationEnabled: true,
           title: {
-            fontColor: "white",
             text: "Messages sent/received by different roles",
+            fontColor: "white"
           },
           axisX: {
             title: "Role ID",
