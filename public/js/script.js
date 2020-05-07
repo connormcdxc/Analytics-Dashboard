@@ -14,10 +14,6 @@ var workingData = [];
 var response;
 sessionStorage.setItem("actors", fetch("/actors").then(res => res.json()));
 
-
-
-
-
 window.addEventListener("load", () => {
   const cont = document.querySelector("#chart7");
   const cont2 = document.querySelector("#chart8");
@@ -58,9 +54,10 @@ window.addEventListener("load", () => {
           },
           axisX: {
             labelFontColor: "white",
+            labelFontSize: 10,
+            labelAngle: -45,
             title: "Role type",
             interval: 1,
-            labelWrap: true,
           },
           axisY: {
             labelFontColor: "white",
@@ -74,11 +71,11 @@ window.addEventListener("load", () => {
               toolTipContent:
                 'Role: {label} <br>Messages Sent: {y}',
               dataPoints: [
-                { label: response["rows"][0].role_type, y: response["rows"][0].sent},
-                { label: response["rows"][1].role_type, y: response["rows"][1].sent },
-                { label: response["rows"][2].role_type, y: response["rows"][2].sent },
-                { label: response["rows"][3].role_type, y: response["rows"][3].sent },
-                { label: response["rows"][4].role_type, y: response["rows"][4].sent }
+                { label: "DB Admin", y: response["rows"][0].sent},
+                { label: "Civic Officer", y: response["rows"][1].sent },
+                { label: "IT Associate", y: response["rows"][2].sent },
+                { label: "ER Specialist", y: response["rows"][3].sent },
+                { label: "Boss", y: response["rows"][4].sent }
               ]
             },
             {
@@ -86,11 +83,11 @@ window.addEventListener("load", () => {
                 toolTipContent:
                   'Role: {label} <br>Messages Recieved: {y}',
                 dataPoints: [
-                  { label: response["rows"][0].role_type, y: response["rows"][0].received},
-                  { label: response["rows"][1].role_type, y: response["rows"][1].received },
-                  { label: response["rows"][2].role_type, y: response["rows"][2].received },
-                  { label: response["rows"][3].role_type, y: response["rows"][3].received },
-                  { label: response["rows"][4].role_type, y: response["rows"][4].received }
+                  { label: "DB Admin", y: response["rows"][0].received},
+                  { label: "Civic Officer", y: response["rows"][1].received },
+                  { label: "IT Associate", y: response["rows"][2].received },
+                  { label: "ER Specialist", y: response["rows"][3].received },
+                  { label: "Boss", y: response["rows"][4].sent }
                 ]
             }
           ]
@@ -186,6 +183,121 @@ window.addEventListener("load", () => {
         });
         chart8.render();
       });
+    }
+    if(cont4) {
+      fetch("/teammsg1").then(data => data.json()).then(data => {
+        response = data;
+        const cont10 = document.querySelector("#chart10");
+          console.log(data);
+          var chart10 = new CanvasJS.Chart(cont10, {
+          backgroundColor: null,
+          animationEnabled: true,
+          title: {
+            text: "Number of messages actions per team",
+            fontColor:"white"
+          },
+          toolTip: {
+            shared: true
+          },
+          legend: {
+		          cursor: "pointer",
+		          verticalAlign: "top",
+		          horizontalAlign: "center",
+		          dockInsidePlotArea: true,
+	        },
+          axisX: {
+            title: "In game day",
+            interval: 1
+          },
+          axisY: {
+            title: "Number of messages",
+            interval: 1
+          },
+          data: [
+            {
+              name: "Team 1",
+              showInLegend: true,
+              labelFontColor: "white",
+              type: "line",
+              axisYType: "secondary",
+              //indexLabel: "{y} messages",
+              toolTipContent:
+                'Team: 1, Day: {x} <br>Messages sent/received: {y}',
+              dataPoints: [
+                { x: 1,  y: response["rows"][0].day1 },
+                { x: 2,  y: response["rows"][0].day2 },
+                { x: 3,  y: response["rows"][0].day3 },
+                { x: 4,  y: response["rows"][0].day4 },
+                { x: 5,  y: response["rows"][0].day5 }
+              ]
+            }, {
+              type: "line",
+              name: "Team 2",
+              showInLegend: true,
+              labelFontColor: "white",
+              axisYType: "secondary",
+              //indexLabel: "{y} messages",
+              toolTipContent:
+                'Team: 2, Day: {x} <br>Messages sent/received: {y}',
+              dataPoints: [
+                { x: 1,  y: response["rows"][1].day1 },
+                { x: 2,  y: response["rows"][1].day2 },
+                { x: 3,  y: response["rows"][1].day3 },
+                { x: 4,  y: response["rows"][1].day4 },
+                { x: 5,  y: response["rows"][1].day5 }
+              ]
+            }, {
+              type: "line",
+              name: "Team 3",
+              showInLegend: true,
+              labelFontColor: "white",
+              axisYType: "secondary",
+              //indexLabel: "{y} messages",
+              toolTipContent:
+                'Team: 3, Day: {x} <br>Messages sent/received: {y}',
+              dataPoints: [
+                { x: 1,  y: response["rows"][2].day1 },
+                { x: 2,  y: response["rows"][2].day2 },
+                { x: 3,  y: response["rows"][2].day3 },
+                { x: 4,  y: response["rows"][2].day4 },
+                { x: 5,  y: response["rows"][2].day5 }
+              ]
+            }, {
+              type: "line",
+              name: "Team 4",
+              showInLegend: true,
+              labelFontColor: "white",
+              axisYType: "secondary",
+              toolTipContent:
+                'Team: 4, Day: {x} <br>Messages sent/received: {y}',
+              dataPoints: [
+                { x: 1,  y: response["rows"][3].day1 },
+                { x: 2,  y: response["rows"][3].day2 },
+                { x: 3,  y: response["rows"][3].day3 },
+                { x: 4,  y: response["rows"][3].day4 },
+                { x: 5,  y: response["rows"][3].day5 }
+              ]
+            }, {
+              type: "line",
+              axisYType: "secondary",
+              name: "Team 5",
+              showInLegend: true,
+              labelFontColor: "white",
+              //indexLabel: "{y} messages",
+              toolTipContent:
+                'Team: 5, Day: {x} <br>Messages sent/received: {y}',
+              dataPoints: [
+                { x: 1,  y: response["rows"][4].day1 },
+                { x: 2,  y: response["rows"][4].day2 },
+                { x: 3,  y: response["rows"][4].day3 },
+                { x: 4,  y: response["rows"][4].day4 },
+                { x: 5,  y: response["rows"][4].day5 }
+              ]
+            }
+          ]
+        });
+        chart10.render();
+      })
     }
   }
 
@@ -287,8 +399,9 @@ window.addEventListener("load", () => {
           },
           axisX: {
             title: "Role type",
+            labelFontSize: 10,
+            labelAngle: -45,
             interval: 1,
-            labelWrap: true
           },
           axisY: {
             title: "Number of messages",
@@ -301,11 +414,11 @@ window.addEventListener("load", () => {
               toolTipContent:
                 'Role: {label} <br>Messages Sent: {y}',
               dataPoints: [
-                { label: response["rows"][0].role_type, y: response["rows"][0].sent},
-                { label: response["rows"][1].role_type, y: response["rows"][1].sent },
-                { label: response["rows"][2].role_type, y: response["rows"][2].sent },
-                { label: response["rows"][3].role_type, y: response["rows"][3].sent },
-                { label: response["rows"][4].role_type, y: response["rows"][4].sent }
+                { label: "DB Admin", y: response["rows"][0].sent},
+                { label: "Civic Officer", y: response["rows"][1].sent },
+                { label: "IT Associate", y: response["rows"][2].sent },
+                { label: "ER Specialist", y: response["rows"][3].sent },
+                { label: "Boss", y: response["rows"][4].sent }
               ]
             },
             {
@@ -313,11 +426,11 @@ window.addEventListener("load", () => {
                 toolTipContent:
                   'Role: {label} <br>Messages Recieved: {y}',
                 dataPoints: [
-                  { label: response["rows"][0].role_type, y: response["rows"][0].received},
-                  { label: response["rows"][1].role_type, y: response["rows"][1].received },
-                  { label: response["rows"][2].role_type, y: response["rows"][2].received },
-                  { label: response["rows"][3].role_type, y: response["rows"][3].received },
-                  { label: response["rows"][4].role_type, y: response["rows"][4].received }
+                  { label: "DB Admin", y: response["rows"][0].received},
+                  { label: "Civic Officer", y: response["rows"][1].received },
+                  { label: "IT Associate", y: response["rows"][2].received },
+                  { label: "ER Specialist", y: response["rows"][3].received },
+                  { label: "Boss", y: response["rows"][4].sent }
                 ]
             }
           ]
@@ -326,7 +439,7 @@ window.addEventListener("load", () => {
 
       });
     }
-    if (cont4) {
+    if(cont4) {
       fetch("/teammsg1").then(data => data.json()).then(data => {
         response = data;
         const cont10 = document.querySelector("#chart10");
@@ -335,7 +448,7 @@ window.addEventListener("load", () => {
           backgroundColor: null,
           animationEnabled: true,
           title: {
-            text: "Number of messages actions per team",
+            text: "Number of messages actions per team"
           },
           toolTip: {
             shared: true
@@ -433,7 +546,7 @@ window.addEventListener("load", () => {
           ]
         });
         chart10.render();
-      });
+      })
     }
   }
 });
