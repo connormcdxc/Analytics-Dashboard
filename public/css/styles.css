@@ -252,4 +252,12 @@ body.dark-mode {
     display: flex;
     justify-content: center;
     word-wrap: normal;
+    flex-direction: column;
+    column-count: 1;
+    justify-items: center;
+}
+
+.content h1, .content p {
+  display: flex;
+  justify-content: center;
 }
