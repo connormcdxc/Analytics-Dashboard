@@ -52,8 +52,7 @@ window.addEventListener("load", () => {
           backgroundColor: null,
           animationEnabled: true,
           title: {
-            text: "Messages sent/received by different roles",
-            fontColor: "white"
+            text: "Messages sent/received by different roles"
           },
           axisX: {
             title: "Role type",
@@ -69,7 +68,7 @@ window.addEventListener("load", () => {
               toolTipContent:
                 'Role: {label} <br>Messages Sent: {y}',
               dataPoints: [
-                { label: response["rows"][0].role_type, x: response["rows"][0].sent},
+                { label: response["rows"][0].role_type, y: response["rows"][0].sent},
                 { label: response["rows"][1].role_type, y: response["rows"][1].sent },
                 { label: response["rows"][2].role_type, y: response["rows"][2].sent },
                 { label: response["rows"][3].role_type, y: response["rows"][3].sent },
@@ -81,7 +80,7 @@ window.addEventListener("load", () => {
                 toolTipContent:
                   'Role: {label} <br>Messages Recieved: {y}',
                 dataPoints: [
-                  { label: response["rows"][0].role_type, x: response["rows"][0].received},
+                  { label: response["rows"][0].role_type, y: response["rows"][0].received},
                   { label: response["rows"][1].role_type, y: response["rows"][1].received },
                   { label: response["rows"][2].role_type, y: response["rows"][2].received },
                   { label: response["rows"][3].role_type, y: response["rows"][3].received },
@@ -90,7 +89,6 @@ window.addEventListener("load", () => {
             }
           ]
         });
-        //chart7.dataPoints = { x: response["rows"][0].comment, y: response["rows"][0].person_id}
         chart7.render();
 
       });
@@ -132,7 +130,6 @@ window.addEventListener("load", () => {
             }
           ]
         });
-        //chart7.dataPoints = { x: response["rows"][0].comment, y: response["rows"][0].person_id}
         chart8.render();
       });
     }
@@ -173,7 +170,6 @@ window.addEventListener("load", () => {
             }
           ]
         });
-        //chart7.dataPoints = { x: response["rows"][0].comment, y: response["rows"][0].person_id}
         chart8.render();
       });
     }
@@ -219,7 +215,6 @@ window.addEventListener("load", () => {
             }
           ]
         });
-        //chart7.dataPoints = { x: response["rows"][0].comment, y: response["rows"][0].person_id}
         chart8.render();
       });
     }
@@ -259,7 +254,6 @@ window.addEventListener("load", () => {
             }
           ]
         });
-        //chart7.dataPoints = { x: response["rows"][0].comment, y: response["rows"][0].person_id}
         chart8.render();
       });
     }
@@ -309,7 +303,6 @@ window.addEventListener("load", () => {
             }
           ]
         });
-        //chart7.dataPoints = { x: response["rows"][0].comment, y: response["rows"][0].person_id}
         chart7.render();
 
       });
