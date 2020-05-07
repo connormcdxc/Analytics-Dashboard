@@ -333,11 +333,11 @@ window.addEventListener("load", () => {
               toolTipContent:
                 'Role: {x} <br>Messages Sent: {y}',
               dataPoints: [
-                { y: "DB Admin", x: response["rows"][0].role_type_id},
-                { y: "Civic Officer", x: response["rows"][1].role_type_id},
-                { y: "IT Associate", x: response["rows"][2].role_type_id},
-                { y: "ER Specialist", x: response["rows"][3].role_type_id},
-                { y: "Boss", x: response["rows"][4].role_type_id}
+                { y: 1, x: response["rows"][0].role_type_id},
+                { y: 2, x: response["rows"][1].role_type_id},
+                { y: 3, x: response["rows"][2].role_type_id},
+                { y: 4, x: response["rows"][3].role_type_id},
+                { y: 4, x: response["rows"][4].role_type_id}
               ]
             },
             {
@@ -346,11 +346,11 @@ window.addEventListener("load", () => {
                 toolTipContent:
                   'Role: {x} <br>Messages Received: {y}',
                 dataPoints: [
-                  { y: "DB Amin", x: response["rows"][0].role_type_id},
-                  { y: "Civic Officer", x: response["rows"][1].role_type_id},
-                  { y: "IT Associate", x: response["rows"][2].role_type_id},
-                  { y: "ER Specialist", x: response["rows"][3].role_type_id},
-                  { y: "Boss", x: response["rows"][4].role_type_id}
+                  { y: 1, x: response["rows"][0].role_type_id},
+                  { y: 2, x: response["rows"][1].role_type_id},
+                  { y: 3, x: response["rows"][2].role_type_id},
+                  { y: 4, x: response["rows"][3].role_type_id},
+                  { y: 5, x: response["rows"][4].role_type_id}
                 ]
             }
           ]
