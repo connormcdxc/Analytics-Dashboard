@@ -14,10 +14,6 @@ var workingData = [];
 var response;
 sessionStorage.setItem("actors", fetch("/actors").then(res => res.json()));
 
-
-
-
-
 window.addEventListener("load", () => {
   const cont = document.querySelector("#chart7");
   const cont2 = document.querySelector("#chart8");
