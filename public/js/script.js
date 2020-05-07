@@ -18,6 +18,8 @@ window.addEventListener("load", () => {
   const cont = document.querySelector("#chart7");
   const cont2 = document.querySelector("#chart8");
   const cont3 = document.querySelector("#chart9");
+  const cont4 = document.querySelector("#chart10");
+  const cont5 = document.querySelector("#chart11");
   const checkbox = document.querySelector("#dark");
   //console.log(sessionStorage.getItem("actors"));
 
