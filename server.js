@@ -110,6 +110,45 @@ app.get("/actors", (req, res) => {
     connection.end(function() {});
   });
 });
+app.get("/teamactions", (req, res) => {
+  var connection = mysql.createConnection({
+    //Host and login info will have to be changed if we use AWS, currently pointing to my database
+    host: "162.241.216.56",
+    user: "connorm4_490user",
+    password: "InfoCap490",
+    database: "connorm4_inst490"
+  });
+  var actors;
+  // connect to mysql
+  connection.connect(function(err) {
+    // in case of error
+    if (err) {
+      console.log(err.code);
+      console.log(err.fatal);
+    }
+    $query = "select g.role_type, g.role_type_id, COUNT(CASE WHEN action_type LIKE 'Sent' THEN 1 END) AS sent, COUNT(CASE WHEN action_type LIKE 'Received' THEN 1 END) AS received, COUNT(CASE WHEN action_type LIKE 'Forward' THEN 1 END) AS forward from message_actions m inner join actors a on m.actor_id = a.actor_id inner join role_types g on a.role_type_id = g.role_type_id group by g.role_type_id";
+    connection.query($query, function(err, rows, fields) {
+      if (err) {
+        console.log("An error ocurred performing the query.");
+        return;
+      }
+      var obj = JSON.stringify(rows);
+      var obj2 = JSON.parse(obj);
+      //actors = obj;
+      console.log(obj2);
+      //var obj = JSON.parse(rows);
+      //console.log(rows);
+      res.send({ rows: obj2 });
+      //console.log(rows);
+      //console.log(actors);
+      //console.log(obj);
+
+      //console.log("Query succesfully executed: ", rows);
+    });
+    // Close the database connection
+    connection.end(function() {});
+  });
+});
 app.get("/teammsg1", (req, res) => {
   var connection = mysql.createConnection({
     //Host and login info will have to be changed if we use AWS, currently pointing to my database

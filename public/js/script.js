@@ -437,3 +437,57 @@ window.addEventListener("load", () => {
     }
   }
 });
+/*
+const cont5 = document.querySelector("#chart11");
+if (cont5) {
+  fetch("/actors").then(data => data.json()).then(data => {
+    response = data;
+      console.log(data);
+      var chart11 = new CanvasJS.Chart(cont5, {
+      backgroundColor: null,
+      animationEnabled: true,
+      title: {
+        text: "Messages sent/received by different roles",
+      },
+      axisX: {
+        title: "Role ID",
+        labelWrap: true,
+      },
+      axisY: {
+        title: "Number of Messages",
+        labelWrap: true
+      },
+      data: [
+        {
+          type: "stackedBar",
+          name: "Sent",
+          toolTipContent:
+            'Role: {x} <br>Messages Sent: {y}',
+          dataPoints: [
+            { y: response["rows"][0].sent, x: response["rows"][0].role_type_id},
+            { y: response["rows"][1].sent, x: response["rows"][1].role_type_id},
+            { y: response["rows"][2].sent, x: response["rows"][2].role_type_id},
+            { y: response["rows"][3].sent, x: response["rows"][3].role_type_id},
+            { y: response["rows"][4].sent, x: response["rows"][4].role_type_id}
+          ]
+        },
+        {
+            type: "stackedBar",
+            name: "Received",
+            toolTipContent:
+              'Role: {x} <br>Messages Received: {y}',
+            dataPoints: [
+              { y: response["rows"][0].received, x: response["rows"][0].role_type_id},
+              { y: response["rows"][1].received, x: response["rows"][1].role_type_id},
+              { y: response["rows"][2].received, x: response["rows"][2].role_type_id},
+              { y: response["rows"][3].received, x: response["rows"][3].role_type_id},
+              { y: response["rows"][4].received, x: response["rows"][4].role_type_id}
+            ]
+        }
+      ]
+    });
+    chart11.render();
+
+  });
+}
+*/
