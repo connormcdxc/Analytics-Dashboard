@@ -47,14 +47,13 @@ window.addEventListener("load", () => {
     if (cont) {
       fetch("/actors").then(data => data.json()).then(data => {
         response = data;
-        const cont7 = document.querySelector("#chart7");
           console.log(data);
-          var chart7 = new CanvasJS.Chart(cont7, {
+          var chart7 = new CanvasJS.Chart(cont, {
           backgroundColor: null,
           animationEnabled: true,
           title: {
             text: "Messages sent/received by different roles",
-            fontColor: "white"
+            fontColor: "white",
           },
           axisX: {
             title: "Role type",
@@ -62,7 +61,7 @@ window.addEventListener("load", () => {
           },
           axisY: {
             title: "Number of messages",
-            interval: 1
+            interval: 5
           },
           data: [
             {
@@ -70,7 +69,7 @@ window.addEventListener("load", () => {
               toolTipContent:
                 'Role: {label} <br>Messages Sent: {y}',
               dataPoints: [
-                { label: response["rows"][0].role_type, x: response["rows"][0].sent},
+                { label: response["rows"][0].role_type, y: response["rows"][0].sent},
                 { label: response["rows"][1].role_type, y: response["rows"][1].sent },
                 { label: response["rows"][2].role_type, y: response["rows"][2].sent },
                 { label: response["rows"][3].role_type, y: response["rows"][3].sent },
@@ -82,7 +81,7 @@ window.addEventListener("load", () => {
                 toolTipContent:
                   'Role: {label} <br>Messages Recieved: {y}',
                 dataPoints: [
-                  { label: response["rows"][0].role_type, x: response["rows"][0].received},
+                  { label: response["rows"][0].role_type, y: response["rows"][0].received},
                   { label: response["rows"][1].role_type, y: response["rows"][1].received },
                   { label: response["rows"][2].role_type, y: response["rows"][2].received },
                   { label: response["rows"][3].role_type, y: response["rows"][3].received },
@@ -91,9 +90,88 @@ window.addEventListener("load", () => {
             }
           ]
         });
-        //chart7.dataPoints = { x: response["rows"][0].comment, y: response["rows"][0].person_id}
         chart7.render();
 
+      });
+    }
+    if (cont2) {
+      fetch("/TeamMessagesSent").then(data => data.json()).then(data => {
+        response = data;
+        const cont8 = document.querySelector("#chart8");
+          console.log(data);
+          var chart8 = new CanvasJS.Chart(cont8, {
+          backgroundColor: null,
+          animationEnabled: true,
+          title: {
+            text: "Messages sent from each team",
+            fontColor: "white",
+          },
+          axisX: {
+            title: "person",
+            interval: 1
+          },
+          axisY: {
+            title: "Person ID",
+            interval: 1
+          },
+          data: [
+            {
+              type: "pie",
+              startAngle: 240,
+              indexLabel: "{label}: {y} messages sent",
+              toolTipContent:
+                'Team ID: {label} <br>Messages sent: {y} messages',
+              dataPoints: [
+                { y: response["rows"][0].count,  label: "Team " + response["rows"][0].team_id },
+                { y: response["rows"][1].count,  label: "Team " + response["rows"][1].team_id },
+                { y: response["rows"][2].count,  label: "Team " + response["rows"][2].team_id },
+                { y: response["rows"][3].count,  label: "Team " + response["rows"][3].team_id },
+                { y: response["rows"][4].count,  label: "Team " + response["rows"][4].team_id }
+              ]
+            }
+          ]
+        });
+        chart8.render();
+      });
+    }
+    if (cont3) {
+      fetch("/TeamMessagesRec").then(data => data.json()).then(data => {
+        response = data;
+        const cont9 = document.querySelector("#chart9");
+          console.log(data);
+          var chart8 = new CanvasJS.Chart(cont9, {
+          backgroundColor: null,
+          animationEnabled: true,
+          title: {
+            text: "Messages recieved from other teams",
+            fontColor: "white",
+          },
+          axisX: {
+            title: "person",
+            interval: 1
+          },
+          axisY: {
+            title: "Person ID",
+            interval: 1
+          },
+          data: [
+            {
+              type: "pie",
+              startAngle: 240,
+              indexLabel: "{label}: {y} messages recieved",
+              toolTipContent:
+                'Team ID: {label} <br>Messages recieved: {y} messages',
+              dataPoints: [
+                { y: response["rows"][0].count,  label: "Team " + response["rows"][0].team_id },
+                { y: response["rows"][1].count,  label: "Team " + response["rows"][1].team_id },
+                { y: response["rows"][2].count,  label: "Team " + response["rows"][2].team_id },
+                { y: response["rows"][3].count,  label: "Team " + response["rows"][3].team_id },
+                { y: response["rows"][4].count,  label: "Team " + response["rows"][4].team_id }
+              ]
+            }
+          ]
+        });
+        chart8.render();
       });
     }
   }
@@ -111,7 +189,7 @@ window.addEventListener("load", () => {
           backgroundColor: null,
           animationEnabled: true,
           title: {
-            text: "Messages sent from each team"
+            text: "Messages sent from each team",
           },
           axisX: {
             title: "person",
@@ -138,7 +216,6 @@ window.addEventListener("load", () => {
             }
           ]
         });
-        //chart7.dataPoints = { x: response["rows"][0].comment, y: response["rows"][0].person_id}
         chart8.render();
       });
     }
@@ -178,16 +255,14 @@ window.addEventListener("load", () => {
             }
           ]
         });
-        //chart7.dataPoints = { x: response["rows"][0].comment, y: response["rows"][0].person_id}
         chart8.render();
       });
     }
     if (cont) {
       fetch("/actors").then(data => data.json()).then(data => {
         response = data;
-        const cont7 = document.querySelector("#chart7");
           console.log(data);
-          var chart7 = new CanvasJS.Chart(cont7, {
+          var chart7 = new CanvasJS.Chart(cont, {
           backgroundColor: null,
           animationEnabled: true,
           title: {
@@ -228,7 +303,6 @@ window.addEventListener("load", () => {
             }
           ]
         });
-        //chart7.dataPoints = { x: response["rows"][0].comment, y: response["rows"][0].person_id}
         chart7.render();
 
       });
