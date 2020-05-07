@@ -39,7 +39,9 @@ span.slide {
   background: #dadada;
   border-radius: 30px;
 }
-
+.main {
+  margin-top:50px;
+}
 .switch{
   display: flex;
   justify-content: center;
@@ -57,7 +59,9 @@ span.slide:before {
   box-shadow: rgba(0, 0, 0, 0.21) 0px 0px 7px 1px;
 }
 
-
+.canvasjs-chart-canvas {
+  width:100% !important;
+}
 #dark:checked + span.slide:before {
   transform: translatex(40px);
 }
@@ -79,14 +83,14 @@ body.dark-mode {
     color: white;
     background-color: #408080;
     -webkit-text-stroke-color: darkblue;
-    -webkit-text-stroke-width: 1px; 
+    -webkit-text-stroke-width: 1px;
     padding-left: 10px;
     padding-right: 10px;
 }
 
 .w3-bar-block a{
   -webkit-text-stroke-color: darkblue;
-  -webkit-text-stroke-width: 1px; 
+  -webkit-text-stroke-width: 1px;
 
 }
 
@@ -96,7 +100,7 @@ body.dark-mode {
   color: white;
   background-color: #408080;
   -webkit-text-stroke-color: darkblue;
-  -webkit-text-stroke-width: 1px; 
+  -webkit-text-stroke-width: 1px;
 }
 
 
@@ -108,7 +112,7 @@ body.dark-mode {
   .w3-auto {
     max-width: 100%;
   }
-  
+
   .main {
     display: flex;
     justify-content: center;
@@ -117,6 +121,7 @@ body.dark-mode {
     margin-top: 60px;
     margin-left: 50px;
     margin-right: 50px;
+    margin-top:50px;
   }
 }
 

@@ -125,7 +125,7 @@ window.addEventListener("load", () => {
             {
               type: "pie",
               startAngle: 240,
-              indexLabel: "{label}: {y} messages sent",
+              indexLabel: "{label}: {y} messages",
               toolTipContent:
                 'Team ID: {label} <br>Messages sent: {y} messages',
               dataPoints: [
@@ -165,7 +165,7 @@ window.addEventListener("load", () => {
             {
               type: "pie",
               startAngle: 240,
-              indexLabel: "{label}: {y} messages recieved",
+              indexLabel: "{label}: {y} messages",
               toolTipContent:
                 'Team ID: {label} <br>Messages recieved: {y} messages',
               dataPoints: [
@@ -192,7 +192,6 @@ window.addEventListener("load", () => {
           animationEnabled: true,
           title: {
             text: "Messages sent/received by different roles",
-            fontColor: "white"
           },
           axisX: {
             title: "Role type",
