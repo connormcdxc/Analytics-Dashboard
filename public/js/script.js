@@ -323,7 +323,6 @@ window.addEventListener("load", () => {
           },
           axisY: {
             title: "Number of Messages",
-            labelFontColor: "white",
             labelWrap: true
           },
           data: [
