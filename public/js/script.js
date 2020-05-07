@@ -52,7 +52,8 @@ window.addEventListener("load", () => {
           backgroundColor: null,
           animationEnabled: true,
           title: {
-            text: "Messages sent/received by different roles"
+            text: "Messages sent/received by different roles",
+            fontColor: "white",
           },
           axisX: {
             title: "Role type",
@@ -266,7 +267,6 @@ window.addEventListener("load", () => {
           animationEnabled: true,
           title: {
             text: "Messages sent/received by different roles",
-            fontColor: "white"
           },
           axisX: {
             title: "Role type",
