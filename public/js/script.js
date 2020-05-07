@@ -307,7 +307,8 @@ window.addEventListener("load", () => {
           var chart11 = new CanvasJS.Chart(cont5, {
           backgroundColor: null,
           animationEnabled: true,
-          title: {
+          title: {            
+            fontColor: "white",
             text: "Messages sent/received by different roles",
           },
           axisX: {
