@@ -57,11 +57,13 @@ window.addEventListener("load", () => {
           },
           axisX: {
             title: "Role type",
-            interval: 1
+            interval: 1,
+            labelAutoFit: "true",
           },
           axisY: {
             title: "Number of messages",
-            interval: 5
+            interval: 5,
+            labelAutoFit: "true",
           },
           data: [
             {
@@ -108,11 +110,13 @@ window.addEventListener("load", () => {
           },
           axisX: {
             title: "person",
-            interval: 1
+            interval: 1,
+            labelAutoFit: "true",
           },
           axisY: {
             title: "Person ID",
-            interval: 1
+            interval: 1,
+            labelAutoFit: "true",
           },
           data: [
             {
@@ -148,11 +152,13 @@ window.addEventListener("load", () => {
           },
           axisX: {
             title: "person",
-            interval: 1
+            interval: 1,
+            labelAutoFit: "true",
           },
           axisY: {
             title: "Person ID",
-            interval: 1
+            interval: 1,
+            labelAutoFit: "true",
           },
           data: [
             {
@@ -193,11 +199,13 @@ window.addEventListener("load", () => {
           },
           axisX: {
             title: "person",
-            interval: 1
+            interval: 1,
+            labelAutoFit: "true",
           },
           axisY: {
             title: "Person ID",
-            interval: 1
+            interval: 1,
+            labelAutoFit: "true",
           },
           data: [
             {
@@ -232,11 +240,13 @@ window.addEventListener("load", () => {
           },
           axisX: {
             title: "person",
-            interval: 1
+            interval: 1,
+            labelAutoFit: "true",
           },
           axisY: {
             title: "Person ID",
-            interval: 1
+            interval: 1,
+            labelAutoFit: "true",
           },
           data: [
             {
@@ -270,11 +280,13 @@ window.addEventListener("load", () => {
           },
           axisX: {
             title: "Role type",
-            interval: 1
+            interval: 1,
+            labelAutoFit: "true",
           },
           axisY: {
             title: "Number of messages",
-            interval: 5
+            interval: 5,
+            labelAutoFit: "true",
           },
           data: [
             {
