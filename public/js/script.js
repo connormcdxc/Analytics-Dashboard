@@ -58,12 +58,14 @@ window.addEventListener("load", () => {
           axisX: {
             title: "Role type",
             interval: 1,
-            labelWrap: true
+            labelWrap: true,
+            labelFontColor: "white",
           },
           axisY: {
             title: "Number of messages",
             interval: 5,
             labelWrap: true
+            labelFontColor: "white",
           },
           data: [
             {
@@ -112,11 +114,13 @@ window.addEventListener("load", () => {
             title: "person",
             interval: 1,
             labelWrap: true
+            labelFontColor: "white",
           },
           axisY: {
             title: "Person ID",
             interval: 1,
             labelWrap: true
+            labelFontColor: "white",
           },
           data: [
             {
@@ -154,11 +158,13 @@ window.addEventListener("load", () => {
             title: "person",
             interval: 1,
             labelWrap: true
+            labelFontColor: "white",
           },
           axisY: {
             title: "Person ID",
             interval: 1,
             labelWrap: true
+            labelFontColor: "white",
           },
           data: [
             {
