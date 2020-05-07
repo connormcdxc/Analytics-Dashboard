@@ -23,6 +23,7 @@ window.addEventListener("load", () => {
   const cont2 = document.querySelector("#chart8");
   const cont3 = document.querySelector("#chart9");
   const cont4 = document.querySelector("#chart10");
+  const cont5 = document.querySelector("#chart11");
   const checkbox = document.querySelector("#dark");
   //console.log(sessionStorage.getItem("actors"));
 
@@ -58,6 +59,8 @@ window.addEventListener("load", () => {
           },
           axisX: {
             labelFontColor: "white",
+            labelFontSize: 15,
+            labelAngle: -45,
             title: "Role type",
             interval: 1,
             labelWrap: true,
@@ -187,6 +190,174 @@ window.addEventListener("load", () => {
         chart8.render();
       });
     }
+    if(cont4) {
+      fetch("/teammsg1").then(data => data.json()).then(data => {
+        response = data;
+        const cont10 = document.querySelector("#chart10");
+          console.log(data);
+          var chart10 = new CanvasJS.Chart(cont10, {
+          backgroundColor: null,
+          animationEnabled: true,
+          title: {
+            text: "Number of messages actions per team",
+            fontColor:"white"
+          },
+          toolTip: {
+            shared: true
+          },
+          legend: {
+		          cursor: "pointer",
+		          verticalAlign: "top",
+		          horizontalAlign: "center",
+		          dockInsidePlotArea: true,
+	        },
+          axisX: {
+            title: "In game day",
+            interval: 1
+          },
+          axisY: {
+            title: "Number of messages",
+            interval: 1
+          },
+          data: [
+            {
+              name: "Team 1",
+              showInLegend: true,
+              labelFontColor: "white",
+              type: "line",
+              axisYType: "secondary",
+              //indexLabel: "{y} messages",
+              toolTipContent:
+                'Team: 1, Day: {x} <br>Messages sent/received: {y}',
+              dataPoints: [
+                { x: 1,  y: response["rows"][0].day1 },
+                { x: 2,  y: response["rows"][0].day2 },
+                { x: 3,  y: response["rows"][0].day3 },
+                { x: 4,  y: response["rows"][0].day4 },
+                { x: 5,  y: response["rows"][0].day5 }
+              ]
+            }, {
+              type: "line",
+              name: "Team 2",
+              showInLegend: true,
+              labelFontColor: "white",
+              axisYType: "secondary",
+              //indexLabel: "{y} messages",
+              toolTipContent:
+                'Team: 2, Day: {x} <br>Messages sent/received: {y}',
+              dataPoints: [
+                { x: 1,  y: response["rows"][1].day1 },
+                { x: 2,  y: response["rows"][1].day2 },
+                { x: 3,  y: response["rows"][1].day3 },
+                { x: 4,  y: response["rows"][1].day4 },
+                { x: 5,  y: response["rows"][1].day5 }
+              ]
+            }, {
+              type: "line",
+              name: "Team 3",
+              showInLegend: true,
+              labelFontColor: "white",
+              axisYType: "secondary",
+              //indexLabel: "{y} messages",
+              toolTipContent:
+                'Team: 3, Day: {x} <br>Messages sent/received: {y}',
+              dataPoints: [
+                { x: 1,  y: response["rows"][2].day1 },
+                { x: 2,  y: response["rows"][2].day2 },
+                { x: 3,  y: response["rows"][2].day3 },
+                { x: 4,  y: response["rows"][2].day4 },
+                { x: 5,  y: response["rows"][2].day5 }
+              ]
+            }, {
+              type: "line",
+              name: "Team 4",
+              showInLegend: true,
+              labelFontColor: "white",
+              axisYType: "secondary",
+              toolTipContent:
+                'Team: 4, Day: {x} <br>Messages sent/received: {y}',
+              dataPoints: [
+                { x: 1,  y: response["rows"][3].day1 },
+                { x: 2,  y: response["rows"][3].day2 },
+                { x: 3,  y: response["rows"][3].day3 },
+                { x: 4,  y: response["rows"][3].day4 },
+                { x: 5,  y: response["rows"][3].day5 }
+              ]
+            }, {
+              type: "line",
+              axisYType: "secondary",
+              name: "Team 5",
+              showInLegend: true,
+              labelFontColor: "white",
+              //indexLabel: "{y} messages",
+              toolTipContent:
+                'Team: 5, Day: {x} <br>Messages sent/received: {y}',
+              dataPoints: [
+                { x: 1,  y: response["rows"][4].day1 },
+                { x: 2,  y: response["rows"][4].day2 },
+                { x: 3,  y: response["rows"][4].day3 },
+                { x: 4,  y: response["rows"][4].day4 },
+                { x: 5,  y: response["rows"][4].day5 }
+              ]
+            }
+          ]
+        });
+        chart10.render();
+      })
+    }
+    if (cont5) {
+      fetch("/actors").then(data => data.json()).then(data => {
+        response = data;
+          console.log(data);
+          var chart11 = new CanvasJS.Chart(cont5, {
+          backgroundColor: null,
+          animationEnabled: true,
+          title: {
+            fontColor: "white",
+            text: "Messages sent/received by different roles",
+          },
+          axisX: {
+            title: "Role ID",
+            labelFontColor: "white",
+            labelWrap: true,
+          },
+          axisY: {
+            title: "Number of Messages",
+            labelFontColor: "white",
+            labelWrap: true
+          },
+          data: [
+            {
+              type: "stackedBar",
+              name: "Sent",
+              toolTipContent:
+                'Role: {x} <br>Messages Sent: {y}',
+              dataPoints: [
+                { y: response["rows"][0].sent, x: response["rows"][0].role_type_id},
+                { y: response["rows"][1].sent, x: response["rows"][1].role_type_id},
+                { y: response["rows"][2].sent, x: response["rows"][2].role_type_id},
+                { y: response["rows"][3].sent, x: response["rows"][3].role_type_id},
+                { y: response["rows"][4].sent, x: response["rows"][4].role_type_id}
+              ]
+            },
+            {
+                type: "stackedBar",
+                name: "Received",
+                toolTipContent:
+                  'Role: {x} <br>Messages Received: {y}',
+                dataPoints: [
+                  { y: response["rows"][0].received, x: response["rows"][0].role_type_id},
+                  { y: response["rows"][1].received, x: response["rows"][1].role_type_id},
+                  { y: response["rows"][2].received, x: response["rows"][2].role_type_id},
+                  { y: response["rows"][3].received, x: response["rows"][3].role_type_id},
+                  { y: response["rows"][4].received, x: response["rows"][4].role_type_id}
+                ]
+            }
+          ]
+        });
+        chart11.render();
+      });
+    }
   }
 
   function nodark() {
@@ -287,6 +458,8 @@ window.addEventListener("load", () => {
           },
           axisX: {
             title: "Role type",
+            labelFontSize: 15,
+            labelAngle: -45,
             interval: 1,
             labelWrap: true
           },
@@ -435,61 +608,55 @@ window.addEventListener("load", () => {
         chart10.render();
       });
     }
+    }
+    if (cont5) {
+      fetch("/actors").then(data => data.json()).then(data => {
+        response = data;
+          console.log(data);
+          var chart11 = new CanvasJS.Chart(cont5, {
+          backgroundColor: null,
+          animationEnabled: true,
+          title: {
+            text: "Messages sent/received by different roles",
+          },
+          axisX: {
+            title: "Role ID",
+            labelWrap: true,
+          },
+          axisY: {
+            title: "Number of Messages",
+            labelWrap: true
+          },
+          data: [
+            {
+              type: "stackedBar",
+              name: "Sent",
+              toolTipContent:
+                'Role: {x} <br>Messages Sent: {y}',
+              dataPoints: [
+                { y: response["rows"][0].sent, x: response["rows"][0].role_type_id},
+                { y: response["rows"][1].sent, x: response["rows"][1].role_type_id},
+                { y: response["rows"][2].sent, x: response["rows"][2].role_type_id},
+                { y: response["rows"][3].sent, x: response["rows"][3].role_type_id},
+                { y: response["rows"][4].sent, x: response["rows"][4].role_type_id}
+              ]
+            },
+            {
+                type: "stackedBar",
+                name: "Received",
+                toolTipContent:
+                  'Role: {x} <br>Messages Received: {y}',
+                dataPoints: [
+                  { y: response["rows"][0].received, x: response["rows"][0].role_type_id},
+                  { y: response["rows"][1].received, x: response["rows"][1].role_type_id},
+                  { y: response["rows"][2].received, x: response["rows"][2].role_type_id},
+                  { y: response["rows"][3].received, x: response["rows"][3].role_type_id},
+                  { y: response["rows"][4].received, x: response["rows"][4].role_type_id}
+                ]
+            }
+          ]
+        });
+        chart11.render();
+    });
   }
 });
-/*
-const cont5 = document.querySelector("#chart11");
-if (cont5) {
-  fetch("/actors").then(data => data.json()).then(data => {
-    response = data;
-      console.log(data);
-      var chart11 = new CanvasJS.Chart(cont5, {
-      backgroundColor: null,
-      animationEnabled: true,
-      title: {
-        text: "Messages sent/received by different roles",
-      },
-      axisX: {
-        title: "Role ID",
-        labelWrap: true,
-      },
-      axisY: {
-        title: "Number of Messages",
-        labelWrap: true
-      },
-      data: [
-        {
-          type: "stackedBar",
-          name: "Sent",
-          toolTipContent:
-            'Role: {x} <br>Messages Sent: {y}',
-          dataPoints: [
-            { y: response["rows"][0].sent, x: response["rows"][0].role_type_id},
-            { y: response["rows"][1].sent, x: response["rows"][1].role_type_id},
-            { y: response["rows"][2].sent, x: response["rows"][2].role_type_id},
-            { y: response["rows"][3].sent, x: response["rows"][3].role_type_id},
-            { y: response["rows"][4].sent, x: response["rows"][4].role_type_id}
-          ]
-        },
-        {
-            type: "stackedBar",
-            name: "Received",
-            toolTipContent:
-              'Role: {x} <br>Messages Received: {y}',
-            dataPoints: [
-              { y: response["rows"][0].received, x: response["rows"][0].role_type_id},
-              { y: response["rows"][1].received, x: response["rows"][1].role_type_id},
-              { y: response["rows"][2].received, x: response["rows"][2].role_type_id},
-              { y: response["rows"][3].received, x: response["rows"][3].role_type_id},
-              { y: response["rows"][4].received, x: response["rows"][4].role_type_id}
-            ]
-        }
-      ]
-    });
-    chart11.render();
-
-  });
-}
-
-
-*/
