@@ -93,7 +93,6 @@ window.addEventListener("load", () => {
           ]
         });
         chart7.render();
-
       });
     }
     if (cont2) {
@@ -184,7 +183,7 @@ window.addEventListener("load", () => {
         chart8.render();
       });
     }
-    if(cont4) {
+    if (cont4) {
       fetch("/teammsg1").then(data => data.json()).then(data => {
         response = data;
         const cont10 = document.querySelector("#chart10");
