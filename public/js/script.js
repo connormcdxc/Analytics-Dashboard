@@ -606,7 +606,7 @@ window.addEventListener("load", () => {
       })
     }
     if (cont5) {
-      fetch("/teamactions").then(data => data.json()).then(data => {
+      fetch("/actors").then(data => data.json()).then(data => {
         response = data;
           console.log(data);
           var chart11 = new CanvasJS.Chart(cont5, {
