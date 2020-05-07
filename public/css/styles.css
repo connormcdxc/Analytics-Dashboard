@@ -167,3 +167,8 @@ body.dark-mode {
     justify-content: center;
     word-wrap: normal;
 }
+
+p {
+  display: flex;
+  justify-content: center;
+}
