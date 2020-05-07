@@ -159,10 +159,11 @@ body.dark-mode {
   .content h1 {
     margin-top:20px;
   }
-  
+
   #chart8, #chart9 {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     width: 100%
   }
   
