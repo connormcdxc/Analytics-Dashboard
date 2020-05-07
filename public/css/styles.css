@@ -241,7 +241,7 @@ body.dark-mode {
   }
 }
 
-.content h1 {
+.content h1, .content p {
     display: flex;
     justify-content: center;
     word-wrap: normal;
