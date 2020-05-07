@@ -328,11 +328,11 @@ window.addEventListener("load", () => {
               toolTipContent:
                 'Role: {x} <br>Messages Sent: {y}',
               dataPoints: [
-                { y: response["rows"][0].sent, x: response["rows"][0].role_type_id},
-                { y: response["rows"][1].sent, x: response["rows"][1].role_type_id},
-                { y: response["rows"][2].sent, x: response["rows"][2].role_type_id},
-                { y: response["rows"][3].sent, x: response["rows"][3].role_type_id},
-                { y: response["rows"][4].sent, x: response["rows"][4].role_type_id}
+                { y: "DB Admin", x: response["rows"][0].role_type_id},
+                { y: "Civic Officer", x: response["rows"][1].role_type_id},
+                { y: "IT Associate", x: response["rows"][2].role_type_id},
+                { y: "ER Specialist", x: response["rows"][3].role_type_id},
+                { y: "Boss", x: response["rows"][4].role_type_id}
               ]
             },
             {
@@ -341,11 +341,11 @@ window.addEventListener("load", () => {
                 toolTipContent:
                   'Role: {x} <br>Messages Received: {y}',
                 dataPoints: [
-                  { y: response["rows"][0].received, x: response["rows"][0].role_type_id},
-                  { y: response["rows"][1].received, x: response["rows"][1].role_type_id},
-                  { y: response["rows"][2].received, x: response["rows"][2].role_type_id},
-                  { y: response["rows"][3].received, x: response["rows"][3].role_type_id},
-                  { y: response["rows"][4].received, x: response["rows"][4].role_type_id}
+                  { y: "DB Amin", x: response["rows"][0].role_type_id},
+                  { y: "Civic Officer", x: response["rows"][1].role_type_id},
+                  { y: "IT Associate", x: response["rows"][2].role_type_id},
+                  { y: "ER Specialist", x: response["rows"][3].role_type_id},
+                  { y: "Boss", x: response["rows"][4].role_type_id}
                 ]
             }
           ]
@@ -628,11 +628,11 @@ window.addEventListener("load", () => {
               toolTipContent:
                 'Role: {x} <br>Messages Sent: {y}',
               dataPoints: [
-                { y: response["rows"][0].sent, x: response["rows"][0].role_type_id},
-                { y: response["rows"][1].sent, x: response["rows"][1].role_type_id},
-                { y: response["rows"][2].sent, x: response["rows"][2].role_type_id},
-                { y: response["rows"][3].sent, x: response["rows"][3].role_type_id},
-                { y: response["rows"][4].sent, x: response["rows"][4].role_type_id}
+                { y: "DB Admin", x: response["rows"][0].role_type_id},
+                { y: "Civic Officer", x: response["rows"][1].role_type_id},
+                { y: "IT Associate", x: response["rows"][2].role_type_id},
+                { y: "ER Specialist", x: response["rows"][3].role_type_id},
+                { y: "Boss", x: response["rows"][4].role_type_id}
               ]
             },
             {
@@ -641,11 +641,11 @@ window.addEventListener("load", () => {
                 toolTipContent:
                   'Role: {x} <br>Messages Received: {y}',
                 dataPoints: [
-                  { y: response["rows"][0].received, x: response["rows"][0].role_type_id},
-                  { y: response["rows"][1].received, x: response["rows"][1].role_type_id},
-                  { y: response["rows"][2].received, x: response["rows"][2].role_type_id},
-                  { y: response["rows"][3].received, x: response["rows"][3].role_type_id},
-                  { y: response["rows"][4].received, x: response["rows"][4].role_type_id}
+                  { y: "DB Amin", x: response["rows"][0].role_type_id},
+                  { y: "Civic Officer", x: response["rows"][1].role_type_id},
+                  { y: "IT Associate", x: response["rows"][2].role_type_id},
+                  { y: "ER Specialist", x: response["rows"][3].role_type_id},
+                  { y: "Boss", x: response["rows"][4].role_type_id}
                 ]
             }
           ]
