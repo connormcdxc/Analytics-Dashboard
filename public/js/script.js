@@ -451,6 +451,7 @@ window.addEventListener("load", () => {
           },
           axisX: {
             title: "Role type",
+            labelAngle: -20
             interval: 1,
             labelWrap: true
           },
