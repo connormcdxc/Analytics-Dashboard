@@ -14,10 +14,6 @@ var workingData = [];
 var response;
 sessionStorage.setItem("actors", fetch("/actors").then(res => res.json()));
 
-
-
-
-
 window.addEventListener("load", () => {
   const cont = document.querySelector("#chart7");
   const cont2 = document.querySelector("#chart8");
@@ -75,11 +71,11 @@ window.addEventListener("load", () => {
               toolTipContent:
                 'Role: {label} <br>Messages Sent: {y}',
               dataPoints: [
-                { label: response["rows"][0].role_type, y: response["rows"][0].sent},
-                { label: response["rows"][1].role_type, y: response["rows"][1].sent },
-                { label: response["rows"][2].role_type, y: response["rows"][2].sent },
-                { label: response["rows"][3].role_type, y: response["rows"][3].sent },
-                { label: response["rows"][4].role_type, y: response["rows"][4].sent }
+                { label: "DB Admin", y: response["rows"][0].sent},
+                { label: "Civic Officer", y: response["rows"][1].sent },
+                { label: "IT Associate", y: response["rows"][2].sent },
+                { label: "ER Specialist", y: response["rows"][3].sent },
+                { label: "Boss", y: response["rows"][4].sent }
               ]
             },
             {
@@ -87,11 +83,11 @@ window.addEventListener("load", () => {
                 toolTipContent:
                   'Role: {label} <br>Messages Recieved: {y}',
                 dataPoints: [
-                  { label: response["rows"][0].role_type, y: response["rows"][0].received},
-                  { label: response["rows"][1].role_type, y: response["rows"][1].received },
-                  { label: response["rows"][2].role_type, y: response["rows"][2].received },
-                  { label: response["rows"][3].role_type, y: response["rows"][3].received },
-                  { label: response["rows"][4].role_type, y: response["rows"][4].received }
+                  { label: "DB Admin", y: response["rows"][0].received},
+                  { label: "Civic Officer", y: response["rows"][1].received },
+                  { label: "IT Associate", y: response["rows"][2].received },
+                  { label: "ER Specialist", y: response["rows"][3].received },
+                  { label: "Boss", y: response["rows"][4].sent }
                 ]
             }
           ]
@@ -418,11 +414,11 @@ window.addEventListener("load", () => {
               toolTipContent:
                 'Role: {label} <br>Messages Sent: {y}',
               dataPoints: [
-                { label: response["rows"][0].role_type, y: response["rows"][0].sent},
-                { label: response["rows"][1].role_type, y: response["rows"][1].sent },
-                { label: response["rows"][2].role_type, y: response["rows"][2].sent },
-                { label: response["rows"][3].role_type, y: response["rows"][3].sent },
-                { label: response["rows"][4].role_type, y: response["rows"][4].sent }
+                { label: "DB Admin", y: response["rows"][0].sent},
+                { label: "Civic Officer", y: response["rows"][1].sent },
+                { label: "IT Associate", y: response["rows"][2].sent },
+                { label: "ER Specialist", y: response["rows"][3].sent },
+                { label: "Boss", y: response["rows"][4].sent }
               ]
             },
             {
@@ -430,11 +426,11 @@ window.addEventListener("load", () => {
                 toolTipContent:
                   'Role: {label} <br>Messages Recieved: {y}',
                 dataPoints: [
-                  { label: response["rows"][0].role_type, y: response["rows"][0].received},
-                  { label: response["rows"][1].role_type, y: response["rows"][1].received },
-                  { label: response["rows"][2].role_type, y: response["rows"][2].received },
-                  { label: response["rows"][3].role_type, y: response["rows"][3].received },
-                  { label: response["rows"][4].role_type, y: response["rows"][4].received }
+                  { label: "DB Admin", y: response["rows"][0].received},
+                  { label: "Civic Officer", y: response["rows"][1].received },
+                  { label: "IT Associate", y: response["rows"][2].received },
+                  { label: "ER Specialist", y: response["rows"][3].received },
+                  { label: "Boss", y: response["rows"][4].sent }
                 ]
             }
           ]
