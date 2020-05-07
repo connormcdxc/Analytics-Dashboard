@@ -58,10 +58,10 @@ window.addEventListener("load", () => {
           },
           axisX: {
             labelFontColor: "white",
+            labelFontSize: 10,
             labelAngle: -45,
             title: "Role type",
             interval: 1,
-            labelWrap: true,
           },
           axisY: {
             labelFontColor: "white",
@@ -398,9 +398,9 @@ window.addEventListener("load", () => {
           },
           axisX: {
             title: "Role type",
+            labelFontSize: 10,
             labelAngle: -45,
             interval: 1,
-            labelWrap: true
           },
           axisY: {
             title: "Number of messages",
