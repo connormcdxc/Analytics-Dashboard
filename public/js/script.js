@@ -19,6 +19,7 @@ window.addEventListener("load", () => {
   const cont2 = document.querySelector("#chart8");
   const cont3 = document.querySelector("#chart9");
   const cont4 = document.querySelector("#chart10");
+  const cont5 = document.querySelector("#chart11");
   const checkbox = document.querySelector("#dark");
   //console.log(sessionStorage.getItem("actors"));
 
@@ -299,6 +300,58 @@ window.addEventListener("load", () => {
         chart10.render();
       })
     }
+    if (cont5) {
+      fetch("/actors").then(data => data.json()).then(data => {
+        response = data;
+          console.log(data);
+          var chart11 = new CanvasJS.Chart(cont5, {
+          backgroundColor: null,
+          animationEnabled: true,
+          title: {
+            text: "Messages sent/received by different roles",
+          },
+          axisX: {
+            title: "Role ID",
+            labelFontColor: "white",
+            labelWrap: true,
+          },
+          axisY: {
+            title: "Number of Messages",
+            labelFontColor: "white",
+            labelWrap: true
+          },
+          data: [
+            {
+              type: "stackedBar",
+              name: "Sent",
+              toolTipContent:
+                'Role: {x} <br>Messages Sent: {y}',
+              dataPoints: [
+                { y: response["rows"][0].sent, x: response["rows"][0].role_type_id},
+                { y: response["rows"][1].sent, x: response["rows"][1].role_type_id},
+                { y: response["rows"][2].sent, x: response["rows"][2].role_type_id},
+                { y: response["rows"][3].sent, x: response["rows"][3].role_type_id},
+                { y: response["rows"][4].sent, x: response["rows"][4].role_type_id}
+              ]
+            },
+            {
+                type: "stackedBar",
+                name: "Received",
+                toolTipContent:
+                  'Role: {x} <br>Messages Received: {y}',
+                dataPoints: [
+                  { y: response["rows"][0].received, x: response["rows"][0].role_type_id},
+                  { y: response["rows"][1].received, x: response["rows"][1].role_type_id},
+                  { y: response["rows"][2].received, x: response["rows"][2].role_type_id},
+                  { y: response["rows"][3].received, x: response["rows"][3].role_type_id},
+                  { y: response["rows"][4].received, x: response["rows"][4].role_type_id}
+                ]
+            }
+          ]
+        });
+        chart11.render();
+      });
+    }
   }
 
   function nodark() {
@@ -548,59 +601,58 @@ window.addEventListener("load", () => {
         chart10.render();
       })
     }
+    }
+    if (cont5) {
+      fetch("/actors").then(data => data.json()).then(data => {
+        response = data;
+          console.log(data);
+          var chart11 = new CanvasJS.Chart(cont5, {
+          backgroundColor: null,
+          animationEnabled: true,
+          title: {
+            text: "Messages sent/received by different roles",
+          },
+          axisX: {
+            title: "Role ID",
+            labelWrap: true,
+          },
+          axisY: {
+            title: "Number of Messages",
+            labelWrap: true
+          },
+          data: [
+            {
+              type: "stackedBar",
+              name: "Sent",
+              toolTipContent:
+                'Role: {x} <br>Messages Sent: {y}',
+              dataPoints: [
+                { y: response["rows"][0].sent, x: response["rows"][0].role_type_id},
+                { y: response["rows"][1].sent, x: response["rows"][1].role_type_id},
+                { y: response["rows"][2].sent, x: response["rows"][2].role_type_id},
+                { y: response["rows"][3].sent, x: response["rows"][3].role_type_id},
+                { y: response["rows"][4].sent, x: response["rows"][4].role_type_id}
+              ]
+            },
+            {
+                type: "stackedBar",
+                name: "Received",
+                toolTipContent:
+                  'Role: {x} <br>Messages Received: {y}',
+                dataPoints: [
+                  { y: response["rows"][0].received, x: response["rows"][0].role_type_id},
+                  { y: response["rows"][1].received, x: response["rows"][1].role_type_id},
+                  { y: response["rows"][2].received, x: response["rows"][2].role_type_id},
+                  { y: response["rows"][3].received, x: response["rows"][3].role_type_id},
+                  { y: response["rows"][4].received, x: response["rows"][4].role_type_id}
+                ]
+            }
+          ]
+        });
+        chart11.render();
+    });
   }
 });
-/*
-const cont5 = document.querySelector("#chart11");
-if (cont5) {
-  fetch("/actors").then(data => data.json()).then(data => {
-    response = data;
-      console.log(data);
-      var chart11 = new CanvasJS.Chart(cont5, {
-      backgroundColor: null,
-      animationEnabled: true,
-      title: {
-        text: "Messages sent/received by different roles",
-      },
-      axisX: {
-        title: "Role ID",
-        labelWrap: true,
-      },
-      axisY: {
-        title: "Number of Messages",
-        labelWrap: true
-      },
-      data: [
-        {
-          type: "stackedBar",
-          name: "Sent",
-          toolTipContent:
-            'Role: {x} <br>Messages Sent: {y}',
-          dataPoints: [
-            { y: response["rows"][0].sent, x: response["rows"][0].role_type_id},
-            { y: response["rows"][1].sent, x: response["rows"][1].role_type_id},
-            { y: response["rows"][2].sent, x: response["rows"][2].role_type_id},
-            { y: response["rows"][3].sent, x: response["rows"][3].role_type_id},
-            { y: response["rows"][4].sent, x: response["rows"][4].role_type_id}
-          ]
-        },
-        {
-            type: "stackedBar",
-            name: "Received",
-            toolTipContent:
-              'Role: {x} <br>Messages Received: {y}',
-            dataPoints: [
-              { y: response["rows"][0].received, x: response["rows"][0].role_type_id},
-              { y: response["rows"][1].received, x: response["rows"][1].role_type_id},
-              { y: response["rows"][2].received, x: response["rows"][2].role_type_id},
-              { y: response["rows"][3].received, x: response["rows"][3].role_type_id},
-              { y: response["rows"][4].received, x: response["rows"][4].role_type_id}
-            ]
-        }
-      ]
-    });
-    chart11.render();
 
-  });
-}
-*/
+
+
