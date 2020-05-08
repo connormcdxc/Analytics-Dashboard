@@ -38,7 +38,7 @@ ENGINE = InnoDB;
 DROP TABLE IF EXISTS `ludo`.`people` ;
 
 CREATE TABLE IF NOT EXISTS `ludo`.`people` (
-  `person_id` INT AUTO_INCREMENT,
+  `person_id` INT NOT NULL AUTO_INCREMENT,
   `person_name` VARCHAR(45) NOT NULL COMMENT 'The name of the person playing.',
   `institution_name` VARCHAR(45) NOT NULL COMMENT 'The institution the player represents.',
   `username` VARCHAR(45) NOT NULL COMMENT 'The in-game username the person is using.',
